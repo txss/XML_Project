@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 
-<!ELEMENT master           			(intervenant+,parcours,parcours)>
+<!ELEMENT master           			(intervenant+, UE+,parcours,parcours)>
 
 <!ENTITY % lum "Luminy">
 <!ENTITY % jer "St-Jerôme">
-<!ENTITY % éto "étoile">
+<!ENTITY % eto "L'Étoile">
+<!ENTITY lum "%lum;">
+<!ENTITY jer "%jer;">
+<!ENTITY eto "%eto;">
 
 <!ENTITY  dom.univ    "univ-amu.fr" >
 <!ENTITY  dom.dil     "dil.&dom.univ;" >
-
 
 
 <!ELEMENT UE						(nomUE,ref-intervenant+,nbCreditsUE,résumé?, plan?, lieu_d_enseignement+)>
@@ -25,7 +27,7 @@
 <!ELEMENT nbCreditsUE     			(#PCDATA)>
 <!ELEMENT résumé        			(p)*>
 <!ELEMENT plan          			(p)*>
-<!ELEMENT lieu_d_enseignement    	(%lum;|%jer;|%éto;)>
+<!ELEMENT lieu_d_enseignement    	(%lum;|%jer;|%eto;)>
 
 <!ELEMENT p 						(#PCDATA|b|i|tt|p|ul|table|a)*>
 <!ELEMENT ul				    	(p)+>
@@ -40,18 +42,22 @@
 <!ATTLIST intervenant
     id ID #REQUIRED
     >
-    
+   
 <!ELEMENT nomIntervenant           	(#PCDATA)>
 <!ELEMENT mail          			(#PCDATA)>
 <!ELEMENT siteWeb        			(#PCDATA)>
 
 <!ELEMENT semestre					(bloc-UE+)>
 
-<!ELEMENT bloc-UE                   (nbCreditsBloc,UE+)>
+<!ELEMENT bloc-UE                   (nbCreditsBloc,ref-UE+)>
 <!ATTLIST bloc-UE
     rôle (Obligatoire|Facultatif) #REQUIRED
     >
 <!ELEMENT nbCreditsBloc         	(#PCDATA)>
+<!ELEMENT ref-UE 					EMPTY    >
+<!ATTLIST ref-UE
+    ref-UE IDREF #REQUIRED
+    >
 
 
 <!ELEMENT parcours                  (reponsable, nomParcours, description, débouché*,semestre,semestre)>
