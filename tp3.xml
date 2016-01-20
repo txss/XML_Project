@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE stock SYSTEM "tp3.dtd">
+
+<master>
+   <intervenant id="massat">
+      <nomIntervenant>Jean-Luc Massat</nomIntervenant>
+      <mail>jean-luc.massat@&dom.univ;</mail>
+      <siteWeb>http://jean-luc.massat.perso.luminy.&dom.univ;</siteWeb>
+   </intervenant>
+   <intervenant id="reynier">
+      <nomIntervenant>Pierre-Alain Reynier</nomIntervenant>
+      <mail>pierre-alain.reynier@&dom.univ;</mail>
+   </intervenant>
+   <intervenant id="ollagnier">
+      <nomIntervenant>Anaïs Ollagnier</nomIntervenant>
+      <mail>anais.ollagnier@&dom.univ;</mail>
+   </intervenant>
+   <parcours>
+     <responsable></responsable>
+     <nomParcours></nomParcours>
+     <description></description>
+     <débouché></débouché>
+     <semestre></semestre>
+     <semestre></semestre>
+   </parcours>
+   <parcours/>
+  
+   <UE id="ENSINBU4">
+      <nomUE>XML</nomUE>
+      <ref-intervenant ref="massat" />
+      <ref-intervenant ref="reynier" />
+      <ref-intervenant ref="ollagnier" />
+      <nbCreditsUE>3</nbCreditsUE>
+      <lieu_d_enseignement>&lum;</lieu_d_enseignement>
+   </UE>
+</master>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!ENTITY lum "Luminy">
+<!ENTITY jer "St-Jerôme">
+<!ENTITY éto "L'étoile">
+
+<!ENTITY  dom.univ    "univ-amu.fr" >
+<!ENTITY  dom.dil     "dil.&dom.univ;" >
+
+<!ELEMENT master           			(intervenant+,parcours,parcours)>
+
+<!ELEMENT UE						(nomUE,ref-intervenant+,nbCreditsUE,résumé?, plan?, lieu_d_enseignement+)>
+<!ATTLIST UE
+    id ID #REQUIRED
+    >
+    
+<!ELEMENT nomUE           			(#PCDATA)>
+<!ELEMENT ref-intervenant			EMPTY    >
+<!ATTLIST ref-intervenant
+    ref IDREF #REQUIRED
+    >
+<!ELEMENT nbCreditsUE     			(#PCDATA)>
+<!ELEMENT résumé        			(p)*>
+<!ELEMENT plan          			(p)*>
+<!ELEMENT lieu_d_enseignement    	(&lum;|&jer;|&éto;)>
+
+<!ELEMENT p 						(#PCDATA|b|i|tt|p|ul|table|a)*>
+<!ELEMENT ul				    	(p)+>
+<!ELEMENT table						(tr)+>
+<!ELEMENT tr						(td)+>
+<!ELEMENT b							(#PCDATA)>
+<!ELEMENT i							(#PCDATA)>
+<!ELEMENT tt						(#PCDATA)>
+<!ELEMENT a					    	(#PCDATA)>
+
+<!ELEMENT intervenant				(nomIntervenant,mail,siteWeb?)>
+<!ATTLIST intervenant
+    id ID #REQUIRED
+    >
+    
+<!ELEMENT nomIntervenant           	(#PCDATA)>
+<!ELEMENT mail          			(#PCDATA)>
+<!ELEMENT siteWeb        			(#PCDATA)>
+
+<!ELEMENT semestre					(bloc-d'UE+)>
+
+<!ELEMENT bloc-d'UE                 (nbCreditsBloc,UE+)>
+<!ATTLIST bloc-d'UE
+    rôle (#PCDATA) #REQUIRED
+    >
+<!ELEMENT nbCreditsBloc         	(#PCDATA)>
+
+
+<!ELEMENT parcours                  (reponsable, nomParcours, description, débouché*,semestre,semestre)>
+<!ELEMENT reponsable                (#PCDATA)>
+<!ELEMENT nomParcours               (#PCDATA)>
+<!ELEMENT description               (p)*>
+<!ELEMENT débouché	                (p)*>
+
