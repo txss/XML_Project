@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE stock SYSTEM "tp3.dtd">
+<!DOCTYPE master SYSTEM "tp3.dtd">
+
 
 <master>
    <intervenant id="massat">
@@ -15,22 +16,41 @@
       <nomIntervenant>Anaïs Ollagnier</nomIntervenant>
       <mail>anais.ollagnier@&dom.univ;</mail>
    </intervenant>
-   <parcours>
-     <responsable></responsable>
-     <nomParcours></nomParcours>
-     <description></description>
-     <débouché></débouché>
-     <semestre></semestre>
-     <semestre></semestre>
-   </parcours>
-   <parcours/>
   
-   <UE id="ENSINBU4">
-      <nomUE>XML</nomUE>
-      <ref-intervenant ref="massat" />
-      <ref-intervenant ref="reynier" />
-      <ref-intervenant ref="ollagnier" />
-      <nbCreditsUE>3</nbCreditsUE>
-      <lieu_d_enseignement>&lum;</lieu_d_enseignement>
-   </UE>
+   <parcours>
+     <responsable>Jean-Luc Massat</responsable>
+     <nomParcours>Master1</nomParcours>
+     <description>
+     	<p>Nothing to say</p>
+     </description>
+     <débouché>
+     	<p>On <b>espére</b> </p>
+     </débouché>
+     <semestre>
+     	<bloc-UE rôle="Obligatoire">
+     		<nbCreditsBloc>6</nbCreditsBloc>
+     		<UE id="ENSINBU4">
+		     	<nomUE>XML</nomUE>
+		      	<ref-intervenant ref="massat" />
+		      	<ref-intervenant ref="reynier" />
+		      	<ref-intervenant ref="ollagnier" />
+		      	<nbCreditsUE>3</nbCreditsUE>
+		      	<lieu_d_enseignement> &lum;</lieu_d_enseignement>
+   			</UE>
+     	</bloc-UE>
+     </semestre>
+     <semestre>
+       	<bloc-UE rôle="Obligatoire">
+  			<nbCreditsBloc>6</nbCreditsBloc>
+  			<UE id="ENSINBU5">
+		    	<nomUE>XML</nomUE>
+		     	<ref-intervenant ref="massat" />
+		     	<ref-intervenant ref="reynier" />
+		     	<ref-intervenant ref="ollagnier" />
+		     	<nbCreditsUE>3</nbCreditsUE>
+	    	</UE>
+  		</bloc-UE>
+     </semestre>
+   </parcours>
+  
 </master>

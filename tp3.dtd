@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 
-<!ENTITY lum "Luminy">
-<!ENTITY jer "St-Jerôme">
-<!ENTITY éto "L'étoile">
+<!ELEMENT master           			(intervenant+,parcours,parcours)>
+
+<!ENTITY % lum "Luminy">
+<!ENTITY % jer "St-Jerôme">
+<!ENTITY % éto "étoile">
 
 <!ENTITY  dom.univ    "univ-amu.fr" >
 <!ENTITY  dom.dil     "dil.&dom.univ;" >
 
-<!ELEMENT master           			(intervenant+,parcours,parcours)>
+
 
 <!ELEMENT UE						(nomUE,ref-intervenant+,nbCreditsUE,résumé?, plan?, lieu_d_enseignement+)>
 <!ATTLIST UE
@@ -23,7 +25,7 @@
 <!ELEMENT nbCreditsUE     			(#PCDATA)>
 <!ELEMENT résumé        			(p)*>
 <!ELEMENT plan          			(p)*>
-<!ELEMENT lieu_d_enseignement    	(&lum;|&jer;|&éto;)>
+<!ELEMENT lieu_d_enseignement    	(%lum;|%jer;|%éto;)>
 
 <!ELEMENT p 						(#PCDATA|b|i|tt|p|ul|table|a)*>
 <!ELEMENT ul				    	(p)+>
@@ -43,11 +45,11 @@
 <!ELEMENT mail          			(#PCDATA)>
 <!ELEMENT siteWeb        			(#PCDATA)>
 
-<!ELEMENT semestre					(bloc-d'UE+)>
+<!ELEMENT semestre					(bloc-UE+)>
 
-<!ELEMENT bloc-d'UE                 (nbCreditsBloc,UE+)>
-<!ATTLIST bloc-d'UE
-    rôle (#PCDATA) #REQUIRED
+<!ELEMENT bloc-UE                   (nbCreditsBloc,UE+)>
+<!ATTLIST bloc-UE
+    rôle (Obligatoire|Facultatif) #REQUIRED
     >
 <!ELEMENT nbCreditsBloc         	(#PCDATA)>
 
