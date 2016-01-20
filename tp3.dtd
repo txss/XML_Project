@@ -5,14 +5,12 @@
 
 <!ENTITY % lum "Luminy">
 <!ENTITY % jer "St-Jerôme">
-<!ENTITY % eto "L'Étoile">
 <!ENTITY lum "%lum;">
 <!ENTITY jer "%jer;">
-<!ENTITY eto "%eto;">
-
 <!ENTITY  dom.univ    "univ-amu.fr" >
 <!ENTITY  dom.dil     "dil.&dom.univ;" >
 
+<!ENTITY unite SYSTEM "UE.xml">
 
 <!ELEMENT UE						(nomUE,ref-intervenant+,nbCreditsUE,résumé?, plan?, lieu_d_enseignement+)>
 <!ATTLIST UE
@@ -27,7 +25,7 @@
 <!ELEMENT nbCreditsUE     			(#PCDATA)>
 <!ELEMENT résumé        			(p)*>
 <!ELEMENT plan          			(p)*>
-<!ELEMENT lieu_d_enseignement    	(%lum;|%jer;|%eto;)>
+<!ELEMENT lieu_d_enseignement    	("%lum;"|"%jer;")>
 
 <!ELEMENT p 						(#PCDATA|b|i|tt|p|ul|table|a)*>
 <!ELEMENT ul				    	(p)+>
@@ -49,19 +47,19 @@
 
 <!ELEMENT semestre					(bloc-UE+)>
 
-<!ELEMENT bloc-UE                   (nbCreditsBloc,ref-UE+)>
+<!ELEMENT bloc-UE                   (nbCreditsBloc,refUE+)>
 <!ATTLIST bloc-UE
     rôle (Obligatoire|Facultatif) #REQUIRED
     >
 <!ELEMENT nbCreditsBloc         	(#PCDATA)>
-<!ELEMENT ref-UE 					EMPTY    >
-<!ATTLIST ref-UE
-    ref-UE IDREF #REQUIRED
+<!ELEMENT refUE 					EMPTY    >
+<!ATTLIST refUE
+    refUE IDREF #REQUIRED
     >
 
 
-<!ELEMENT parcours                  (reponsable, nomParcours, description, débouché*,semestre,semestre)>
-<!ELEMENT reponsable                (#PCDATA)>
+<!ELEMENT parcours                  (responsable, nomParcours, description, débouché*,semestre,semestre)>
+<!ELEMENT responsable               (#PCDATA)>
 <!ELEMENT nomParcours               (#PCDATA)>
 <!ELEMENT description               (p)*>
 <!ELEMENT débouché	                (p)*>

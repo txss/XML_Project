@@ -17,7 +17,7 @@
       <mail>anais.ollagnier@&dom.univ;</mail>
    </intervenant>
   
-    <UE id="ENSINAU1">
+   <UE id="ENSINAU1">
   	<nomUE>Génie Logiciel</nomUE>
    	<ref-intervenant ref="perrot" />
    	<ref-intervenant ref="arrighi" />
@@ -200,7 +200,7 @@
    	<lieu_d_enseignement>&lum;</lieu_d_enseignement>
    	<lieu_d_enseignement>&jer;</lieu_d_enseignement>
  </UE>
-
+   
    <parcours>
      <responsable>Jean-Luc Massat</responsable>
      <nomParcours>Master1</nomParcours>
@@ -213,15 +213,33 @@
      <semestre>
      	<bloc-UE rôle="Obligatoire">
      		<nbCreditsBloc>6</nbCreditsBloc>
-     		<ref-UE ref-UE="ENSINBU4" />
+     		<refUE refUE="ENSINBU4" />
      	</bloc-UE>
      </semestre>
      <semestre>
        	<bloc-UE rôle="Obligatoire">
   			<nbCreditsBloc>6</nbCreditsBloc>
-  			<ref-UE ref-UE="ENSINBU5" />
+  			<refUE refUE="ENSINBU5" />
   		</bloc-UE>
      </semestre>
+   </parcours>
+   
+   <parcours>
+   		<responsable>Morin </responsable>
+   		<nomParcours> master2 </nomParcours>
+   		<description><p>nothing</p></description>
+   		<semestre>
+   			<bloc-UE rôle="Obligatoire">
+	  			<nbCreditsBloc>6</nbCreditsBloc>
+	  			<refUE refUE="ENSINBU5" />
+  			</bloc-UE>
+   		</semestre>
+   		<semestre>
+   			<bloc-UE rôle="Obligatoire">
+	  			<nbCreditsBloc>6</nbCreditsBloc>
+	  			<refUE refUE="ENSINBU5" />
+  			</bloc-UE>
+   		</semestre>
    </parcours>
   
 </master>
