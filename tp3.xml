@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE master SYSTEM "tp3.dtd">
 
-
 <master>
    <intervenant id="massat">
       <nomIntervenant>Jean-Luc Massat</nomIntervenant>
