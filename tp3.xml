@@ -15,16 +15,52 @@
       <nomIntervenant>Anaïs Ollagnier</nomIntervenant>
       <mail>anais.ollagnier@&dom.univ;</mail>
    </intervenant>
+   <intervenant id="perrot">
+      <nomIntervenant>Kevin Perrot</nomIntervenant>
+      <mail>kevin.perrot@&dom.univ;</mail>
+   </intervenant>
+   <intervenant id="arrighi">
+      <nomIntervenant>Pablo Arrighi</nomIntervenant>
+      <mail>pablo.arrighi@&dom.univ;</mail>
+   </intervenant>
+   <intervenant id="olive">
+      <nomIntervenant>Frédéric Olive</nomIntervenant>
+      <mail>frederic.olive@&dom.univ;</mail>
+   </intervenant>
+   <intervenant id="creignou">
+      <nomIntervenant>Nadia Creignou</nomIntervenant>
+      <mail>nadia.creignou@&dom.univ;</mail>
+   </intervenant>
+   <intervenant id="godard">
+      <nomIntervenant>Emmanuel Godard</nomIntervenant>
+      <mail>emmanuel.godard@&dom.univ;</mail>
+   </intervenant>
+    <intervenant id="tichit">
+      <nomIntervenant>Laurent Tichit</nomIntervenant>
+      <mail>laurent.tichit@&dom.univ;</mail>
+   </intervenant>
+    <intervenant id="santocanal">
+      <nomIntervenant>Luigi santocanal</nomIntervenant>
+      <mail>luigi.santocanal@&dom.univ;</mail>
+   </intervenant>
+    <intervenant id="couetoux">
+      <nomIntervenant>Basile Couetoux</nomIntervenant>
+      <mail>basile.couetoux@&dom.univ;</mail>
+   </intervenant>
+    <intervenant id="novelli">
+      <nomIntervenant>Noël Novelli</nomIntervenant>
+      <mail>noel.novelli@&dom.univ;</mail>
+   </intervenant>
   
    <UE id="ENSINAU1">
   	<nomUE>Génie Logiciel</nomUE>
    	<ref-intervenant ref="perrot" />
    	<ref-intervenant ref="arrighi" />
    	<nbCreditsUE>6</nbCreditsUE>
-   	<lieu_d_enseignement>&lum;</lieu_d_enseignement>
+   	<lieu_d_enseignement>Luminy</lieu_d_enseignement>
    	<lieu_d_enseignement>&jer;</lieu_d_enseignement>
  </UE>
- <UE id="ENSINBU2">
+ <UE id="ENSINBU20">
   	<nomUE>Complexité</nomUE>
    	<ref-intervenant ref="olive" />
    	<ref-intervenant ref="creignou" />
@@ -41,7 +77,7 @@
    	<lieu_d_enseignement> &lum;</lieu_d_enseignement>
    	<lieu_d_enseignement>&jer;</lieu_d_enseignement>
   </UE>
-  <UE id="ENSINBU4">
+  <UE id="ENSINBU40">
    	<nomUE>Programmation fonctionnelle</nomUE>
    	<ref-intervenant ref="santocanal" />
    	<ref-intervenant ref="couetoux" />
@@ -65,7 +101,7 @@
    	<lieu_d_enseignement> &lum;</lieu_d_enseignement>
    	<lieu_d_enseignement>&jer;</lieu_d_enseignement>
   </UE>
-  <UE id="ENSINBU7">
+  <UE id="ENSINBU70">
    	<nomUE>Outils de l'internet</nomUE>
    	<ref-intervenant ref="contensin" />
    	<nbCreditsUE>3</nbCreditsUE>
@@ -79,14 +115,14 @@
    	<lieu_d_enseignement> &lum;</lieu_d_enseignement>
    	<lieu_d_enseignement>&jer;</lieu_d_enseignement>
   </UE>
-  <UE id="ENSINBU9">
+  <UE id="ENSINBU90">
    	<nomUE>Fondamentaux pour l'ingénierie des langues </nomUE>
    	<ref-intervenant ref="bechet" />
    	<nbCreditsUE>3</nbCreditsUE>
    	<lieu_d_enseignement> &lum;</lieu_d_enseignement>
    	<lieu_d_enseignement>&jer;</lieu_d_enseignement>
   </UE>
-  <UE id="ENSINBU10">
+  <UE id="ENSINBU100">
    	<nomUE>Modèles à évènements discrets</nomUE>
    	<ref-intervenant ref="BOUCELMA" />
    	<nbCreditsUE>3</nbCreditsUE>
@@ -126,7 +162,7 @@
    	<lieu_d_enseignement>&jer;</lieu_d_enseignement>
   </UE>
   
-  <UE id="ENSINBU5">
+  <UE id="ENSINBU50">
   	<nomUE>ARO</nomUE>
    	<ref-intervenant ref="cepoi" />
    	<ref-intervenant ref="couetoux" />
@@ -142,7 +178,7 @@
    	<lieu_d_enseignement>&lum;</lieu_d_enseignement>
    	<lieu_d_enseignement>&jer;</lieu_d_enseignement>
  </UE>
- <UE id="ENSINBU6">
+ <UE id="ENSINBU60">
   	<nomUE>Projet</nomUE>
    	<ref-intervenant ref="jegou" />
    	<nbCreditsUE>6</nbCreditsUE>
@@ -192,7 +228,7 @@
    	<lieu_d_enseignement>&lum;</lieu_d_enseignement>
    	<lieu_d_enseignement>&jer;</lieu_d_enseignement>
  </UE>
-  <UE id="ENSINBU13">
+  <UE id="ENSINBU14">
   	<nomUE>Introduction à l'apprentissage automatique</nomUE>
    	<ref-intervenant ref="kadri" />
    	<nbCreditsUE>3</nbCreditsUE>
@@ -225,18 +261,21 @@
    
    <parcours>
    		<responsable>Morin </responsable>
-   		<nomParcours> master2 </nomParcours>
+   		<nomParcours> Master 2 </nomParcours>
    		<description><p>nothing</p></description>
    		<semestre>
    			<bloc-UE rôle="Obligatoire">
-	  			<nbCreditsBloc>6</nbCreditsBloc>
+	  			<nbCreditsBloc>18</nbCreditsBloc>
 	  			<refUE refUE="ENSINBU5" />
   			</bloc-UE>
    		</semestre>
    		<semestre>
    			<bloc-UE rôle="Obligatoire">
-	  			<nbCreditsBloc>6</nbCreditsBloc>
+	  			<nbCreditsBloc>12</nbCreditsBloc>
 	  			<refUE refUE="ENSINBU5" />
+	  			<refUE refUE="ENSINBU11" />
+	  			<refUE refUE="ENSINBU2" />
+	  			<refUE refUE="ENSINBU1" />
   			</bloc-UE>
    		</semestre>
    </parcours>

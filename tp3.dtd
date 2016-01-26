@@ -25,7 +25,7 @@
 <!ELEMENT nbCreditsUE     			(#PCDATA)>
 <!ELEMENT résumé        			(p)*>
 <!ELEMENT plan          			(p)*>
-<!ELEMENT lieu_d_enseignement    	("%lum;"|"%jer;")>
+<!ELEMENT lieu_d_enseignement    	(%lum;|%jer;)>
 
 <!ELEMENT p 						(#PCDATA|b|i|tt|p|ul|table|a)*>
 <!ELEMENT ul				    	(p)+>
