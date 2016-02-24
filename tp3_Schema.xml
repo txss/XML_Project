@@ -83,8 +83,8 @@
 		<mail>omar.BOUCELMA@univ-amu.fr</mail>
 	</intervenant>
 	<intervenant id="morin">
-		<nomIntervenant>Rémis Morin</nomIntervenant>
-		<mail>remis.morin@univ-amu.fr</mail>
+		<nomIntervenant>Rémi Morin</nomIntervenant>
+		<mail>remi.morin@univ-amu.fr</mail>
 	</intervenant>
 	<intervenant id="dalmolin">
 		<nomIntervenant>Alain dalmolin</nomIntervenant>
@@ -439,7 +439,7 @@
 	</parcours>
 
 	<parcours>
-		<responsable>Morin </responsable>
+		<responsable>Rémi Morin</responsable>
 		<nomParcours>Master2</nomParcours>
 		<description>
 			<p>nothing</p>

@@ -76,7 +76,7 @@
 									</h2>
 									<br />
 									Responsable :
-									<xsl:value-of select="responsable" />
+										<xsl:value-of select="responsable" />
 									<br />
 									Description :
 									<xsl:value-of select="description" />
@@ -244,6 +244,7 @@
 		<xsl:for-each select="/master/intervenant">
 			<xsl:variable name="idIntervenantCourant" select="@id" />
 			<xsl:variable name="siteWebIntervenant" select="siteWeb" />
+			<xsl:variable name="nomIntervenant" select="nomIntervenant" />
 			<xsl:document href="www/{$idIntervenantCourant}.html">
 				<html>
 					<head>
@@ -294,6 +295,16 @@
 									</xsl:for-each>
 								</xsl:for-each>
 							</ul>
+							<xsl:for-each select="//parcours">
+								<xsl:variable name="nomResp" select="responsable" />
+								<xsl:variable name="nomParcours" select="nomParcours" />
+								<xsl:if test="$nomIntervenant = $nomResp">
+									Cet enseignant est responsable du/des parcours:
+									<a href="{$nomParcours}.html">
+										<xsl:value-of select="$nomParcours" />
+									</a>
+								</xsl:if>
+							</xsl:for-each>
 						</p>
 					</body>
 				</html>

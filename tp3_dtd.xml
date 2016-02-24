@@ -85,8 +85,8 @@
 		<mail>omar.BOUCELMA@&dom.univ;</mail>
 	</intervenant>
 	<intervenant id="morin">
-		<nomIntervenant>Rémis Morin</nomIntervenant>
-		<mail>remis.morin@&dom.univ;</mail>
+		<nomIntervenant>Rémi Morin</nomIntervenant>
+		<mail>remi.morin@&dom.univ;</mail>
 	</intervenant>
 	<intervenant id="dalmolin">
 		<nomIntervenant>Alain dalmolin</nomIntervenant>
@@ -441,7 +441,7 @@
 	</parcours>
 
 	<parcours>
-		<responsable>Morin </responsable>
+		<responsable>Rémi Morin</responsable>
 		<nomParcours>Master2</nomParcours>
 		<description>
 			<p>nothing</p>
@@ -449,7 +449,7 @@
 		<semestre>
 			<bloc-UE rôle="Obligatoire">
 				<nbCreditsBloc>18</nbCreditsBloc>
-				<refUE refUE="ENSINBU5" />
+				<refUE refUE="ENSINBU5"/>
 			</bloc-UE>
 		</semestre>
 		<semestre>
