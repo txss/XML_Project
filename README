@@ -1,0 +1,5 @@
+Scholivet Manon et Campanella Florian
+
+Lancer la commande:
+xsltproc tp3.xsl tp3.xml > tp3.html
+

@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
+<!ELEMENT master					(intervenant+, UE+, parcours, parcours)>
 
-<!ELEMENT master           			(intervenant+, UE+,parcours,parcours)>
-
-<!ENTITY % lum "Luminy">
-<!ENTITY % jer "St-Jerôme">
-<!ENTITY lum "%lum;">
-<!ENTITY jer "%jer;">
-<!ENTITY  dom.univ    "univ-amu.fr" >
-<!ENTITY  dom.dil     "dil.&dom.univ;" >
-
-<!ENTITY unite SYSTEM "UE.xml">
-
-<!ELEMENT UE						(nomUE,ref-intervenant+,nbCreditsUE,résumé?, plan?, lieu_d_enseignement+)>
+<!ELEMENT UE						(nomUE, ref-intervenant+, nbCreditsUE, résumé?, plan?, lieu_d_enseignement+)>
 <!ATTLIST UE
     id ID #REQUIRED
     >
-    
+
 <!ELEMENT nomUE           			(#PCDATA)>
 <!ELEMENT ref-intervenant			EMPTY    >
 <!ATTLIST ref-intervenant
@@ -25,16 +15,20 @@
 <!ELEMENT nbCreditsUE     			(#PCDATA)>
 <!ELEMENT résumé        			(p)*>
 <!ELEMENT plan          			(p)*>
-<!ELEMENT lieu_d_enseignement    	(%lum;|%jer;)>
+<!ELEMENT lieu_d_enseignement    	(Luminy|St-Jerôme)>
+<!ELEMENT Luminy   				 	EMPTY>
+<!ELEMENT St-Jerôme    				EMPTY>
 
 <!ELEMENT p 						(#PCDATA|b|i|tt|p|ul|table|a)*>
-<!ELEMENT ul				    	(p)+>
+<!ELEMENT ul				    	(li)+>
 <!ELEMENT table						(tr)+>
 <!ELEMENT tr						(td)+>
 <!ELEMENT b							(#PCDATA)>
 <!ELEMENT i							(#PCDATA)>
 <!ELEMENT tt						(#PCDATA)>
 <!ELEMENT a					    	(#PCDATA)>
+<!ELEMENT td				    	(p)*>
+<!ELEMENT li				    	(p)+>
 
 <!ELEMENT intervenant				(nomIntervenant,mail,siteWeb?)>
 <!ATTLIST intervenant

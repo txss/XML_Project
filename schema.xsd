@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+
+
+
+	<xs:element name="master">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="intervenant" />
+				<xs:element maxOccurs="unbounded" ref="UE" />
+				<xs:element maxOccurs="2" minOccurs="2" ref="parcours" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+
+
+	<xs:element name="UE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nomUE" type="xs:string" />
+				<xs:element maxOccurs="unbounded" ref="ref-intervenant" />
+				<xs:element name="nbCreditsUE" type="xs:string" />
+
+				<xs:element name="résumé" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element minOccurs="0" maxOccurs="unbounded" ref="p" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+
+				<xs:element name="plan" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element minOccurs="0" maxOccurs="unbounded" ref="p" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+
+				<xs:element name="lieu_d_enseignement" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="Luminy" />
+							<xs:element ref="St-Jerôme" />
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+
+
+			</xs:sequence>
+			<xs:attribute name="id" use="required" type="xs:ID" />
+		</xs:complexType>
+	</xs:element>
+
+
+
+	<xs:element name="ref-intervenant">
+		<xs:complexType>
+			<xs:attribute name="ref" use="required" type="xs:IDREF" />
+		</xs:complexType>
+	</xs:element>
+
+
+
+
+
+	<xs:element name="Luminy">
+		<xs:complexType />
+	</xs:element>
+	<xs:element name="St-Jerôme">
+		<xs:complexType />
+	</xs:element>
+
+
+	<xs:element name="p">
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="b" type="xs:string" />
+				<xs:element name="i" type="xs:string" />
+				<xs:element name="tt" type="xs:string" />
+				<xs:element ref="p" />
+
+
+
+				<xs:element name="ul">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="li" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" ref="p" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+
+				<xs:element name="table">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="tr" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="td" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element maxOccurs="unbounded" ref="p" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+
+				<xs:element name="a" type="xs:string" />
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+
+
+	<xs:element name="intervenant">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nomIntervenant" type="xs:string" />
+				<xs:element name="mail" type="xs:string" />
+				<xs:element name="siteWeb" minOccurs="0" type="xs:string" />
+				<xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="id" use="required" type="xs:ID" />
+		</xs:complexType>
+	</xs:element>
+
+
+
+
+
+	<xs:element name="semestre">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="bloc-UE">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nbCreditsBloc" type="xs:string" />
+							<xs:element maxOccurs="unbounded" ref="refUE" />
+						</xs:sequence>
+						<xs:attribute name="rôle" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:token">
+									<xs:enumeration value="Obligatoire" />
+									<xs:enumeration value="Facultatif" />
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+
+	<xs:element name="refUE">
+		<xs:complexType>
+			<xs:attribute name="refUE" use="required" type="xs:IDREF" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="parcours">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="responsable" type="xs:string" />
+				<xs:element name="nomParcours" type="xs:string" />
+				<xs:element name="description">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element minOccurs="0" maxOccurs="unbounded" ref="p" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="débouché" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element minOccurs="0" maxOccurs="unbounded" ref="p" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element minOccurs="2" maxOccurs="2" ref="semestre" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+
+</xs:schema>
