@@ -28,6 +28,7 @@
 					</ul>
 					<h2 style="margin-top:50px;">Le Master</h2>
 					<xsl:call-template name="listerParcours" />
+					
 				</body>
 			</html>
 		</xsl:document>
@@ -76,7 +77,7 @@
 									</h2>
 									<br />
 									Responsable :
-										<xsl:value-of select="responsable" />
+									<xsl:value-of select="responsable" />
 									<br />
 									Description :
 									<xsl:value-of select="description" />
@@ -169,6 +170,20 @@
 										</li>
 									</xsl:for-each>
 								</ul>
+								<p>Cette UE apparaît dans le(s) parcours : </p>
+								<ul>
+									<xsl:for-each select="//parcours">
+										<xsl:variable name="nomParcours" select="nomParcours" />
+										<xsl:for-each select="semestre/bloc-UE/refUE[@refUE=$idUECourant]">
+
+											<li>
+												<a href="{$nomParcours}.html">
+													<xsl:value-of select="$nomParcours" />
+												</a>
+											</li>
+										</xsl:for-each>
+									</xsl:for-each>
+								</ul>
 							</ul>
 						</div>
 					</body>
@@ -176,6 +191,7 @@
 			</xsl:document>
 		</xsl:for-each>
 	</xsl:template>
+
 
 	<xsl:template name="listerUE">
 		<xsl:document href="www/listeUE.html">
@@ -204,9 +220,9 @@
 					<xsl:for-each select="UE">
 						<div style="border:solid 1px black; margin: 1px; padding-left:5%;">
 							<xsl:variable name="idUECourant" select="@id" />
-							<h3 id="{$idUECourant}">
+							<a href="{$idUECourant}.html">
 								<xsl:value-of select="nomUE" />
-							</h3>
+							</a>
 							<ul>
 								<xsl:for-each select="ref-intervenant">
 									<xsl:variable name="idIntervenant" select="@ref" />
@@ -231,6 +247,20 @@
 										</li>
 									</xsl:for-each>
 								</ul>
+								<p>Cette UE apparaît dans le(s) parcours : </p>
+								<ul>
+									<xsl:for-each select="//parcours">
+										<xsl:variable name="nomParcours" select="nomParcours" />
+										<xsl:for-each select="semestre/bloc-UE/refUE[@refUE=$idUECourant]">
+
+											<li>
+												<a href="{$nomParcours}.html">
+													<xsl:value-of select="$nomParcours" />
+												</a>
+											</li>
+										</xsl:for-each>
+									</xsl:for-each>
+								</ul>
 							</ul>
 						</div>
 					</xsl:for-each>
@@ -238,6 +268,7 @@
 			</html>
 		</xsl:document>
 	</xsl:template>
+
 
 	<xsl:template name="AfficherIntervenant">
 		<!-- <h2>Intervenants du master</h2> <ul> -->
@@ -278,7 +309,7 @@
 							<xsl:apply-templates /> <!-- TODO -->
 							<br />
 							<br />
-							UE enseignée:
+							UE enseignée(s):
 							<br />
 							<ul>
 								<xsl:for-each select="//UE">
@@ -335,25 +366,30 @@
 							<a href="listeUE.html"> Les unités d'enseignements </a>
 						</li>
 					</ul>
-					<h2 style="margin-top:50px;">Intervenants du master</h2>
-					<ul>
-						<xsl:for-each select="/master/intervenant">
-							<xsl:variable name="idIntervenantCourant" select="@id" />
-							<li>
-								<p id="{$idIntervenantCourant}">
-									<a href="{$idIntervenantCourant}.html">
-										<xsl:value-of select="nomIntervenant" />
-									</a>
-									<br />
-								</p>
-							</li>
-						</xsl:for-each>
-					</ul>
+					<xsl:call-template name="faire-une-liste">
+						<xsl:with-param name="objets" select="//intervenant"/>
+						<xsl:with-param name="nom" select="'intervenants'" />
+					</xsl:call-template>
 				</body>
 			</html>
 		</xsl:document>
 	</xsl:template>
 
+
+	<xsl:template name="faire-une-liste">
+		<xsl:param name="objets" />
+		<xsl:param name="nom" />
+		<h2 style="margin-top:50px;">Liste de <xsl:value-of select="$nom" /> </h2>
+		<ul>
+			<xsl:for-each select="$objets">
+				<xsl:variable name="idObjets" select="@id"/>
+				<li>
+					<a href="{$idObjets}.html"><xsl:value-of select="current()/*[1]"/></a>
+				</li>
+			</xsl:for-each>
+		</ul>
+
+	</xsl:template>
 
 
 	<xsl:template match="ref-intervenant">
@@ -376,6 +412,5 @@
 		<br />
 		<xsl:value-of select="." />
 	</xsl:template>
-
 
 </xsl:stylesheet>
