@@ -1,0 +1,54 @@
+body {
+	background-image: url('http://www.unesourisetmoi.info/data/images/photos/164/fond-d-ecran-ordinateur-gratuit_1.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+h2 {
+	text-decoration: underline;
+}
+
+#menu {
+	position:fixed;
+	top: 0px;
+	display: inline;
+	background: white;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	text-align: center ;
+}
+
+#menu li {
+	display: inline;
+	margin-right: 1px ;
+    color: #fff ;
+}
+
+#menu li a {
+  padding: 4px 20px ;
+  background: #c00 ;
+  color: #fff ;
+  border: 1px solid #600 ;
+  font: 1em "Trebuchet MS",Arial,sans-serif ;
+  line-height: 1em ;
+  text-align: center ;
+  text-decoration: none ;
+}
+
+#menu li a:hover, #menu li a:focus, #menu li a:active {
+  background: #900 ;
+  text-decoration: underline ;
+}
+
+.boxUE {
+	border:solid 1px black;
+	margin: 1px;
+	padding-left:5%;
+}
+
+
+
+
+
+
+

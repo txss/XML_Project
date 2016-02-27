@@ -2,7 +2,7 @@
 
 <!ELEMENT master					(intervenant+, UE+, parcours, parcours)>
 
-<!ELEMENT UE						(nomUE, ref-intervenant+, nbCreditsUE, résumé?, plan?, lieu_d_enseignement+)>
+<!ELEMENT UE						(nomUE, ref-intervenant*, nbCreditsUE, résumé?, plan?, lieu_d_enseignement*)>
 <!ATTLIST UE
     id ID #REQUIRED
     >
@@ -19,13 +19,13 @@
 <!ELEMENT Luminy   				 	EMPTY>
 <!ELEMENT St-Jerôme    				EMPTY>
 
-<!ELEMENT p 						(#PCDATA|b|i|tt|p|ul|table|a)*>
+<!ELEMENT p 						(#PCDATA|b|i|t|p|ul|table|a)*>
 <!ELEMENT ul				    	(li)+>
 <!ELEMENT table						(tr)+>
 <!ELEMENT tr						(td)+>
 <!ELEMENT b							(#PCDATA)>
 <!ELEMENT i							(#PCDATA)>
-<!ELEMENT tt						(#PCDATA)>
+<!ELEMENT t							(#PCDATA)>
 <!ELEMENT a					    	(#PCDATA)>
 <!ELEMENT td				    	(p)*>
 <!ELEMENT li				    	(p)+>
@@ -41,7 +41,7 @@
 
 <!ELEMENT semestre					(bloc-UE+)>
 
-<!ELEMENT bloc-UE                   (nbCreditsBloc,refUE+)>
+<!ELEMENT bloc-UE                   (nbCreditsBloc?,refUE+)>
 <!ATTLIST bloc-UE
     rôle (Obligatoire|Facultatif) #REQUIRED
     >
@@ -52,7 +52,7 @@
     >
 
 
-<!ELEMENT parcours                  (responsable, nomParcours, description, débouché*,semestre,semestre)>
+<!ELEMENT parcours                  (responsable?, nomParcours, description, débouché*,semestre,semestre)>
 <!ELEMENT responsable               (#PCDATA)>
 <!ELEMENT nomParcours               (#PCDATA)>
 <!ELEMENT description               (p)*>

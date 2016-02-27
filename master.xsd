@@ -22,7 +22,7 @@
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="nomUE" type="xs:string" />
-				<xs:element maxOccurs="unbounded" ref="ref-intervenant" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="ref-intervenant" />
 				<xs:element name="nbCreditsUE" type="xs:string" />
 
 				<xs:element name="résumé" minOccurs="0">
@@ -41,7 +41,7 @@
 					</xs:complexType>
 				</xs:element>
 
-				<xs:element name="lieu_d_enseignement" maxOccurs="unbounded">
+				<xs:element name="lieu_d_enseignement" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:choice>
 							<xs:element ref="Luminy" />
@@ -81,7 +81,7 @@
 			<xs:choice minOccurs="0" maxOccurs="unbounded">
 				<xs:element name="b" type="xs:string" />
 				<xs:element name="i" type="xs:string" />
-				<xs:element name="tt" type="xs:string" />
+				<xs:element name="t" type="xs:string" />
 				<xs:element ref="p" />
 
 
@@ -149,7 +149,7 @@
 				<xs:element name="bloc-UE">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element name="nbCreditsBloc" type="xs:string" />
+							<xs:element name="nbCreditsBloc" minOccurs="0" type="xs:string" />
 							<xs:element maxOccurs="unbounded" ref="refUE" />
 						</xs:sequence>
 						<xs:attribute name="rôle" use="required">
@@ -177,7 +177,7 @@
 	<xs:element name="parcours">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="responsable" type="xs:string" />
+				<xs:element name="responsable" minOccurs = "0" type="xs:string" />
 				<xs:element name="nomParcours" type="xs:string" />
 				<xs:element name="description">
 					<xs:complexType>

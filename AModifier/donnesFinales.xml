@@ -1,0 +1,2550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE master>
+<master xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="master.xsd">
+  <intervenant id="IN10388">
+    <nomIntervenant>FAVRE Benoit</nomIntervenant>
+    <mail>benoit.favre@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN12068">
+    <nomIntervenant>HABET Djamal</nomIntervenant>
+    <mail>djamal.habet@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN12316">
+    <nomIntervenant>DEMONGODIN Isabelle</nomIntervenant>
+    <mail>isabel.demongodin@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN12544">
+    <nomIntervenant>BOUCELMA Omar</nomIntervenant>
+    <mail>omar.boucelma@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN12632">
+    <nomIntervenant>OLIVETTI Nicola</nomIntervenant>
+    <mail>nicola.olivetti@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN12834">
+    <nomIntervenant>OUTBIB Rachid</nomIntervenant>
+    <mail>rachid.outbib@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN12969">
+    <nomIntervenant>RENE CHABAROT Lydie</nomIntervenant>
+    <mail>lydie.rene@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN13794">
+    <nomIntervenant>OLIVE Frederic</nomIntervenant>
+    <mail>frederic.olive@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN14758">
+    <nomIntervenant>BROCHE Martine</nomIntervenant>
+    <mail>martine.broche@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN16209">
+    <nomIntervenant>RALAIVOLA Hery Liva</nomIntervenant>
+    <mail>hery-liva.ralaivola@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN16625">
+    <nomIntervenant>SELLAMI Sana</nomIntervenant>
+    <mail>sana.sellami@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN17708">
+    <nomIntervenant>MICHEL Stephane</nomIntervenant>
+    <mail/>
+  </intervenant>
+  <intervenant id="IN18">
+    <nomIntervenant>MASSAT Jean Luc</nomIntervenant>
+    <mail>jean-luc.massat@univ-amu.fr</mail>
+    <siteWeb>http://jean-luc.massat.perso.luminy.univ-amu.fr</siteWeb>
+  </intervenant>
+  <intervenant id="IN2563">
+    <nomIntervenant>GODARD Emmanuel</nomIntervenant>
+    <mail>emmanuel.godard@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN3524">
+    <nomIntervenant>LUGIEZ Denis</nomIntervenant>
+    <mail>denis.lugiez@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN616">
+    <nomIntervenant>AGOPIAN Roland</nomIntervenant>
+    <mail>roland.agopian@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN6213">
+    <nomIntervenant>LABOUREL Arnaud</nomIntervenant>
+    <mail>arnaud.labourel@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN7001">
+    <nomIntervenant>CREIGNOU Nadia</nomIntervenant>
+    <mail>nadia.creignou@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN7680">
+    <nomIntervenant>LAI Claude</nomIntervenant>
+    <mail>claude.lai@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN7722">
+    <nomIntervenant>NOVELLI Noel</nomIntervenant>
+    <mail>noel.novelli@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN7931">
+    <nomIntervenant>RISCH Sylvie</nomIntervenant>
+    <mail>sylvie.risch@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN8006">
+    <nomIntervenant>BOI Jean Marc</nomIntervenant>
+    <mail>jean-marc.boi@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN8086">
+    <nomIntervenant>VAXES Yann</nomIntervenant>
+    <mail>yann.vaxes@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN9224">
+    <nomIntervenant>MORIN Remi</nomIntervenant>
+    <mail>remi.morin@univ-amu.fr</mail>
+  </intervenant>
+  <intervenant id="IN9941">
+    <nomIntervenant>BECHET Frederic</nomIntervenant>
+    <mail>frederic.bechet@univ-amu.fr</mail>
+  </intervenant>
+  <UE id="ENSINAU1">
+    <nomUE>Génie Logiciel</nomUE>
+    <ref-intervenant ref="IN7722"/>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>- Processus logiciel</t>
+				<br/>
+				<t>- Gestion de projet</t>
+				<br/>
+				<t>- Spécification et conception (artefact : notation UML)</t>
+				<br/>
+				<t>- Design patterns</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINAU10">
+    <nomUE>Modèles à évènements discrets</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Posséder les notions de base en modélisation et analyse de
+					systèmes dynamiques à événements discrets et particulièrement
+					appréhender le formalisme réseau de</t>
+				<br/>
+				<t>Pétri. Étudier la conception et la spécification des systèmes
+					réactifs à travers l'analyse du modèle à évènements discrets
+					(concurrence, parallélisme, synchronisation).</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINAU11">
+    <nomUE>Introduction à l'apprentissage automatique</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>- Introduction aux concepts de bases : formalisme statistique,
+					erreur de généralisation</t>
+				<br/>
+				<t>- Arbres de décision : algorithme ID3, élagage, programmation</t>
+				<br/>
+				<t>- Algorithme du perceptron : algorithme, temps de convergence,
+					propriétés de généralisation, application à la classification de
+					textes</t>
+				<br/>
+				<t>- Régression logistique : cadre probabiliste, maximisation de la
+					vraisemblance, optimisation par gradient conjugué et méthode de
+					Newton, application à la classification de textes</t>
+				<br/>
+				<t>- Quelques éléments théoriques : notion de capacité de classes de
+					fonctions, complexité de Rademacher, borne dépendante des données.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINAU2">
+    <nomUE>Complexité</nomUE>
+    <ref-intervenant ref="IN7001"/>
+    <ref-intervenant ref="IN13794"/>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>- Rappels sur les notions d'analyse de la complexité des
+					algorithmes et des problèmes.</t>
+				<br/>
+				<t>- Notion de problèmes (décision, recherche, dénombrement,
+					énumération, optimisation). Bornes inférieures de complexité.</t>
+				<br/>
+				<t>- Classes P et NP. Problèmes NP-complets.</t>
+				<br/>
+				<t>- Méthodes de résolution des problèmes NP-Complets.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINAU3">
+    <nomUE>Réseaux</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>- Architecture en couches, standard OSI</t>
+				<br/>
+				<t>- Couche physique</t>
+				<br/>
+				<t>- Couche liaison de Données</t>
+				<br/>
+				<t>- Réseau IP</t>
+				<br/>
+				<t>- Algorithmes de routage, routage IP</t>
+				<br/>
+				<t>- Protocole TCP/IP</t>
+				<br/>
+				<t>- Couche Application : HTTP, SMTP, FTP, ...</t>
+				<br/>
+				<t>- Bases des protocoles cryptographiques (terminologie,
+					architecture à clef publique).</t>
+				<br/>
+				<t>- Introduction à la Sécurité des réseaux.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINAU4">
+    <nomUE>Programmation fonctionnelle</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>1- Introduction à la programmation fonctionnelle, sur l'exemple
+					du langage</t>
+				<br/>
+				<t>OCaml</t>
+				<br/>
+				<t>Expressions, évaluation, types de base. Polymorphisme, ordre
+					supérieur.</t>
+				<br/>
+				<t>Fonctions récursives, filtrage. Les diverses stratégies
+					d'évaluation, application à la programmation d'un opérateur de
+					point fixe.</t>
+				<br/>
+				<t>2- Les types</t>
+				<br/>
+				<t>Sommes, types récursifs, polymorphes. Arbres. Filtrage.</t>
+				<br/>
+				<t>3- Sémantique opérationnelle</t>
+				<br/>
+				<t>Liaisons, environnements, clôtures. Évaluation des fonctions
+					récursives .</t>
+				<br/>
+				<t>4- Aspects impératifs</t>
+				<br/>
+				<t>Exceptions, entrées-sorties, séquencement, fichiers, références,
+					tableaux, enregistrements.</t>
+				<br/>
+				<t>5- Implantation du filtrage en OCaml</t>
+				<br/>
+				<t>Termes formels, substitutions, filtrage.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINAU5">
+    <nomUE>Programmation parallèle</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Ma position est que dans programmation parallèle, on fait de la
+					programmation multithread en JAVA, en tâchant d'être rigoureux :
+					présentation des problèmes et des solutions algorithmiques ;
+					classes utiles ; construction de classe threadsafe ; détail de
+					modèle mémoire</t>
+				<br/>
+				<t>Java et garantie DRF.</t>
+				<br/>
+				<t>Cette année j'ai ajouté vérification formelle d'algorithmes
+					parallèles (ou distribués).</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINAU6">
+    <nomUE>Programmation logique</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>- Introduction. Forme générale des règles. Effacement,
+					unification, backtracking. Contrôle de l'exécution.</t>
+				<br/>
+				<t>- Listes, arbres et n-uplets. Liste représentée par différence de
+					listes. Ajout en tête et en queue, concaténation.</t>
+				<br/>
+				<t>- Analyseurs syntaxiques. Construction d'un arbre syntaxique.
+					Liste des feuilles d'un arbre. Freeze et analyse par feuille.</t>
+				<br/>
+				<t>- Règles prédéfinies.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINAU7">
+    <nomUE>Outils de l'internet</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>- Présentation d'Internet.</t>
+				<br/>
+				<t>- Les langages et les normes sur Internet.</t>
+				<br/>
+				<t>- Les protocoles : HTTP, HTTP, SMTP, IMAP, POP3</t>
+				<br/>
+				<t>- Les applications web.</t>
+				<br/>
+				<t>- Sécurité.</t>
+				<br/>
+				<t>- Les nouvelles et futures technologies.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINAU8">
+    <nomUE>Système embarqué</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSINAU9">
+    <nomUE>Fondamentaux pour l'ingénierie des langues</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>- Rappel de théorie des langages</t>
+				<br/>
+				<t>- Algorithmes d'analyse syntaxique pour grammaires ambiguës</t>
+				<br/>
+				<t>- Transducteurs finis et leur application en TAL</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINBU1">
+    <nomUE>Anglais</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Un enseignement destiné à confirmer l'utilisation de l'anglais
+					dans le contexte de l'informatique ainsi que dans la pratique
+					professionnelle.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINBU10">
+    <nomUE>Intégration des systèmes d'information</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>- Problématique d'intégration des SI</t>
+				<br/>
+				<t>- Architectures et patrons d'intégration</t>
+				<br/>
+				<t>- Systèmes d'Information d'entreprises</t>
+				<br/>
+				<t>- Systèmes d'Information sur Internet</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINBU11">
+    <nomUE>Initiation à la fouille de données et à l’optimisation des SGBD</nomUE>
+    <ref-intervenant ref="IN7722"/>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Actuellement, de plus en plus de données sont conservées sans
+					être réellement exploitées. Elles représentent pourtant une source
+					importante d’information. La fouille de données peut-être
+					définie comme le processus permettant d’extraire de
+					l’information non triviale et non préalablement connue à
+					partir des données. Dans cet enseignement, nous nous focaliserons
+					sur l’extraction de corrélations entre les données (règle
+					d’association, Dépendances Fonctionnelles...) et nous verrons
+					des techniques de mesure de la qualité des données (détection et
+					correction d’erreur).</t>
+				<br/>
+				<t>Par ailleurs, nous passerons du côté obscur des SGBD en mettant
+					évidence le lien existant entre les performances d'un SGBD et les
+					choix d'implémentation des différents algorithmes utilisés (gestion
+					de la concurrence, reprise sur panne, transaction...) ainsi que les
+					différentes implémentations existantes des opérations de base des
+					SGBD comme les jointures ou les tris accompagnés de leurs
+					conditions d'utilisation.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINBU12">
+    <nomUE>Intelligence artificielle</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>- Introduction à l'IA</t>
+				<br/>
+				<t>- Problèmes d'espace d'états et d'exploration</t>
+				<br/>
+				<t>- Logiques pour l'IA et démonstration automatique</t>
+				<br/>
+				<t>- Représentation de connaissances</t>
+				<br/>
+				<t>- Actions, temps et planification</t>
+				<br/>
+				<t>- Programmation par contraintes et réseaux de contraintes</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINBU13">
+    <nomUE>Algorithme à performance garantie</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>- Algorithmes d'approximation de nature combinatoire pour les
+					problèmes</t>
+				<br/>
+				<t>NP-complets suivants : Voyageur de Commerce, arbre de Steiner,
+					ordonnancement de taches, clustering, p-centres, sac à dos, bin
+					packing, couverture d'ensemble, la plus courte sur-séquence
+					commune ;</t>
+				<br/>
+				<t>- FPTAS et PTAS (ordonnancement de taches et sac à dos) ;</t>
+				<br/>
+				<t>- Algorithmes d'approximation par programmation linéaire :
+					l'arrondi et la méthode primale-duale (MAXSAT, couverture
+					d'ensemble, multicoupes et multiflots dans les arbres) ;</t>
+				<br/>
+				<t>- Algorithmes en ligne et compétitivité : la pagination et les
+					k-serveurs.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINBU14">
+    <nomUE>Pratique de la cryptographie</nomUE>
+    <ref-intervenant ref="IN9224"/>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Cette UE propose un tour d'horizon de la cryptographie moderne
+					avec une attention particulière pour le codage de primitives
+					cryptographiques. Il s'agit tout d'abord de comprendre les
+					problèmes centraux de confidentialité, d’authentification et
+					d’intégrité. Les notions de signature et de certificats
+					électroniques seront aussi étudiées. Les différents types de
+					solutions seront présentées : cryptographie symétrique,
+					asymétrique, par flot, par blocs, les fonctions de hâchage, les
+					architectures PKI, etc.</t>
+				<br/>
+				<t>Le détail des techniques éprouvées telles que RC4, AES, RSA, DSA
+					feront l'objet d'un codage en C ou en Java. Enfin les Travaux
+					Pratiques permettront de s'initier à des librairies standards pour
+					le calcul sur de grands entiers, à savoir GMP en C ou BigInteger en
+					Java, ainsi qu'au fonctionnement de l’extension JCE (Java
+					Cryptography Extension).</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINBU2">
+    <nomUE>Communication</nomUE>
+    <ref-intervenant ref="IN12969"/>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<b>chapitre 1</b>
+				<t> : </t>
+				<b>Théories de la communication :</b>
+			</p>
+      <ul>
+				<li>
+					<t>1.1 La théorie mathématique de l’information (Shannon,
+						Weaver), la cybernétique (Wiener)</t>
+				</li>
+				<li>
+					<t>1.2 La théorie de Palo Alto ( Bateson, Watzlawick) et la théorie
+						de la communication par les processus (Mucchielli)</t>
+				</li>
+			</ul>
+      <p>
+				<b>chapitre 2 : Rôle de l’interculturalité dans le travail en
+					équipe :</b>
+			</p>
+      <ul>
+				<li>
+					<t>2.1 L’enquête interculturelle de Hofstede pour IBM</t>
+				</li>
+				<li>
+					<t>2.2 La gestuelle et le paralangage et la proxémie dans le monde
+						(Hall)</t>
+				</li>
+			</ul>
+      <p>
+				<b>chapitre 3 : Notions de management et de travail collaboratif</b>
+			</p>
+      <ul>
+				<li>
+					<t>3.1 Le travail collaboratif vs le travail coopératif</t>
+				</li>
+				<li>
+					<t>3.2 La notion de groupes</t>
+				</li>
+				<li>
+					<t>3.3 Les compétences managériales</t>
+				</li>
+			</ul>
+    </résumé>
+  </UE>
+  <UE id="ENSINBU3">
+    <nomUE>Bases de données avancées</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>- Transactions, concurrence</t>
+				<br/>
+				<t>- Déclencheurs et exceptions</t>
+				<br/>
+				<t>- Conception, Entités/Associations</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINBU4">
+    <nomUE>XML</nomUE>
+    <ref-intervenant ref="IN18"/>
+    <ref-intervenant ref="IN16625"/>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>- XML, DTD, XSD</t>
+				<br/>
+				<t>- XPath, XSLT, XQuery</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINBU5">
+    <nomUE>Algorithmique et recherche opérationnelle</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>- Programmation linéaire.</t>
+				<br/>
+				<t>- Notions et algorithmes de flots.</t>
+				<br/>
+				<t>- Applications (couplage, affectation, transport, ...)</t>
+				<br/>
+				<t>- Programmation dynamique (sac à dos, ordonnancement, ...)</t>
+				<br/>
+				<t>- Algorithmes à performance garantie</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINBU6">
+    <nomUE>Projet</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Le but du projet est de mettre en oeuvre, de l'analyse à la
+					programmation, les notions présentées en cours. C'est l'occasion,
+					pour les étudiants, d'utiliser sur un cas pratique, les éléments
+					exposées dans les UE. Travail effectué sous la direction
+					pédagogique d'un enseignant, et donnant lieu à la rédaction d'un
+					mémoire et d'une soutenance orale.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINBU7">
+    <nomUE>Stage de deux mois</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Le but du projet est de mettre en oeuvre, de l'analyse à la
+					programmation, les notions présentées en cours. C'est l'occasion,
+					pour les étudiants, d'utiliser sur un cas pratique, les éléments
+					exposées dans les UE. Travail effectué sous la direction
+					pédagogique d'un enseignant, et donnant lieu à la rédaction d'un
+					mémoire et d'une soutenance orale.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINBU8">
+    <nomUE>Sémantique</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>1-Le lambda-calcul simplement typé</t>
+				<br/>
+				<t>Syntaxe, typage, beta et eta-conversions, équations. Modèles :
+					interprétation des jugements de typage.</t>
+				<br/>
+				<t>2-Extension à PCF. La règle \mu.</t>
+				<br/>
+				<t>3-Points fixes dans les ordres partiels complets.</t>
+				<br/>
+				<t>Le théorème de Tarski.</t>
+				<br/>
+				<t>4-Sémantique par point fixe de PCF.</t>
+				<br/>
+				<t>5-Cours de clôture : survol des différentes approches
+					sémantiques.</t>
+				<br/>
+				<t>Sémantiques opérationnelles : par transitions, naturelles,
+					machine abstraite de</t>
+				<br/>
+				<t>Landin.</t>
+				<br/>
+				<t>Sémantique dénotationnelles : cas fonctionnel(cf.chapitre 4) et
+					cas d'un petit langage impératif.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINBU9">
+    <nomUE>Algorithmique distribuée</nomUE>
+    <ref-intervenant ref="IN6213"/>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Un système distribué est un ensemble d’entités autonomes de
+					calcul (ordinateurs, PDA, processeurs, processus, processus léger,
+					...) interconnectées et qui peuvent communiquer entre eux. Ce cours
+					est une introduction aux méthodes pour la conception d'algorithmes
+					dans de tels systèmes. Il donne une présentation des différents
+					types de systèmes distribués et des différents problèmes que l'on
+					doit résoudre. Les problèmes abordés sont : l'élection, le
+					consensus, la diffusion, l'exploration, la réplication,
+					l'exploration et le rendez-vous avec des agent mobiles.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU1">
+    <nomUE>Algorithmique et complexité</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Principales techniques de conception et analyse d'algorithmes
+					(efficaces) pour les problèmes polynomiaux et les problèmes
+					NP-complets. Complexité de l'approximation, du comptage. Complexité
+					paramétrée. Classes probabilistes.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU10">
+    <nomUE>Fouille de données avancée</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Approfondissement des techniques de fouille de données en
+					étudiant les méthodes de réduction des règles d'association ainsi
+					que leur application à la classification supervisée et en mettant
+					en œuvre des algorithmes par niveaux.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU11">
+    <nomUE>Géométrie discrète</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Introduction à la géométrie discrète dans $Z^n$, en trois
+					volets : des rappels sur la géométrie des nombres, un état de l'art
+					en géométrie discrète, enfin une étude des transformations de
+					distances et leurs applications.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU12">
+    <nomUE>Algorithmique des graphes et réseaux</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Algorithmes exacts. Algorithmes d'approximation. Structures de
+					données distribuées.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU13">
+    <nomUE>Espaces métriques : structure et algorithmiques</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Introduction aux principales classes et constructions des espaces
+					métriques et des graphes métriques,. Plongements isométriques ou à
+					faible distorsion des espaces métriques dans des espaces
+					géométriques, leur applications en informatique et mathématiques.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU14">
+    <nomUE>Optimisation combinatoire et programmation en nombres entiers</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Principaux concepts, algorithmes, méthodes et outils qui
+					permettent de résoudre les problèmes d'optimisation combinatoire,
+					en particulier ceux qui se formulent comme des programmes linéaires
+					en nombres entiers.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU15">
+    <nomUE>Logiques et jeux</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Mu-calcul , syntaxe-sémantique. Model-checking par jeux de
+					parité, tableaux-decidabilité. Puissance expressive</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU16">
+    <nomUE>Algorithmique distribuée 2</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Algorithmes de diffusion, diffusion avec retour. Algorithmes
+					d'élection, détection de la terminaison. Tolérance aux pannes</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU17">
+    <nomUE>Vérification et sécurité</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Model Checking. Algorithmes de vérification. Modèles de sécurité.
+					Vérification de programmes par analyse statique.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU18">
+    <nomUE>Modèles du parallélisme</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Modèles classiques de systèmes. Résultats principaux du domaine
+					concernant les problèmes d'accessibilité, de model-checking, de
+					contrôle ou de synthèse associés.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU19">
+    <nomUE>Modèles et connaissances linguistiques pour le TAL</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Traitement automatique des langues dans ses aspects applications.
+					Différentes types de connaissances et modèles symboliques sur la
+					langue. Plusieurs ressources linguistiques pour le français sont
+					examinées.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU2">
+    <nomUE>Logique, automates et aspects formels de la théorie des langages</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Logique du premier ordre. Logiques modales et temporelles.
+					Logiques monadiques. Décidabilité de logiques .</t>
+			</p>
+      <p>
+				<t>Automates de mots finis et infinis. Automates d'arbres et
+					langages réguliers d'arbres. Liens avec la logique</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU20">
+    <nomUE>Syntaxe et sémantique : modèles et outils</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Principes et nature des représentations syntaxiques et
+					sémantiques associables à une phrase. Différents formalismes seront
+					étudiés pour exprimer ces représentations.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU21">
+    <nomUE>Modèles numériques pour le TAL</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Présentation des modèles numériques utilisés pour différentes
+					tâches du Traitement Automatique des Langue. Algorithmes qui
+					permettent d'en estimer les paramètres à partir de données et les
+					algorithmes de décodage.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU22">
+    <nomUE>Applications du Traitement Automatique de la Langue (TAL)</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>État de l'art dans différentes applications du Traitement
+					Automatique des Langues, tel que la traduction automatique, le
+					résumé automatique ainsi que sur les traitements de « bas niveau »
+					nécessaires dans la majorité des applications.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU23">
+    <nomUE>Algorithmique des chaînes de caractères</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Différentes structures et algorithmes relatifs aux traitements
+					des chaînes de caractères.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU24">
+    <nomUE>Classification et phylogénie</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Méthodes de classification et de construction d'arbres à partir
+					de distances.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU25">
+    <nomUE>Modèles markoviens</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Présentation des chaînes de Markov, leurs algorithmes et
+					applications.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU26">
+    <nomUE>Logiques non-standards</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Logiques multi-modales des connaissances et de l'interaction.
+					Logiques non-monotones. Logiques de description. Tableaux
+					sémantiques pour logiques de mondes possibles. Bases de
+					connaissances dynamiques.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU27">
+    <nomUE>Anglais 2</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Expression orale et écrite : exposés sur des sujets scientifiques
+					et / ou professionnels, travaux écrits. Préparation et passage du
+					TOEIC.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU28">
+    <nomUE>Communication 2</nomUE>
+    <ref-intervenant ref="IN14758"/>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>L’étudiant apprend à effectuer un bilan de son parcours de
+					formation, à élaborer un projet professionnel personnel, à cerner
+					ses motivations et à enrichir ses connaissances des métiers et du
+					marché de l’informatique pour se constituer un portefeuille
+					de compétences.</t>
+			</p>
+      <ul>
+				<li>
+					<t>Valorisation du parcours de formation</t>
+				</li>
+				<li>
+					<t>Clarification des motivations et de leurs incidences sur des
+						choix professionnels</t>
+				</li>
+				<li>
+					<t>Identification des aptitudes et des compétences,</t>
+				</li>
+				<li>
+					<t>Positionnement du projet personnel et professionnel</t>
+				</li>
+				<li>
+					<t>Ajustement des profils annonce / candidature</t>
+				</li>
+				<li>
+					<t>Préparation aux entretiens de recrutement</t>
+				</li>
+				<li>
+					<t>Rédaction de curriculum vitae et de lettres de motivation</t>
+				</li>
+			</ul>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU29">
+    <nomUE>Fiabilité logicielle 1</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Les bases du Test. Test d'intégration. Preuve de programme et
+					Design by Contract. Test d'applications distribuées.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU3">
+    <nomUE>Statistique inférentielle</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Théorie des probabilités et statistique inférentielle. Ce cours
+					permet d'acquérir des bases solides pour l'apprentissage
+					automatique ou le traitement automatique de la langue naturelle</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU30">
+    <nomUE>Plateforme JEE</nomUE>
+    <ref-intervenant ref="IN18"/>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Interface d'accès aux données (JDBC). Technologies pour la
+					réalisation d'applications Client/Serveur sur le WEB (JSP/Servlet).
+					Technologies pour la mise en œuvre de middleware (RMI/EJB).</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU31">
+    <nomUE>Systèmes hétérogènes</nomUE>
+    <ref-intervenant ref="IN616"/>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Les parties magistrales de l'enseignement seront l'occasion
+					d'aborder notamment les aspects suivants :</t>
+			</p>
+      <ul>
+				<li>
+					<t>Introduction aux métiers et organisation des Systèmes
+						d'Information (DSI, AMO, MOE, architectes, exploitants...)</t>
+				</li>
+				<li>
+					<t>Introduction aux stratégies d'entreprises autour de leurs
+						systèmes d'information (plan de continuité d'activité, plan de
+						reprise d'activité, plan de continuité informatique...)</t>
+				</li>
+				<li>
+					<t>Introduction à la conception et à l'évolution de systèmes
+						d'information (recueil et analyse de l'existant, des besoins et
+						contraintes, scénarii, rédaction de cahier des charges...)</t>
+				</li>
+				<li>
+					<t>Découvertes des technologies liées à la disponibilité et haute
+						disponibilité des données informatiques (réseaux de stockage -
+						SAN, NAS -, virtualisation...)</t>
+				</li>
+				<li>
+					<t>Découverte des architectures de disponibilité et haute
+						disponibilité des SI (analyse des besoins, conception, cloud
+						computing...)</t>
+				</li>
+				<li>
+					<t>Approfondissement des savoirs autour des réseaux de transferts
+						de données d'entreprises (routage, réseaux privés virtuels...)</t>
+				</li>
+				<li>
+					<t>Découverte des infrastructures de services des réseaux de
+						données</t>
+				</li>
+			</ul>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU32">
+    <nomUE>Sécurité internet et réseau</nomUE>
+    <ref-intervenant ref="IN616"/>
+    <ref-intervenant ref="IN2563"/>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Le cours aborde la sécurité de l'information sous deux aspects :</t>
+			</p>
+      <ul>
+				<li>
+					<t>Un volet organisationnel qui aborde la mise en place d'un
+						système de management de la sécurité informatique à travers
+						notamment l'étude des normes (ISO 27001, ISO 27002 ...) ou
+						l'utilisation pratique de méthodes d'évaluation des besoins et des
+						objectifs de sécurité</t>
+				</li>
+				<li>
+					<t>Un volet technique orienté sur l'acquisition des mécanismes
+						cryptographiques actuels (algorithmes, protocoles ...) avec une
+						mise en œuvre pratique (tunnels sécurisés, infrastructure de
+						distribution de certificats...) ainsi que l'utilisation des outils
+						de sécurité réseaux (journalisation, conformité …) en
+						complément d'une sensibilisation pratique aux types d'attaque
+						réellement existantes.</t>
+				</li>
+			</ul>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU33">
+    <nomUE>Fiabilité logicielle 2</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Politique de Sécurité, Contrôle d'accès, Modèles de sécurité.
+					Typage et Sécurité en Java. Analyse de programme.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU34">
+    <nomUE>Qualité</nomUE>
+    <ref-intervenant ref="IN17708"/>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<b>Chapitre 1 : Introduction : Référentiels et Gestion de Service IT</b>
+			</p>
+      <ul>
+				<li>
+					<t>Concept de Service, La Gestion de Service et ITILv3, Processus,
+						Rôles et Fonctions, Deming, Cycle de vie des Services</t>
+				</li>
+			</ul>
+      <p>
+				<b>Chapitre 2 : Stratégie des Services</b>
+			</p>
+      <ul>
+				<li>
+					<t>Définition de la Stratégie, Gestion du Portefeuille, Gestion de
+						la Demande, Gestion Financière</t>
+				</li>
+			</ul>
+      <p>
+				<b>Chapitre 3 : Conception des Services</b>
+			</p>
+      <ul>
+				<li>
+					<t>Concepts, Gestion du Catalogue, Gestion des Niveaux de Service,
+						Gestion de la Capacité, Gestion de la Disponibilité, Gestion de la
+						Continuité, Gestion de la Sécurité, Gestion des Fournisseurs</t>
+				</li>
+			</ul>
+      <p>
+				<b>Chapitre 4 : Transition des Services</b>
+			</p>
+      <ul>
+				<li>
+					<t>Gestion des Actifs et des Configurations, Gestion des
+						Changements, Gestion des Déploiements et des Mises en Production,
+						Gestion de la Connaissance</t>
+				</li>
+			</ul>
+      <p>
+				<b>Chapitre 5 : Exploitation des Services</b>
+			</p>
+      <ul>
+				<li>
+					<t>Les Fonctions, Gestion des Evènements, Gestion des Incidents,
+						Gestion des Requêtes, gestion des Problèmes, Gestion des Accès</t>
+				</li>
+			</ul>
+      <p>
+				<b>Chapitre 6 : Amélioration Continue des Services</b>
+			</p>
+      <ul>
+				<li>
+					<t>Processus d’amélioration en 7 étapes</t>
+				</li>
+			</ul>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU35">
+    <nomUE>Sécurité des systèmes embarqués</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Contenu en cours d'élaboration.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU36">
+    <nomUE>Administration système et réseau</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>L'objectif est de préparer les étudiants à l'administration d'un
+					réseau d'ordinateurs. L'accent sera mis sur les aspects pratiques
+					et concrets de l'administration d'un réseau d'entreprise pour les
+					systèmes UNIX et Windows. A ce titre, une maquette constituée de
+					plusieurs serveurs et stations sous Windows 2000/XP/Linux sera
+					montée par les étudiants.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU37">
+    <nomUE>Méthodes de développement</nomUE>
+    <ref-intervenant ref="IN10388"/>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>En cours, sont vus les éléments suivants :</t>
+			</p>
+      <ul>
+				<li>
+					<t>Les problématiques d'un développement pérenne (principes, cycle
+						de développement, méthodologies)</t>
+				</li>
+				<li>
+					<t>Rappels d'UML : principaux diagrammes (classes, activités, cas,
+						séquences), représentation, études de cas</t>
+				</li>
+				<li>
+					<t>Les design patterns en profondeur (description détaillée des 26
+						patterns, étude de cas)</t>
+				</li>
+			</ul>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU38">
+    <nomUE>Architecture logicielle</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Architecture n-tiers. Architecture des applications WEB (MVC,
+					Spring, Struts, JSF). Sécurité des applications WEB. Architecture
+					par composants (EJB, IoC, Spring). Annuaire d'entreprise (JNDI).</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU39">
+    <nomUE>Intégration des données</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Modèle objet (standard de l'ODMG 1993-1997). Modèle
+					relationnel-objet (norme SQL3 de 1999-2000). Principe des
+					plateforme de correspondance objet-relationnel (ORM, JPA)</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU4">
+    <nomUE>Nouveaux défis en apprentissage</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Étude des méthodes d'apprentissage qui traitent, de façon tant
+					théorique qu'appliquée, séparément ou simultanément, un ou
+					plusieurs problèmes classiques</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU40">
+    <nomUE>Administration et alimentation de BD</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Architecture d’un SGBD (Oracle). Création, confidentialité,
+					optimisation et sécurité d’une base de données. Migration de
+					bases de données : techniques usuelles, maintenance de
+					l’inter-dépendance entre bases de données. Alimentation,
+					nettoyage et sélection des données en vue d'analyses.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU41">
+    <nomUE>Qualité logicielle : outils et méthodes</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Qualité logicielle, test et validation logiciel, ateliers de
+					génie logiciel.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU42">
+    <nomUE>Spécification logicielle</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Modèles formels, modèle SADT, logiciels temps réel, méthode
+					SA-RT.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU43">
+    <nomUE>Conception logicielle et IHM</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Conception objet, patrons de conception, conception IHM.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU44">
+    <nomUE>Architecture logicielle JEE</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Composants logiciels , architectures N-tier, middleware,
+					Entreprise Java Beans (EJB).</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU45">
+    <nomUE>Technologies du Web et Web 2.0</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Protocoles de communication, standards Web, Langages à balises,
+					programmation Web, Ajax, XUL, standardisation et convergence
+					d'interfaces.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU46">
+    <nomUE>XML avancé</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Modélisation et navigation, XSchema et XPath avancés, Requêtage
+					des bases documentaires, DOM et SAX avancés.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU47">
+    <nomUE>Gestion de projet</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Définition et acteurs d'un projet, organisation d'un projet,
+					techniques de planification, estimation prévisionnelle d'un projet,
+					pilotage et contrôle d'un projet, recette finale.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU48">
+    <nomUE>Optimisation linéaire</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>– Rappels de programmation linéaire.</t>
+			</p>
+      <p>
+				<t>– Implantation efficace de la méthode simplex.</t>
+			</p>
+      <p>
+				<t>– Dualité et analyse de sensibilité.</t>
+			</p>
+      <p>
+				<t>– Notion et algorithmes de flots, applications.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU49">
+    <nomUE>Fouille de Bases de Données (FBD)</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSINCU5">
+    <nomUE>Théorie de l'apprentissage</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Avancées récentes en théorie de l'apprentissage statistique :
+					complexité de Rademacher, bornes PAC-Bayes, stabilité
+					algorithmique, schémas de compression.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU50">
+    <nomUE>Méthodologie de conception d'applications décisionnelles</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>– Technique de nettoyage et de vérification des données.</t>
+			</p>
+      <p>
+				<t>– Analyse et modélisation de problèmes décisionnels.</t>
+			</p>
+      <p>
+				<t>– Définition de l'objectif de l'analyse : indicateurs,
+					mesures et reporting.</t>
+			</p>
+      <p>
+				<t>– Études de cas.</t>
+			</p>
+      <p>
+				<t>– Logiciels : Penthao Dashboard et Reporting.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU51">
+    <nomUE>Entrepôt de Données</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>– Définition, caractéristique, particularité, architecture.</t>
+			</p>
+      <p>
+				<t>– Intégration de données.</t>
+			</p>
+      <p>
+				<t>– Exploitation d'un entrepôt en vue d'analyses.</t>
+			</p>
+      <p>
+				<t>– Requêtes OLAP.</t>
+			</p>
+      <p>
+				<t>– Cubes de données, modèles conceptuels et logiques.</t>
+			</p>
+      <p>
+				<t>– Méthode algorithmique de type Rolap cubing.</t>
+			</p>
+      <p>
+				<t>– Fouille d'entrepôt de données.</t>
+			</p>
+      <p>
+				<t>– Logiciels : ORACLE OLAP, Pentaho Data Integration,
+					Mondrian.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU52">
+    <nomUE>Fouille de Données Avancée</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>– Extraction des règles de corrélation.</t>
+			</p>
+      <p>
+				<t>– Méthodes de classification.</t>
+			</p>
+      <p>
+				<t>– Méthodes de clustering.</t>
+			</p>
+      <p>
+				<t>– Logiciels : SAS Enterprise.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU53">
+    <nomUE>Modélisation en RO</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>– Modélisation mathématique d'un problème d'optimisation.</t>
+			</p>
+      <p>
+				<t>– Utilisation de langage de modélisation et de solveurs.</t>
+			</p>
+      <p>
+				<t>– Modélisation en variables binaires.</t>
+			</p>
+      <p>
+				<t>– Etudes de cas par secteurs d'activités.</t>
+			</p>
+      <p>
+				<t>– Logiciels : Xpress, Mosel, OPL.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU54">
+    <nomUE>Recherche locale</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>– Introduction et méthodologie.</t>
+			</p>
+      <p>
+				<t>– Stratégie de recherche et mouvements.</t>
+			</p>
+      <p>
+				<t>– Algorithmique incrémentale.</t>
+			</p>
+      <p>
+				<t>– Modélisation orientée recherche locale.</t>
+			</p>
+      <p>
+				<t>– Un solveur par recherche locale : LocalSolver.</t>
+			</p>
+      <p>
+				<t>– Etude de cas.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU55">
+    <nomUE>Programmation en Nombres Entiers</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>– Formulations de programmes en nombres entiers.</t>
+			</p>
+      <p>
+				<t>– Reformulations, formulations étendues et formulations
+					parfaites.</t>
+			</p>
+      <p>
+				<t>– Méthodes par séparation et évaluation progressive
+					(branch-and-bound).</t>
+			</p>
+      <p>
+				<t>– Aspects polyédraux, méthodes de plan coupant, méthodes de
+					coupes.</t>
+			</p>
+      <p>
+				<t>– Dualité, décomposition, relaxations lagrangiennes,
+					relaxations semi-définies positives.</t>
+			</p>
+      <p>
+				<t>– Logiciels : CPLEX, GLPK, GnuMathProg, COIN-OR.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU56">
+    <nomUE>Traitement automatique de la parole</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>L'objectif de ce cours est de présenter d'une part les principaux
+					formalismes, modèles et algorithmes pour le traitement automatique
+					de l'oral et d'autre part les outils logiciels permettant de
+					construire une application incluant de la reconnaissance et/ou de
+					la synthèse vocale. Le but de ce cours est de donner aux étudiants
+					une connaissance du potentiel et des limites de la technologie
+					actuelle dans ce domaine.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU57">
+    <nomUE>Indexation et recherche d'images et vidéos</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Ce cours présente les techniques d’analyse pour
+					l’indexation et la recherche dans des corpus d'images et de
+					vidéos : calcul de caractéristiques, segmentation en plans et
+					fusion d’indexes.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU58">
+    <nomUE>Apprentissage automatique et classification</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>La classification par apprentissage automatique (supervisé et non
+					supervisé) est introduite dans ses objectifs et ses principes. En
+					s'appuyant sur des méthodes éprouvées (arbres de décision,
+					classifieur naïf de Bayes, SVM, k-means, etc.), les grands
+					principes de l'apprentissage automatique pour la classification
+					sont présentés, et illustrés dans le cas de données multimedia
+					(texte et image). Un accent tout particulier est porté sur
+					l'environnement méthodologique de l'apprentissage automatique
+					(estimation de paramètres, évaluation des classifieurs, données
+					manquantes ou bruitées, etc.)</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU59">
+    <nomUE>Traitement et indexation des données multimédia</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Ce cours présente une introduction au domaine de la Recherche
+					d’Information Multimédia. La première partie du cours
+					introduit les principes généraux de la RI, appliqués aux documents
+					textuels : indexation ; interrogation ; évaluation. Les modèles
+					classiques : booléen, vectoriel et probabiliste sont présentés,
+					ainsi que les notions d’extension de requête et de bouclage
+					de pertinence. Ce cours s'intéresse aussi aux spécificités des
+					différents formats image et vidéo et présente des solutions
+					pratique pour la mise en oeuvre de serveurs de streaming vidéo.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU6">
+    <nomUE>Inférence grammaticale</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Large panorama des différents algorithmes et résultats obtenus
+					récemment pour l'apprentissage de représentations grammaticales de
+					langages</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU60">
+    <nomUE>Architecture d'applications réparties sur le Web</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Cette UE contient les concepts et outils de base pour le
+					développement de systèmes et d'applications distribués sur le Web.
+					Les architectures client serveur seront revisitées, et un focus
+					particulier sera fait sur les servlets, JSP, EJB, J2EE etc.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU61">
+    <nomUE>Services Web et Business Process</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>La première partie de cette UE sera consacrée à la conception, le
+					développement et déploiement de services Web. Les standards de
+					services Web seront étudiés (WDSL, UDDI, SOAP, etc.), et des
+					applications seront réalisées.</t>
+			</p>
+      <p>
+				<t>La seconde partie couvrira les éléments nécessaires à la mise en
+					œuvre des processus métiers : outils graphiques, langages de
+					représentation et d'exécution.</t>
+			</p>
+      <p>
+				<t>Les compléments XML et des technologies Web nécessaires seront
+					étudiés en préambule. La programmation d'applications se fera à
+					l'aide de Java, des dialectes XML orientés processus, ainsi que des
+					logiciels dédiés.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU62">
+    <nomUE>Web Multimédia</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Cette UE analyse les problèmes fondamentaux et techniques que
+					pose le développement d'applications multimédia (images, vidéo,
+					son, etc.) et l’architecture logicielle nécessaire pour
+					supporter le traitement de telles données. Cela permet d'abord une
+					familiarisation avec les problèmes de streaming, de VoD, etc.
+					Seront ensuite étudiés les problèmes que pose la mise en ligne de
+					telles applications : passage à l’échelle, tolérance aux
+					pannes, etc. Enfin, nous étudions l’intégration des services
+					de téléphonie sur IP dans une telle application tout en considérant
+					la personnalisation d’accès à l’information multimédia
+					et aux services disponibles.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU63">
+    <nomUE>Processus d'entreprise - ERP</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Un ERP ou progiciel de gestion intégrée est un logiciel qui
+					permet de gérer l'ensemble des processus opérationnels d'une
+					entreprise, en intégrant l'ensemble des fonctions de cette comme la
+					gestion des ressources humaines, la gestion comptable, financière,
+					mais aussi la vente, la distribution, l'approvisionnement, le
+					commerce électronique.</t>
+			</p>
+      <p>
+				<t>Cette UE couvrira aussi bien les aspects techniques et
+					fonctionnels des ERP que la mise en œuvre d'un projet ERP.</t>
+			</p>
+      <p>
+				<t>L'illustration pratique se fera avec un logiciel libre ou du
+					commerce</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU64">
+    <nomUE>Applications mobiles et réseaux sociaux</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Le Web permet aujourd’hui à des entités sociales
+					(individus, groupes, organisations) de s’organiser en réseaux
+					et d’interagir pour diffuser et échanger de
+					l’information et éventuellement des services.</t>
+			</p>
+      <p>
+				<t>Cette UE introduit d’abord les différents sortes de réseaux
+					existants sur Internet (amis, familles, partenaires commerciaux,
+					membres de la même promotion, etc.) et pose le problème du
+					développement et d’analyse des réseaux sociaux. Nous abordons
+					alors les fondements de l’analyse en introduisant la théorie
+					des réseaux et les technologies pour le développement d’une
+					application basée sur les réseaux sociaux.</t>
+			</p>
+      <p>
+				<t>Enfin, on étudie l’impact de la mobilité sur
+					l’utilisation des réseaux sociaux et le développement
+					d’applications mobiles.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU65">
+    <nomUE>Gestion de projet</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Cette UE vise à inculquer un mode de fonctionnement projet. Les
+					aspects techniques (délais, jalons, indicateurs, etc.) et humains
+					(communication, gestion ds conflits, etc) seront abordés.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU66">
+    <nomUE>Nouvelles applications du Traitement Automatique de la Langue (TAL)</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>État de l'art dans différentes applications du Traitement
+					Automatique des</t>
+			</p>
+      <p>
+				<t>Langues, tel que la traduction automatique, le résumé automatique
+					ainsi que surles traitements de « bas niveau » nécessaires dans la
+					majorité des applications.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU67">
+    <nomUE>Projet d'entreprise</nomUE>
+    <ref-intervenant ref="IN7680"/>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>L'objet de cet enseignement est de présenter un projet de
+					création et de développementd'entreprise. Le but est de donner une
+					vision horizontale des différents aspects à examiner pour se
+					lancerdans une création d'entreprise, sans la complétude verticale
+					donnée par exemple par un cours de type« école de commerce » sur
+					l'aspect marché. Une vision de Business Plan pourra ainsi être
+					acquise à la finde cet enseignement.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU7">
+    <nomUE>Apprentissage numérique</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Étude de quelques unes des méthodes les plus performantes en
+					apprentissage numérique : les réseaux de neurones, les modèles de
+					Markov cachés et les machines à vecteurs de support.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU8">
+    <nomUE>Fouille de bases de données</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Bases mathématiques sur lesquelles reposent les méthodes de
+					fouille de bases de données qui sont également présentées et visent
+					soit l'aide à la décision soit l'administration de bases de
+					données.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINCU9">
+    <nomUE>Entrepôts de données</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Étude de la problématique posée par les entrepôts de données (ou
+					data warehouse ou OLAP), depuis leur conception jusqu'aux
+					algorithmes de calcul de cubes de données.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINDU1">
+    <nomUE>Communication scientifique</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Lecture d'un article en anglais et exposé oral.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINDU2">
+    <nomUE>Initiation à la recherche</nomUE>
+    <nbCreditsUE>27</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSINDU3">
+    <nomUE>Projet industriel de mise en application</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Rédaction du cahier des charges. Conception de l'application.
+					Développement et test. Rédaction d'un mémoire et présentation.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSINDU4">
+    <nomUE>Stage en entreprise</nomUE>
+    <nbCreditsUE>24</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Recherche d'un stage. Validation du sujet de stage. Suivi du bon
+					déroulement du stage. Aide à la rédaction du mémoire de stage.
+					Soutenance et évaluation du stage.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSISCU1">
+    <nomUE>AU4 : Classification, apprentissage et décision</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Méthodes non supervisées et supervisées, classification
+					Bayésienne, évaluation et validation, logique floue</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSISCU2">
+    <nomUE>IM8 : Segmentation 2</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Contours actifs, filtrage non linéaire/diffusion, approches
+					stochastiques (Markov/Bayes)</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSISCU20">
+    <nomUE>RTC : Concepts et fondamentaux de la modélisation</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Concepts et formalismes de base pour la modélisation temporelle
+					et spatiale (modèles de comportements, modèles de structures et
+					modèles géométriques) et la modélisation de l'information et de la
+					connaissance (méthodes de représentation de la connaissance,
+					formalismes logiques, expression de problèmes à l'aide de
+					contraintes).</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSISCU21">
+    <nomUE>RI1 : Fondements logiques et algorithmiques</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Introduction aux notions fondamentales logiques et algorithmiques
+					qui trouvent leurs applications dans plusieurs domaines : systèmes
+					multi-agents, vérification des systèmes, ontologies pour le web
+					sémantique, traitement de connaissance incomplète et révisable,
+					recherche d’information et fouilles des données. Le cours
+					prévoit une partie portant sur la complexité structurelle
+					nécessaire à l’analyse et à l’évaluation des tous
+					formalismes logiques d’un point de vue algorithmique ainsi
+					que sur les algorithmes probabilistes utilisés dans la recherche
+					d’information et fouilles des données.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSISCU22">
+    <nomUE>RI2 : Fondements de programmation et de satisfiabilité</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Etude des problèmes de satisfaction de contraintes (CSP) et du
+					problème de la satisfiabilité en logique propositionnelle (SAT).
+					Nous nous intéressons en particulier aux questions portant sur la
+					résolution de ces problèmes (méthodes et fondements théoriques)
+					ainsi qu'aux fragments polynomiaux existant en SAT et CSP.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSISCU23">
+    <nomUE>RI3 : Représentation des connaissances : Approfondissement et applications</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Acquérir des notions avancées en représentation de connaissances
+					et raisonnement dans les domaines de : la révision et la fusion des
+					croyances, l’Answer Set Programming et les théories formelles
+					de l’argumentation.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSISCU24">
+    <nomUE>RI4 : Planification, configuration et raisonnement temporel et spatial</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU25">
+    <nomUE>RI5 : Agents et ontologies pour les systèmes d'information et le web sémantique</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU26">
+    <nomUE>RI6 : Approches avancées de conception de systèmes d'information</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU27">
+    <nomUE>RI7 : Extraction et intégration d'information du web</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU28">
+    <nomUE>RI8 : Web services</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU29">
+    <nomUE>RIS1 : Traitement de données multimodales</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU3">
+    <nomUE>IM6 : Animation et simulation physique</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU30">
+    <nomUE>RIS2 : Formalises à éléments discrets</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU31">
+    <nomUE>RIS3 : Simulation distribuée et modèles hétérogènes</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU32">
+    <nomUE>RIS4 : Aide à la décision</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU33">
+    <nomUE>R2 : Communication et interaction homme-machine</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU34">
+    <nomUE>RE1 : Problématique, démarche, modèles et objects de conception</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU35">
+    <nomUE>RE2 : Modèles et objets de conception</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU36">
+    <nomUE>RE3 : Systèmes intelligents</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU37">
+    <nomUE>RE4 : Conception et architecture</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU38">
+    <nomUE>RO1 : Une UE extérieure de 3 crédits (validation requise)</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU39">
+    <nomUE>RO2 : Une UE extérieure de 6 crédits (validation requise)</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU4">
+    <nomUE>IM10 : Imagerie médicale</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Origine et nature des images médicales (les différentes
+					modalités), Analyse des images médicales, Reconstruction et
+					imagerie médicale 3D, Recalage d’images, Applications</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSISCU40">
+    <nomUE>RS1 : Commande et diagnostic des systèmes complexes</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU41">
+    <nomUE>RS2 : Systèmes à structure variable et planification</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU42">
+    <nomUE>RS3 : Génie électrique et mécatronique</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU43">
+    <nomUE>RS4 : Pronostic des systèmes</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU44">
+    <nomUE>RS5 : Procédés à énergie renouvelable</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU45">
+    <nomUE>RS6 : Réseaux de neurones</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU46">
+    <nomUE>RS7 : Conduite et gestion de la production</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU5">
+    <nomUE>IM11 : Modélisation algorithmique, différentielle et discrète</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Enveloppe convexe, triangulation de Delaunay, diagramme de
+					Voronoi, Courbures discrètes, Distances discrètes, Axes médians et
+					squelettes, Topologie élémentaire et nombres de Betti</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSISCU55">
+    <nomUE>IM15 : Modèles pour la production d'images, traitement et visualisation de données géométriques à haute-performance</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISCU6">
+    <nomUE>IM12 : Analyse de vidéo et reconnaissance de forme</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Détection de mouvement dans une séquence vidéo, Suivi
+					d’objets, Reconnaissance de formes , Applications : Vidéo
+					surveillance, Détection et suivi de personnes , Suivi des visages
+					et détection des émotions</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSISCU7">
+    <nomUE>IM13 : Vision industrielle</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>Introduction sur les capteurs , Vision active, Vision passive ,
+					Technique de mosaiquage d’images, Recalage multimodal,
+					Reconstruction 3D, Application : Photogrammétrie, Inspection
+					industrielle</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSISCU8">
+    <nomUE>IM14 : Modèles pour la production d'images : CAO et jeux vidéo</nomUE>
+    <nbCreditsUE>3</nbCreditsUE>
+    <résumé>
+      <p>
+				<t>- la Conception Assistée par Ordinateur,</t>
+			</p>
+      <p>
+				<t>- la Visualisation, la Simulation, la Réalité Virtuelle et
+					Augmentée,</t>
+			</p>
+      <p>
+				<t>- les Jeux Vidéos.</t>
+			</p>
+    </résumé>
+  </UE>
+  <UE id="ENSISDU3">
+    <nomUE>R bib : Étude bibliographique</nomUE>
+    <nbCreditsUE>6</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <UE id="ENSISDU4">
+    <nomUE>Stage de recherche</nomUE>
+    <nbCreditsUE>24</nbCreditsUE>
+    <résumé/>
+  </UE>
+  <parcours>
+    <responsable>MORIN Remi</responsable>
+    <nomParcours>M1 Informatique</nomParcours>
+    <description>
+			
+				L'objectif de cette première année est de donner les bases
+					indispensables permettant, en deuxième année, de choisir une
+					spécialisation dans un domaine précis. Sur les 60 crédits de cette
+					première année, 15 crédits correspondent à des enseignements
+					optionnels. Ces options permettent de construire un parcours
+					adapté. Un choix entre stage ou projet encadré est également
+					proposé au semestre de printemps.
+			
+		</description>
+    <semestre>
+      <bloc-UE rôle="Option de 6 crédits à choisir">
+        <nbCreditsBloc>6</nbCreditsBloc>
+        <refUE refUE="ENSINAU6"/>
+        <refUE refUE="ENSINAU7"/>
+        <refUE refUE="ENSINAU8"/>
+        <refUE refUE="ENSINAU9"/>
+        <refUE refUE="ENSINAU10"/>
+        <refUE refUE="ENSINAU11"/>
+      </bloc-UE>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSINAU1"/>
+        <refUE refUE="ENSINAU2"/>
+        <refUE refUE="ENSINAU3"/>
+        <refUE refUE="ENSINAU4"/>
+        <refUE refUE="ENSINAU5"/>
+      </bloc-UE>
+    </semestre>
+    <semestre>
+      <bloc-UE rôle="Option de 6 crédits à choisir">
+        <nbCreditsBloc>6</nbCreditsBloc>
+        <refUE refUE="ENSINBU6"/>
+        <refUE refUE="ENSINBU7"/>
+      </bloc-UE>
+      <bloc-UE rôle="Option de 9 crédits à choisir">
+        <nbCreditsBloc>9</nbCreditsBloc>
+        <refUE refUE="ENSINBU8"/>
+        <refUE refUE="ENSINBU9"/>
+        <refUE refUE="ENSINBU10"/>
+        <refUE refUE="ENSINBU11"/>
+        <refUE refUE="ENSINBU12"/>
+        <refUE refUE="ENSINBU13"/>
+        <refUE refUE="ENSINBU14"/>
+      </bloc-UE>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSINBU1"/>
+        <refUE refUE="ENSINBU2"/>
+        <refUE refUE="ENSINBU3"/>
+        <refUE refUE="ENSINBU4"/>
+        <refUE refUE="ENSINBU5"/>
+      </bloc-UE>
+    </semestre>
+  </parcours>
+  <parcours>
+    <nomParcours>M2 Spécialité Informatique fondamentale (IF)</nomParcours>
+    <description>
+			
+				L'objectif de la spécialité Informatique Fondamentale est de
+					donner des connaissances solides dans le domaine des fondements de
+					l'informatique. Il s'agit d'acquérir des connaissances sur les
+					concepts et les méthodes dans l es thèmes couverts par le
+					Laboratoire d'Informatique Fondamentale.
+			
+		</description>
+    <semestre>
+      <bloc-UE rôle="15 crédits à choisir (validation requise)">
+        <nbCreditsBloc>15</nbCreditsBloc>
+        <refUE refUE="ENSINCU4"/>
+        <refUE refUE="ENSINCU5"/>
+        <refUE refUE="ENSINCU6"/>
+        <refUE refUE="ENSINCU7"/>
+        <refUE refUE="ENSINCU8"/>
+        <refUE refUE="ENSINCU9"/>
+        <refUE refUE="ENSINCU10"/>
+        <refUE refUE="ENSINCU11"/>
+        <refUE refUE="ENSINCU12"/>
+        <refUE refUE="ENSINCU13"/>
+        <refUE refUE="ENSINCU14"/>
+        <refUE refUE="ENSINCU15"/>
+        <refUE refUE="ENSINCU16"/>
+        <refUE refUE="ENSINCU17"/>
+        <refUE refUE="ENSINCU18"/>
+        <refUE refUE="ENSINCU19"/>
+        <refUE refUE="ENSINCU20"/>
+        <refUE refUE="ENSINCU21"/>
+        <refUE refUE="ENSINCU22"/>
+        <refUE refUE="ENSINCU23"/>
+        <refUE refUE="ENSINCU24"/>
+        <refUE refUE="ENSINCU25"/>
+        <refUE refUE="ENSINCU26"/>
+      </bloc-UE>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSINCU1"/>
+        <refUE refUE="ENSINCU2"/>
+        <refUE refUE="ENSINCU3"/>
+      </bloc-UE>
+    </semestre>
+    <semestre>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSINDU1"/>
+        <refUE refUE="ENSINDU2"/>
+      </bloc-UE>
+    </semestre>
+  </parcours>
+  <parcours>
+    <responsable>OLIVETTI Nicola</responsable>
+    <nomParcours>M2 Spécialité Sciences de l'information et des systèmes, parcours Informatique</nomParcours>
+    <description>
+			
+				L’objectif est d’approfondir les connaissances de
+					bases en Informatique sur l’intelligence artificielle, les
+					systèmes d’information, conception et vérification des
+					systèmes, informatique décisionnelle.
+			
+		</description>
+    <semestre>
+      <bloc-UE rôle="15 crédits à choisir parmi">
+        <nbCreditsBloc>15</nbCreditsBloc>
+        <refUE refUE="ENSISCU21"/>
+        <refUE refUE="ENSISCU22"/>
+        <refUE refUE="ENSISCU23"/>
+        <refUE refUE="ENSISCU24"/>
+        <refUE refUE="ENSISCU25"/>
+        <refUE refUE="ENSISCU26"/>
+        <refUE refUE="ENSISCU27"/>
+        <refUE refUE="ENSISCU28"/>
+        <refUE refUE="ENSISCU29"/>
+        <refUE refUE="ENSISCU30"/>
+        <refUE refUE="ENSISCU31"/>
+        <refUE refUE="ENSISCU32"/>
+      </bloc-UE>
+      <bloc-UE rôle="9 crédits à choisir parmi">
+        <nbCreditsBloc>9</nbCreditsBloc>
+        <refUE refUE="ENSISCU1"/>
+        <refUE refUE="ENSISCU4"/>
+        <refUE refUE="ENSISCU5"/>
+        <refUE refUE="ENSISCU6"/>
+        <refUE refUE="ENSISCU7"/>
+        <refUE refUE="ENSISCU8"/>
+        <refUE refUE="ENSISCU55"/>
+        <refUE refUE="ENSISCU3"/>
+        <refUE refUE="ENSISCU2"/>
+        <refUE refUE="ENSISCU33"/>
+        <refUE refUE="ENSISCU34"/>
+        <refUE refUE="ENSISCU35"/>
+        <refUE refUE="ENSISCU36"/>
+        <refUE refUE="ENSISCU37"/>
+        <refUE refUE="ENSISCU38"/>
+        <refUE refUE="ENSISCU39"/>
+        <refUE refUE="ENSISCU40"/>
+        <refUE refUE="ENSISCU41"/>
+        <refUE refUE="ENSISCU42"/>
+        <refUE refUE="ENSISCU43"/>
+        <refUE refUE="ENSISCU44"/>
+        <refUE refUE="ENSISCU45"/>
+        <refUE refUE="ENSISCU46"/>
+      </bloc-UE>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSISCU20"/>
+      </bloc-UE>
+    </semestre>
+    <semestre>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSISDU3"/>
+        <refUE refUE="ENSISDU4"/>
+      </bloc-UE>
+    </semestre>
+  </parcours>
+  <parcours>
+    <responsable>BOI Jean Marc</responsable>
+    <nomParcours>M2 Spécialité Sciences de l'information et des systèmes, parcours Image</nomParcours>
+    <description>
+			
+				L’objectif est d’approfondir les connaissances de
+					bases en imagerie numérique : analyse d’image, synthèse
+					d’image, CAO, …
+			
+		</description>
+    <semestre>
+      <bloc-UE rôle="15 crédits à choisir parmi">
+        <nbCreditsBloc>15</nbCreditsBloc>
+        <refUE refUE="ENSISCU1"/>
+        <refUE refUE="ENSISCU4"/>
+        <refUE refUE="ENSISCU5"/>
+        <refUE refUE="ENSISCU6"/>
+        <refUE refUE="ENSISCU7"/>
+        <refUE refUE="ENSISCU8"/>
+        <refUE refUE="ENSISCU55"/>
+        <refUE refUE="ENSISCU3"/>
+        <refUE refUE="ENSISCU2"/>
+        <refUE refUE="ENSISCU29"/>
+      </bloc-UE>
+      <bloc-UE rôle="9 crédits à choisir parmi">
+        <nbCreditsBloc>9</nbCreditsBloc>
+        <refUE refUE="ENSISCU33"/>
+        <refUE refUE="ENSISCU34"/>
+        <refUE refUE="ENSISCU35"/>
+        <refUE refUE="ENSISCU36"/>
+        <refUE refUE="ENSISCU37"/>
+        <refUE refUE="ENSISCU21"/>
+        <refUE refUE="ENSISCU22"/>
+        <refUE refUE="ENSISCU23"/>
+        <refUE refUE="ENSISCU24"/>
+        <refUE refUE="ENSISCU25"/>
+        <refUE refUE="ENSISCU26"/>
+        <refUE refUE="ENSISCU27"/>
+        <refUE refUE="ENSISCU28"/>
+        <refUE refUE="ENSISCU30"/>
+        <refUE refUE="ENSISCU31"/>
+        <refUE refUE="ENSISCU32"/>
+        <refUE refUE="ENSISCU38"/>
+        <refUE refUE="ENSISCU39"/>
+        <refUE refUE="ENSISCU40"/>
+        <refUE refUE="ENSISCU41"/>
+        <refUE refUE="ENSISCU42"/>
+        <refUE refUE="ENSISCU43"/>
+        <refUE refUE="ENSISCU44"/>
+        <refUE refUE="ENSISCU45"/>
+        <refUE refUE="ENSISCU46"/>
+      </bloc-UE>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSISCU20"/>
+      </bloc-UE>
+    </semestre>
+    <semestre>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSISDU3"/>
+        <refUE refUE="ENSISDU4"/>
+      </bloc-UE>
+    </semestre>
+  </parcours>
+  <parcours>
+    <responsable>OUTBIB Rachid</responsable>
+    <nomParcours>M2 Spécialité Sciences de l'information et des systèmes, parcours Systèmes</nomParcours>
+    <description>
+			
+				L’objectif est d’approfondir les connaissances sur
+					les systèmes dynamiques complexes : modélisation, commande,
+					diagnostic, …
+			
+		</description>
+    <semestre>
+      <bloc-UE rôle="15 crédits à choisir parmi">
+        <nbCreditsBloc>15</nbCreditsBloc>
+        <refUE refUE="ENSISCU34"/>
+        <refUE refUE="ENSISCU35"/>
+        <refUE refUE="ENSISCU36"/>
+        <refUE refUE="ENSISCU29"/>
+        <refUE refUE="ENSISCU30"/>
+        <refUE refUE="ENSISCU31"/>
+        <refUE refUE="ENSISCU32"/>
+        <refUE refUE="ENSISCU40"/>
+        <refUE refUE="ENSISCU41"/>
+        <refUE refUE="ENSISCU42"/>
+        <refUE refUE="ENSISCU43"/>
+        <refUE refUE="ENSISCU44"/>
+        <refUE refUE="ENSISCU45"/>
+        <refUE refUE="ENSISCU46"/>
+      </bloc-UE>
+      <bloc-UE rôle="9 crédits à choisir parmi">
+        <nbCreditsBloc>9</nbCreditsBloc>
+        <refUE refUE="ENSISCU1"/>
+        <refUE refUE="ENSISCU4"/>
+        <refUE refUE="ENSISCU5"/>
+        <refUE refUE="ENSISCU6"/>
+        <refUE refUE="ENSISCU7"/>
+        <refUE refUE="ENSISCU8"/>
+        <refUE refUE="ENSISCU55"/>
+        <refUE refUE="ENSISCU3"/>
+        <refUE refUE="ENSISCU2"/>
+        <refUE refUE="ENSISCU33"/>
+        <refUE refUE="ENSISCU37"/>
+        <refUE refUE="ENSISCU21"/>
+        <refUE refUE="ENSISCU22"/>
+        <refUE refUE="ENSISCU23"/>
+        <refUE refUE="ENSISCU24"/>
+        <refUE refUE="ENSISCU25"/>
+        <refUE refUE="ENSISCU26"/>
+        <refUE refUE="ENSISCU27"/>
+        <refUE refUE="ENSISCU28"/>
+        <refUE refUE="ENSISCU38"/>
+        <refUE refUE="ENSISCU39"/>
+      </bloc-UE>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSISCU20"/>
+      </bloc-UE>
+    </semestre>
+    <semestre>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSISDU3"/>
+        <refUE refUE="ENSISDU4"/>
+      </bloc-UE>
+    </semestre>
+  </parcours>
+  <parcours>
+    <responsable>LUGIEZ Denis</responsable>
+    <nomParcours>M2 Spécialité Fiabilité, sécurité et intégration logicielle (FSIL), parcours Fiabilité et sécurité informatique (FSI)</nomParcours>
+    <description>
+			
+				La formation donne les principes et techniques liés à la
+					conception de systèmes informatiques surs dans un environnement
+					ouvert et hétérogène. Elle forme les étudiants aux principes et
+					méthodes de développement modernes qui reposent sur des outils de
+					prototypage, de test et de suivi de logiciels, avec des
+					méthodologies normalisées. Elle apporte des compétences fortes en
+					sécurité informatique dans les domaines liés à l'échange
+					d'information (Web-services, protocoles de communication et
+					cryptographiques,..) et à la communication entre systèmes (réseaux
+					hétérogènes et applications embarquées ou distribuées).
+			
+		</description>
+    <semestre>
+      <bloc-UE rôle="TC des parcours FSI et ISL">
+        <nbCreditsBloc>15</nbCreditsBloc>
+        <refUE refUE="ENSINCU27"/>
+        <refUE refUE="ENSINCU28"/>
+        <refUE refUE="ENSINCU29"/>
+        <refUE refUE="ENSINCU30"/>
+        <refUE refUE="ENSINCU31"/>
+      </bloc-UE>
+      <bloc-UE rôle="Unité d'enseignement à bonus">
+        <nbCreditsBloc>0</nbCreditsBloc>
+        <refUE refUE="ENSINCU67"/>
+      </bloc-UE>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSINCU32"/>
+        <refUE refUE="ENSINCU33"/>
+        <refUE refUE="ENSINCU34"/>
+        <refUE refUE="ENSINCU35"/>
+      </bloc-UE>
+    </semestre>
+    <semestre>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSINDU3"/>
+        <refUE refUE="ENSINDU4"/>
+      </bloc-UE>
+    </semestre>
+  </parcours>
+  <parcours>
+    <responsable>MASSAT Jean Luc</responsable>
+    <nomParcours>M2 Spécialité Fiabilité, sécurité et intégration logicielle (FSIL), parcours Intégration de systèmes logiciels (ISL)</nomParcours>
+    <description>
+			
+				Le développement de l'Internet/Intranet et des applications
+					associées a fait émerger de nouvelles normes pour la structuration
+					des applications informatiques réparties. L'enjeu est de présenter
+					des modèles (programmation par composants, par aspects, design
+					pattern), des plateformes (JEE, .NET, Corba, etc.) et des outils
+					(JAVA, SGBDOO, XML) qui offrent un cadre dans lequel les
+					applications sont développées, validées et intégrées plus
+					facilement.
+			
+			
+				L'objectif de ce parcours est d'initier les étudiants à la
+					conception et à la réalisation d'applications dans de tels cadres.
+					La formation mettra plus particulièrement l'accent sur les notions
+					d'architecture logicielle, de programmation par composants, de
+					qualité et de fiabilité. Elle utilisera la plateforme 
+				Java Enterprise Edition
+				 pour concrétiser les concepts présentés.
+			
+		</description>
+    <semestre>
+      <bloc-UE rôle="TC des parcours FSI et ISL">
+        <nbCreditsBloc>15</nbCreditsBloc>
+        <refUE refUE="ENSINCU27"/>
+        <refUE refUE="ENSINCU28"/>
+        <refUE refUE="ENSINCU29"/>
+        <refUE refUE="ENSINCU30"/>
+        <refUE refUE="ENSINCU31"/>
+      </bloc-UE>
+      <bloc-UE rôle="Unité d'enseignement à bonus">
+        <nbCreditsBloc>0</nbCreditsBloc>
+        <refUE refUE="ENSINCU67"/>
+      </bloc-UE>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSINCU36"/>
+        <refUE refUE="ENSINCU37"/>
+        <refUE refUE="ENSINCU38"/>
+        <refUE refUE="ENSINCU39"/>
+        <refUE refUE="ENSINCU40"/>
+      </bloc-UE>
+    </semestre>
+    <semestre>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSINDU3"/>
+        <refUE refUE="ENSINDU4"/>
+      </bloc-UE>
+    </semestre>
+  </parcours>
+  <parcours>
+    <nomParcours>M2 Spécialité Génie logiciel (GL)</nomParcours>
+    <description>
+			
+				La production d'un logiciel est une tâche très complexe mettant
+					en oeuvre plusieurs ressources, notamment humaines, matériels et
+					technologiques. La spécialité « Génie logiciel » a pour objectif
+					d'apporter aux étudiants les compétences approfondies requises pour
+					pouvoir intervenir dans toutes les phases de la production
+					logiciel.
+			
+		</description>
+    <semestre>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSINCU41"/>
+        <refUE refUE="ENSINCU42"/>
+        <refUE refUE="ENSINCU43"/>
+        <refUE refUE="ENSINCU44"/>
+        <refUE refUE="ENSINCU45"/>
+        <refUE refUE="ENSINCU46"/>
+        <refUE refUE="ENSINCU47"/>
+        <refUE refUE="ENSINCU27"/>
+        <refUE refUE="ENSINCU28"/>
+      </bloc-UE>
+    </semestre>
+    <semestre>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSINDU3"/>
+        <refUE refUE="ENSINDU4"/>
+      </bloc-UE>
+    </semestre>
+  </parcours>
+  <parcours>
+    <responsable>NOVELLI Noel</responsable>
+    <nomParcours>M2 Spécialité Informatique décisionnelle (ID), parcours Fouille et entrepôts de données (FED)</nomParcours>
+    <description>
+			
+				Ce parcours permet aux étudiants d’approfondir les
+					connaissances qu'ils doivent maîtriser pour appréhender le cycle de
+					vie complet des bases et entrepôts de données : de leur conception
+					à leur administration, en passant par les architectures logicielles
+					des systèmes de bases de données, et les divers formats d'échanges
+					à travers le web. Une attention particulière est portée à l'étude
+					des techniques de fouille et d'extraction de connaissances à partir
+					de données. La Fouille de Données ou l'Extraction de Connaissances
+					à partir de Bases de données désigne un domaine de compétences dont
+					l'objectif est de rechercher et découvrir des informations,
+					nouvelles et utiles, dans des données le plus souvent volumineuses
+					et hétérogènes. La fouille de données rassemble des professionnels
+					de plusieurs disciplines : des spécialistes en bases et entrepôts
+					de données, en analyse des données, ayant aussi des connaissances
+					de bases en recherche opérationnelle.
+			
+		</description>
+    <semestre>
+      <bloc-UE rôle="Tronc-commun des parcours FED et RO">
+        <nbCreditsBloc>21</nbCreditsBloc>
+        <refUE refUE="ENSINCU27"/>
+        <refUE refUE="ENSINCU28"/>
+        <refUE refUE="ENSINCU30"/>
+        <refUE refUE="ENSINCU40"/>
+        <refUE refUE="ENSINCU48"/>
+        <refUE refUE="ENSINCU49"/>
+        <refUE refUE="ENSINCU50"/>
+      </bloc-UE>
+      <bloc-UE rôle="Unité d'enseignement à bonus">
+        <nbCreditsBloc>0</nbCreditsBloc>
+        <refUE refUE="ENSINCU67"/>
+      </bloc-UE>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSINCU51"/>
+        <refUE refUE="ENSINCU52"/>
+      </bloc-UE>
+    </semestre>
+    <semestre>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSINDU3"/>
+        <refUE refUE="ENSINDU4"/>
+      </bloc-UE>
+    </semestre>
+  </parcours>
+  <parcours>
+    <responsable>VAXES Yann</responsable>
+    <nomParcours>M2 Spécialité Informatique décisionnelle (ID), parcours Recherche opérationnelle (RO)</nomParcours>
+    <description>
+			
+				La recherche opérationnelle consiste à utiliser des méthodes et
+					des modèles pour résoudre des problèmes complexes d'organisation,
+					de planification, de gestion de ressources, ou d'optimisation issus
+					de nombreux secteurs d'activités comme le transport, l'industrie,
+					les télécommunications, la finance... La résolution de ces
+					problèmes constitue un enjeu économique et industriel important. La
+					conception d'applications décisionnelles requiert une phase de
+					spécification et d'extraction de données lors de laquelle les
+					compétences acquises par les étudiants de la spécialité ID dans le
+					domaine de la fouille et des entrepôts de données sera
+					particulièrement utile. Elle nécessite également des connaissances
+					fondamentales dans le domaine de la modélisation et de
+					l'optimisation et une très bonne maîtrise des outils nécessaires
+					pour concevoir et développer des applications décisionnelles
+					(langages de modélisation, solveurs, structures de données,
+					algorithmes…).
+			
+		</description>
+    <semestre>
+      <bloc-UE rôle="Tronc-commun des parcours FED et RO">
+        <nbCreditsBloc>21</nbCreditsBloc>
+        <refUE refUE="ENSINCU27"/>
+        <refUE refUE="ENSINCU28"/>
+        <refUE refUE="ENSINCU30"/>
+        <refUE refUE="ENSINCU40"/>
+        <refUE refUE="ENSINCU48"/>
+        <refUE refUE="ENSINCU49"/>
+        <refUE refUE="ENSINCU50"/>
+      </bloc-UE>
+      <bloc-UE rôle="Unité d'enseignement à bonus">
+        <nbCreditsBloc>0</nbCreditsBloc>
+        <refUE refUE="ENSINCU67"/>
+      </bloc-UE>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSINCU53"/>
+        <refUE refUE="ENSINCU54"/>
+        <refUE refUE="ENSINCU55"/>
+      </bloc-UE>
+    </semestre>
+    <semestre>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSINDU3"/>
+        <refUE refUE="ENSINDU4"/>
+      </bloc-UE>
+    </semestre>
+  </parcours>
+  <parcours>
+    <nomParcours>M2 Spécialité Recherche d'informations multimédia (RIM)</nomParcours>
+    <description>
+			
+				L'objectif de la spécialité RIM est de former des spécialistes du
+					traitement et de la recherche de contenus multimédias. Du point de
+					vue des débouchés professionnels, cette formation vise à produire
+					des informaticiens spécialistes du traitement des données
+					multimédia et de la recherche d'information qui pourront s'intégrer
+					dans des entreprises innovantes centrées autour des domaines du
+					multimédia et de l'internet.
+			
+		</description>
+    <semestre>
+      <bloc-UE rôle="3 crédits à choisir parmi">
+        <nbCreditsBloc>3</nbCreditsBloc>
+        <refUE refUE="ENSINCU4"/>
+        <refUE refUE="ENSINCU5"/>
+        <refUE refUE="ENSINCU6"/>
+        <refUE refUE="ENSINCU7"/>
+        <refUE refUE="ENSINCU19"/>
+        <refUE refUE="ENSINCU20"/>
+        <refUE refUE="ENSINCU21"/>
+      </bloc-UE>
+      <bloc-UE rôle="Unité d'enseignement à bonus">
+        <nbCreditsBloc>0</nbCreditsBloc>
+        <refUE refUE="ENSINCU67"/>
+      </bloc-UE>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSINCU56"/>
+        <refUE refUE="ENSINCU57"/>
+        <refUE refUE="ENSINCU58"/>
+        <refUE refUE="ENSINCU59"/>
+        <refUE refUE="ENSINCU66"/>
+        <refUE refUE="ENSINCU27"/>
+        <refUE refUE="ENSINCU28"/>
+      </bloc-UE>
+    </semestre>
+    <semestre>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSINDU3"/>
+        <refUE refUE="ENSINDU4"/>
+      </bloc-UE>
+    </semestre>
+  </parcours>
+  <parcours>
+    <nomParcours>M2 Spécialité Systèmes d'information répartis (SIR)</nomParcours>
+    <description>
+			
+				Le programme vise la formation de spécialistes dans des métiers à
+					forte valeur ajoutée au travers des compétences acquises dans trois
+					domaines clés de l’informatique : les technologies avancées
+					du Web (services web, multimédia, etc.), les nouveaux modes de
+					développement du logiciel (Cloud, Mobile, etc.) et les processus
+					métiers de l’entreprise.
+			
+		</description>
+    <semestre>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSINCU60"/>
+        <refUE refUE="ENSINCU61"/>
+        <refUE refUE="ENSINCU62"/>
+        <refUE refUE="ENSINCU63"/>
+        <refUE refUE="ENSINCU64"/>
+        <refUE refUE="ENSINCU65"/>
+        <refUE refUE="ENSINCU27"/>
+        <refUE refUE="ENSINCU28"/>
+      </bloc-UE>
+    </semestre>
+    <semestre>
+      <bloc-UE rôle="Obligatoire">
+        <refUE refUE="ENSINDU3"/>
+        <refUE refUE="ENSINDU4"/>
+      </bloc-UE>
+    </semestre>
+  </parcours>
+</master>
