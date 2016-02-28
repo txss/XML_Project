@@ -141,38 +141,3 @@ body {
 	font-size: 1em;
 }
 
-
-/* --- NOTES ---
-
-1.	Pour pouvoir utiliser une hauteur (height) ou une hauteur minimale
-	(min-height) sur un bloc, il faut que sont parent direct ait lui-même une
-	hauteur déterminée (donc toute valeur de height sauf "auto": hauteur en
-	pixels, em, autres unités...).
-	Si la hauteur du parent est en pourcentage, elle se réfère alors à la
-	hauteur du «grand-père», et ainsi de suite.
-	Ainsi, pour pouvoir utiliser un "min-height: 100%" sur div#contenu, il nous
-	faut:
-	- un parent (body) en "height: 100%";
-	- le parent de body également en "height: 100%".
-
-2.	Il faut éviter que les marges des enfants de div#global ne se transmettent
-	à leur parent. Notamment, le margin-top du premier enfant (ici, div#entete),
-	et le margin-bottom du dernier enfant (ici, div#pied).
-	On évite ce problème grâce à la propriété CSS overflow, qui bloque la
-	fusion des marges. En savoir plus sur la fusion des marges:
-	http://web.covertprestige.info/test
-		04-blocs-imbriques-et-fusion-des-marges.html
-
-3.	Les marges automatiques à gauche et à droite permettent de centrer notre
-	bloc div#global, et donc tout le site.
-	Pour aligner div#global à gauche, on fera:
-		margin-left: 0;
-		margin-rigth: auto;
-	Pour aligner div#global à droite, on fera:
-		margin-left: auto;
-		margin-right: 0;
-	Pour aligner div#global à droite avec un retrait (à droite) de 100px:
-		margin-left: auto;
-		margin-right: 100px;
-
-*/

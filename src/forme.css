@@ -1,0 +1,25 @@
+/* Campanella Florian et Manon Scholivet
+
+	Ajout de contenue dans le css,
+	pour une meilleur mise en forme des templates.
+ */
+
+#contenu #breadcrumb {
+	text-align: center ;
+	margin: 0 ;
+  	padding: 0 ;
+  	list-style: none ;
+}
+
+#contenu #breadcrumb li{
+	display: inline ; 
+	margin-right: 1px ;
+}
+
+#contenu #breadcrumb li a {
+	color: black;
+	padding: 4px 10px ;
+	font: 1em "Trebuchet MS",Arial,sans-serif ;
+	line-height: 1em ;
+	text-align: center ;
+}

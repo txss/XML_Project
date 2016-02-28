@@ -2,39 +2,56 @@
 	version="1.0">
 
 	<xsl:output method="html" encoding="UTF-8" />
-
+	
 	<xsl:key name="UEenParticulier" match="//UE" use="@id" />
+
+
+
+
+	<xsl:template name="head-page-web">
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<link rel="stylesheet" type="text/css" href="../src/nice.css" />
+			<link rel="stylesheet" type="text/css" href="../src/forme.css" />
+			<title>Master Informatique</title>
+		</head>
+	</xsl:template>
+
+
+	<xsl:template name="menu-page-web">
+		<div id="entete">Master Informatique:</div>
+		<ul id="menu">
+			<li>
+				<a href="index.html"> Accueil </a>
+			</li>
+			<li>
+				<a href="listeEnseignants.html"> Les enseignants </a>
+			</li>
+			<li>
+				<a href="listeUE.html"> Les unités d'enseignements </a>
+			</li>
+		</ul>
+	</xsl:template>
+
+
+	<xsl:template name="pied-page-web">
+		<div id="pied">Fait par Campanella Florian et Manon Scholivet</div>
+	</xsl:template>
+
 
 	<xsl:template match="/master">
 		<xsl:document href="www/index.html">
 			<html>
-				<head>
-					<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-					<link rel="stylesheet" type="text/css" href="../src/nice.css" />
-					<title>Master Informatique</title>
-				</head>
+				<xsl:call-template name="head-page-web" />
 				<body>
 					<div id="global">
-						<div id="entete">Master Informatique:</div>
-						<ul id="menu">
-							<li>
-								<a href="index.html"> Accueil </a>
-							</li>
-							<li>
-								<a href="listeEnseignants.html"> Les enseignants </a>
-							</li>
-							<li>
-								<a href="listeUE.html"> Les unités d'enseignements </a>
-							</li>
-						</ul>
+						<xsl:call-template name="menu-page-web" />
 						<div id="contenu">
-
 							<h2 style="margin-top:50px;">Le Master</h2>
 							<xsl:call-template name="listerParcours" />
-
 						</div>
 					</div>
-					<div id="pied">Fait par Campanella Florian et Manon Scholivet</div>
+					<xsl:call-template name="pied-page-web" />
 				</body>
 			</html>
 		</xsl:document>
@@ -57,25 +74,10 @@
 				</li>
 				<xsl:document href="{$nomParcours}.html">
 					<html>
-						<head>
-							<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-							<link rel="stylesheet" type="text/css" href="../src/nice.css" />
-							<title>Master Informatique</title>
-						</head>
+						<xsl:call-template name="head-page-web" />
 						<body>
 							<div id="global">
-								<div id="entete">Master Informatique:</div>
-								<ul id="menu">
-									<li>
-										<a href="index.html"> Accueil </a>
-									</li>
-									<li>
-										<a href="listeEnseignants.html"> Les enseignants </a>
-									</li>
-									<li>
-										<a href="listeUE.html"> Les unités d'enseignements </a>
-									</li>
-								</ul>
+								<xsl:call-template name="menu-page-web" />
 								<div id="contenu">
 									<div
 										style="border:solid 1px black; margin: 1px; padding-left:5%; margin-top:50px; margin-top:50px; padding-bottom:50px;">
@@ -94,12 +96,12 @@
 											<xsl:value-of select="débouché" />
 											<br />
 										</p>
-
 										<xsl:for-each select="semestre">
 											<div>
 												<xsl:for-each select="bloc-UE">
 													<h3>
-														<xsl:value-of select="@rôle" />&#160;
+														<xsl:value-of select="@rôle" />
+														&#160;
 														<xsl:if test="nbCreditsBloc">
 															<xsl:value-of select="nbCreditsBloc" />
 															crédits
@@ -124,7 +126,7 @@
 									</div>
 								</div>
 							</div>
-							<div id="pied">Fait par Campanella Florian et Manon Scholivet</div>
+							<xsl:call-template name="pied-page-web" />
 						</body>
 					</html>
 				</xsl:document>
@@ -138,25 +140,10 @@
 			<xsl:variable name="idUECourant" select="@id" />
 			<xsl:document href="www/{$idUECourant}.html">
 				<html>
-					<head>
-						<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-						<link rel="stylesheet" type="text/css" href="../src/nice.css" />
-						<title>Master Informatique</title>
-					</head>
+					<xsl:call-template name="head-page-web" />
 					<body>
 						<div id="global">
-							<div id="entete">Master Informatique:</div>
-							<ul id="menu">
-								<li>
-									<a href="index.html"> Accueil </a>
-								</li>
-								<li>
-									<a href="listeEnseignants.html"> Les enseignants </a>
-								</li>
-								<li>
-									<a href="listeUE.html"> Les unités d'enseignements </a>
-								</li>
-							</ul>
+							<xsl:call-template name="menu-page-web" />
 							<div id="contenu">
 								<div
 									style="border:solid 1px black; margin: 1px; padding-left:5%; margin-top:50px; margin-top:50px;">
@@ -173,7 +160,6 @@
 												</a>
 											</li>
 										</xsl:for-each>
-
 										<p>
 											Cette matière compte pour
 											<xsl:value-of select="nbCreditsUE" />
@@ -205,7 +191,7 @@
 								</div>
 							</div>
 						</div>
-						<div id="pied">Fait par Campanella Florian et Manon Scholivet</div>
+						<xsl:call-template name="pied-page-web" />
 					</body>
 				</html>
 			</xsl:document>
@@ -213,51 +199,44 @@
 	</xsl:template>
 
 
+	<xsl:template name="menu-lister-UEs">
+		<ul id="breadcrumb">
+			<li>
+				<a href="listeUE.html">
+					Toutes les UEs
+					<xsl:call-template name="listerUE" />
+				</a>
+			</li>
+			<li>
+				<a href="listeDe3Credits.html">
+					UEs de 3 Crédits
+					<xsl:call-template name="lister-selon-nbCredits">
+						<xsl:with-param name="nbCredits" select="3" />
+					</xsl:call-template>
+				</a>
+			</li>
+			<li>
+				<a href="listeDe6Credits.html">
+					UEs de 6 Crédits
+					<xsl:call-template name="lister-selon-nbCredits">
+						<xsl:with-param name="nbCredits" select="6" />
+					</xsl:call-template>
+				</a>
+			</li>
+		</ul>
+	</xsl:template>
+
+
 	<xsl:template name="listerUE">
 		<xsl:document href="www/listeUE.html">
 			<html>
-				<head>
-					<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-					<link rel="stylesheet" type="text/css" href="../src/nice.css" />
-					<title>Master Informatique</title>
-				</head>
+				<xsl:call-template name="head-page-web" />
 				<body>
 					<div id="global">
-						<div id="entete">Master Informatique:</div>
-						<ul id="menu">
-							<li>
-								<a href="index.html"> Accueil </a>
-							</li>
-							<li>
-								<a href="listeEnseignants.html"> Les enseignants </a>
-							</li>
-							<li>
-								<a href="listeUE.html"> Les unités d'enseignements </a>
-							</li>
-						</ul>
+						<xsl:call-template name="menu-page-web" />
 						<div id="contenu">
-
-							<ul>
-								<li>
-									<a href="listeDe3Credits.html">
-										UEs de 3 Crédits
-										<xsl:call-template name="lister-selon-nbCredits">
-											<xsl:with-param name="nbCredits" select="3" />
-										</xsl:call-template>
-									</a>
-								</li>
-								<li>
-									<a href="listeDe6Credits.html">
-										UEs de 6 Crédits
-										<xsl:call-template name="lister-selon-nbCredits">
-											<xsl:with-param name="nbCredits" select="6" />
-										</xsl:call-template>
-									</a>
-								</li>
-							</ul>
-
+							<xsl:call-template name="menu-lister-UEs" />
 							<h2>Liste des matières</h2>
-
 							<xsl:for-each select="UE">
 								<div style="border:solid 1px black; margin: 1px; padding-left:5%;">
 									<xsl:variable name="idUECourant" select="@id" />
@@ -274,7 +253,6 @@
 												</a>
 											</li>
 										</xsl:for-each>
-
 										<p>
 											Cette matière compte pour
 											<xsl:value-of select="nbCreditsUE" />
@@ -293,7 +271,6 @@
 											<xsl:for-each select="//parcours">
 												<xsl:variable name="nomParcours" select="nomParcours" />
 												<xsl:for-each select="semestre/bloc-UE/refUE[@refUE=$idUECourant]">
-
 													<li>
 														<a href="{$nomParcours}.html">
 															<xsl:value-of select="$nomParcours" />
@@ -307,7 +284,7 @@
 							</xsl:for-each>
 						</div>
 					</div>
-					<div id="pied">Fait par Campanella Florian et Manon Scholivet</div>
+					<xsl:call-template name="pied-page-web" />
 				</body>
 			</html>
 		</xsl:document>
@@ -322,25 +299,10 @@
 			<xsl:variable name="nomIntervenant" select="nomIntervenant" />
 			<xsl:document href="www/{$idIntervenantCourant}.html">
 				<html>
-					<head>
-						<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-						<link rel="stylesheet" type="text/css" href="../src/nice.css" />
-						<title>Master Informatique</title>
-					</head>
+					<xsl:call-template name="head-page-web" />
 					<body>
 						<div id="global">
-							<div id="entete">Master Informatique:</div>
-							<ul id="menu">
-								<li>
-									<a href="index.html"> Accueil </a>
-								</li>
-								<li>
-									<a href="listeEnseignants.html"> Les enseignants </a>
-								</li>
-								<li>
-									<a href="listeUE.html"> Les unités d'enseignements </a>
-								</li>
-							</ul>
+							<xsl:call-template name="menu-page-web" />
 							<div id="contenu">
 								<p id="{$idIntervenantCourant}" style="margin-top:50px;">
 									<xsl:value-of select="nomIntervenant" />
@@ -385,37 +347,21 @@
 								</p>
 							</div>
 						</div>
-						<div id="pied">Fait par Campanella Florian et Manon Scholivet</div>
+						<xsl:call-template name="pied-page-web" />
 					</body>
 				</html>
 			</xsl:document>
 		</xsl:for-each>
-
 	</xsl:template>
 
 
 	<xsl:template name="listerIntervenant">
 		<xsl:document href="www/listeEnseignants.html">
 			<html>
-				<head>
-					<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-					<link rel="stylesheet" type="text/css" href="../src/nice.css" />
-					<title>Master Informatique</title>
-				</head>
+				<xsl:call-template name="head-page-web" />
 				<body>
 					<div id="global">
-						<div id="entete">Master Informatique:</div>
-						<ul id="menu">
-							<li>
-								<a href="index.html"> Accueil </a>
-							</li>
-							<li>
-								<a href="listeEnseignants.html"> Les enseignants </a>
-							</li>
-							<li>
-								<a href="listeUE.html"> Les unités d'enseignements </a>
-							</li>
-						</ul>
+						<xsl:call-template name="menu-page-web" />
 						<div id="contenu">
 							<xsl:call-template name="faire-une-liste">
 								<xsl:with-param name="objets" select="//intervenant" />
@@ -423,7 +369,7 @@
 							</xsl:call-template>
 						</div>
 					</div>
-					<div id="pied">Fait par Campanella Florian et Manon Scholivet</div>
+					<xsl:call-template name="pied-page-web" />
 				</body>
 			</html>
 		</xsl:document>
@@ -434,26 +380,12 @@
 		<xsl:param name="nbCredits" />
 		<xsl:document href="listeDe{$nbCredits}Credits.html">
 			<html>
-				<head>
-					<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-					<link rel="stylesheet" type="text/css" href="../src/nice.css" />
-					<title>Master Informatique</title>
-				</head>
+				<xsl:call-template name="head-page-web" />
 				<body>
 					<div id="global">
-						<div id="entete">Master Informatique:</div>
-						<ul id="menu">
-							<li>
-								<a href="index.html"> Accueil </a>
-							</li>
-							<li>
-								<a href="listeEnseignants.html"> Les enseignants </a>
-							</li>
-							<li>
-								<a href="listeUE.html"> Les unités d'enseignements </a>
-							</li>
-						</ul>
+						<xsl:call-template name="menu-page-web" />
 						<div id="contenu">
+						<xsl:call-template name="menu-lister-UEs" />
 							<xsl:call-template name="faire-une-liste">
 								<xsl:with-param name="objets"
 									select="//UE[nbCreditsUE=$nbCredits]" />
@@ -461,11 +393,12 @@
 							</xsl:call-template>
 						</div>
 					</div>
-					<div id="pied">Fait par Campanella Florian et Manon Scholivet</div>
+					<xsl:call-template name="pied-page-web" />
 				</body>
 			</html>
 		</xsl:document>
 	</xsl:template>
+
 
 	<xsl:template name="faire-une-liste">
 		<xsl:param name="objets" />
@@ -484,8 +417,8 @@
 				</li>
 			</xsl:for-each>
 		</ul>
-
 	</xsl:template>
+
 
 
 	<xsl:template match="ref-intervenant">
@@ -494,14 +427,18 @@
 		</li>
 	</xsl:template>
 
+
 	<xsl:template match="Luminy">
 		Luminy
 	</xsl:template>
+
 
 	<xsl:template match="St-Jerôme">
 		St-Jerôme
 	</xsl:template>
 
+
 	<!-- <xsl:template match="any"> Infos complémentaires: <br /> <xsl:value-of 
 		select="." /> </xsl:template> -->
+
 </xsl:stylesheet>
