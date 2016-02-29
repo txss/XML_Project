@@ -19,9 +19,9 @@
 	<xsl:template name="listerIntervenant">
 		<xsl:for-each select="//objet[@type = 'personne']">
 			<intervenant id="{@id}">
-				<nomIntervenant>
+				<nom>
 					<xsl:value-of select="info[@nom = 'nom']/@value" />&#160;<xsl:value-of select="info[@nom = 'prenom']/@value" />
-				</nomIntervenant>
+				</nom>
 				<mail>
 					<xsl:value-of select="info[@nom = 'mail']/@value" />
 				</mail>
@@ -38,18 +38,20 @@
 				select="//objet[@id = $idResp]/info[@nom='prenom']/@value" />
 			<xsl:variable name="objectifs" select="info[@nom='objectifs']/@value" />
 
-			<parcours>
+			<parcours id="{@id}">
+				<nom>
+					<xsl:value-of select="info[@nom='nom']/@value" />
+				</nom>
 				<xsl:if test="$nomResp != ''">
 					<responsable>
 						<xsl:value-of select="$nomResp" />&#160;<xsl:value-of select="$prenomResp" />
 					</responsable>
 				</xsl:if>
-				<nomParcours>
-					<xsl:value-of select="info[@nom='nom']/@value" />
-				</nomParcours>
 				<xsl:if test="info[@nom='objectifs']">
 					<description>
-						<xsl:value-of select="info[@nom='objectifs']" />
+						<p>
+							<xsl:value-of select="info[@nom='objectifs']" />
+						</p>
 					</description>
 				</xsl:if>
 
@@ -86,7 +88,7 @@
 				<xsl:variable name="idStructure" select="@value" />
 				<xsl:variable name="EnsOuBloc" select="//objet[@id = $idStructure]" />
 				<xsl:if test="$EnsOuBloc[@type = 'enseignement']">
-						<refUE refUE="{$idStructure}" />
+					<refUE refUE="{$idStructure}" />
 				</xsl:if>
 			</xsl:for-each>
 		</bloc-UE>
@@ -95,9 +97,9 @@
 	<xsl:template name="listerUE">
 		<xsl:for-each select="//objet[@type = 'enseignement']">
 			<UE id="{@id}">
-				<nomUE>
+				<nom>
 					<xsl:value-of select="info[@nom='nom']/@value" />
-				</nomUE>
+				</nom>
 				<xsl:for-each select="info[@nom='responsables']">
 					<ref-intervenant ref="{@value}" />
 				</xsl:for-each>

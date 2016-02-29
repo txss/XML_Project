@@ -10,61 +10,88 @@
 			<xs:sequence>
 				<xs:element maxOccurs="unbounded" ref="intervenant" />
 				<xs:element maxOccurs="unbounded" ref="UE" />
-				<xs:element maxOccurs="2" minOccurs="2" ref="parcours" />
+				<xs:element minOccurs="2" maxOccurs="unbounded" ref="parcours" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
 
 
+	<xs:complexType name="objet" abstract="true">
+		<xs:sequence>
+			<xs:element name="nom" />
+		</xs:sequence>
+		<xs:attribute name="id" use="required" type="xs:ID" />
+	</xs:complexType>
 
 
-	<xs:element name="UE">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="nomUE" type="xs:string" />
-				<xs:element minOccurs="0" maxOccurs="unbounded" ref="ref-intervenant" />
-				<xs:element name="nbCreditsUE" type="xs:string" />
+	<xs:complexType name="UE">
+		<xs:complexContent>
+			<xs:extension base="objet">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="unbounded" ref="ref-intervenant" />
+					<xs:element name="nbCreditsUE" type="xs:string" />
 
-				<xs:element name="résumé" minOccurs="0">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element minOccurs="0" maxOccurs="unbounded" ref="p" />
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
+					<xs:element name="résumé" minOccurs="0">
+						<xs:complexType>
+							<xs:choice maxOccurs="unbounded">
+								<xs:element minOccurs="0" ref="p" />
+								<xs:element minOccurs="0" ref="ul" />
+								<xs:element minOccurs="0" ref="t" />
+								<xs:element minOccurs="0" ref="br" />
+							</xs:choice>
+						</xs:complexType>
+					</xs:element>
 
-				<xs:element name="plan" minOccurs="0">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element minOccurs="0" maxOccurs="unbounded" ref="p" />
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
+					<xs:element name="plan" minOccurs="0">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element minOccurs="0" maxOccurs="unbounded" ref="p" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
 
-				<xs:element name="lieu_d_enseignement" minOccurs="0" maxOccurs="unbounded">
-					<xs:complexType>
-						<xs:choice>
-							<xs:element ref="Luminy" />
-							<xs:element ref="St-Jerôme" />
-						</xs:choice>
-					</xs:complexType>
-				</xs:element>
+					<xs:element name="lieu_d_enseignement" minOccurs="0"
+						maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:choice>
+								<xs:element ref="Luminy" />
+								<xs:element ref="St-Jerôme" />
+							</xs:choice>
+						</xs:complexType>
+					</xs:element>
+
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 
 
-			</xs:sequence>
-			<xs:attribute name="id" use="required" type="xs:ID" />
-		</xs:complexType>
-	</xs:element>
+	<xs:element name="UE" type="UE" />
 
+	<xs:complexType name="UELuminy">
+		<xs:complexContent>
+			<xs:restriction base="UE">
+				<xs:sequence>
+					<xs:element name="nom" type="xs:string" />
+					<xs:element minOccurs="0" maxOccurs="unbounded" ref="ref-intervenant" />
+					<xs:element name="nbCreditsUE" type="xs:string" />
+					<xs:element name="résumé" minOccurs="0" />
+					<xs:element name="plan" minOccurs="0" />
+					<xs:element name="lieu_d_enseignement" minOccurs="1"
+						maxOccurs="1" fixed="Luminy" />
+				</xs:sequence>
+				<xs:attribute name="id" use="required" type="xs:ID" />
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
 
+	<xs:element name="UELuminy" type="UELuminy" />
 
 	<xs:element name="ref-intervenant">
 		<xs:complexType>
 			<xs:attribute name="ref" use="required" type="xs:IDREF" />
 		</xs:complexType>
 	</xs:element>
-
-
 
 
 
@@ -81,24 +108,11 @@
 			<xs:choice minOccurs="0" maxOccurs="unbounded">
 				<xs:element name="b" type="xs:string" />
 				<xs:element name="i" type="xs:string" />
-				<xs:element name="t" type="xs:string" />
+
 				<xs:element ref="p" />
-
-
-
-				<xs:element name="ul">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="li" maxOccurs="unbounded">
-								<xs:complexType>
-									<xs:sequence>
-										<xs:element maxOccurs="unbounded" ref="p" />
-									</xs:sequence>
-								</xs:complexType>
-							</xs:element>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
+				<xs:element ref="br" />
+				<xs:element ref="t" />
+				<xs:element ref="ul" />
 
 				<xs:element name="table">
 					<xs:complexType>
@@ -125,41 +139,70 @@
 		</xs:complexType>
 	</xs:element>
 
+	<xs:element name="br" />
 
+	<xs:element name="t" type="xs:string" />
 
-	<xs:element name="intervenant">
+	<xs:element name="ul">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="nomIntervenant" type="xs:string" />
-				<xs:element name="mail" type="xs:string" />
-				<xs:element name="siteWeb" minOccurs="0" type="xs:string" />
-				<xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element name="li" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element maxOccurs="unbounded" ref="p" />
+							<xs:element maxOccurs="unbounded" ref="t" />
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
 			</xs:sequence>
-			<xs:attribute name="id" use="required" type="xs:ID" />
 		</xs:complexType>
 	</xs:element>
 
 
 
+	<xs:complexType name="intervenant">
+		<xs:complexContent>
+			<xs:extension base="objet">
+				<xs:sequence>
+					<xs:element name="mail" type="xs:string" />
+					<xs:element name="siteWeb" minOccurs="0" type="xs:string" />
+					<xs:element name="infoComplementaire" minOccurs="0"
+						maxOccurs="unbounded">
+						<xs:complexType mixed="true">
+							<xs:attribute name="typeInfo" use="required" type="xs:string" />
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 
+
+	<xs:element name="intervenant" type="intervenant" />
+
+
+	<xs:complexType name="personne">
+		<xs:complexContent>
+			<xs:extension base="intervenant">
+				<xs:sequence>
+					<xs:element name="adresse" type="xs:string" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:element name="personne" type="personne" />
 
 	<xs:element name="semestre">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="bloc-UE">
+				<xs:element name="bloc-UE" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="nbCreditsBloc" minOccurs="0" type="xs:string" />
 							<xs:element maxOccurs="unbounded" ref="refUE" />
 						</xs:sequence>
-						<xs:attribute name="rôle" use="required">
-							<xs:simpleType>
-								<xs:restriction base="xs:token">
-									<xs:enumeration value="Obligatoire" />
-									<xs:enumeration value="Facultatif" />
-								</xs:restriction>
-							</xs:simpleType>
-						</xs:attribute>
+						<xs:attribute name="rôle" use="required" />
 					</xs:complexType>
 				</xs:element>
 			</xs:sequence>
@@ -174,30 +217,33 @@
 		</xs:complexType>
 	</xs:element>
 
-	<xs:element name="parcours">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="responsable" minOccurs = "0" type="xs:string" />
-				<xs:element name="nomParcours" type="xs:string" />
-				<xs:element name="description">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element minOccurs="0" maxOccurs="unbounded" ref="p" />
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-				<xs:element name="débouché" minOccurs="0">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element minOccurs="0" maxOccurs="unbounded" ref="p" />
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-				<xs:element minOccurs="2" maxOccurs="2" ref="semestre" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
 
+	<xs:complexType name="parcours">
+		<xs:complexContent>
+			<xs:extension base="objet">
+				<xs:sequence>
+					<xs:element name="responsable" minOccurs="0" type="xs:string" />
+					<xs:element name="description">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element minOccurs="0" maxOccurs="unbounded" ref="p" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="débouché" minOccurs="0">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element minOccurs="0" maxOccurs="unbounded" ref="p" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element minOccurs="2" maxOccurs="2" ref="semestre" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:element name="parcours" type="parcours" />
 
 
 </xs:schema>

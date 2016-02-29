@@ -1,109 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE master>
-<master xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="master.xsd">
+<!DOCTYPE master SYSTEM "master.dtd"
+	[
+		<!ENTITY dom.univ    "univ-amu.fr" >
+	]
+>
+
+<master>
   <intervenant id="IN10388">
-    <nomIntervenant>FAVRE Benoit</nomIntervenant>
+    <nom>FAVRE Benoit</nom>
     <mail>benoit.favre@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN12068">
-    <nomIntervenant>HABET Djamal</nomIntervenant>
+    <nom>HABET Djamal</nom>
     <mail>djamal.habet@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN12316">
-    <nomIntervenant>DEMONGODIN Isabelle</nomIntervenant>
+    <nom>DEMONGODIN Isabelle</nom>
     <mail>isabel.demongodin@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN12544">
-    <nomIntervenant>BOUCELMA Omar</nomIntervenant>
+    <nom>BOUCELMA Omar</nom>
     <mail>omar.boucelma@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN12632">
-    <nomIntervenant>OLIVETTI Nicola</nomIntervenant>
+    <nom>OLIVETTI Nicola</nom>
     <mail>nicola.olivetti@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN12834">
-    <nomIntervenant>OUTBIB Rachid</nomIntervenant>
+    <nom>OUTBIB Rachid</nom>
     <mail>rachid.outbib@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN12969">
-    <nomIntervenant>RENE CHABAROT Lydie</nomIntervenant>
+    <nom>RENE CHABAROT Lydie</nom>
     <mail>lydie.rene@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN13794">
-    <nomIntervenant>OLIVE Frederic</nomIntervenant>
+    <nom>OLIVE Frederic</nom>
     <mail>frederic.olive@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN14758">
-    <nomIntervenant>BROCHE Martine</nomIntervenant>
+    <nom>BROCHE Martine</nom>
     <mail>martine.broche@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN16209">
-    <nomIntervenant>RALAIVOLA Hery Liva</nomIntervenant>
+    <nom>RALAIVOLA Hery Liva</nom>
     <mail>hery-liva.ralaivola@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN16625">
-    <nomIntervenant>SELLAMI Sana</nomIntervenant>
+    <nom>SELLAMI Sana</nom>
     <mail>sana.sellami@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN17708">
-    <nomIntervenant>MICHEL Stephane</nomIntervenant>
+    <nom>MICHEL Stephane</nom>
     <mail/>
   </intervenant>
   <intervenant id="IN18">
-    <nomIntervenant>MASSAT Jean Luc</nomIntervenant>
+    <nom>MASSAT Jean Luc</nom>
     <mail>jean-luc.massat@univ-amu.fr</mail>
-    <siteWeb>http://jean-luc.massat.perso.luminy.univ-amu.fr</siteWeb>
+	<siteWeb>http://jean-luc.massat.perso.luminy.univ-amu.fr</siteWeb>
+    <infoComplementaire typeInfo="Taille">1m80</infoComplementaire>
+    <infoComplementaire typeInfo="Gentil">Oui</infoComplementaire>
   </intervenant>
   <intervenant id="IN2563">
-    <nomIntervenant>GODARD Emmanuel</nomIntervenant>
+    <nom>GODARD Emmanuel</nom>
     <mail>emmanuel.godard@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN3524">
-    <nomIntervenant>LUGIEZ Denis</nomIntervenant>
+    <nom>LUGIEZ Denis</nom>
     <mail>denis.lugiez@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN616">
-    <nomIntervenant>AGOPIAN Roland</nomIntervenant>
+    <nom>AGOPIAN Roland</nom>
     <mail>roland.agopian@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN6213">
-    <nomIntervenant>LABOUREL Arnaud</nomIntervenant>
+    <nom>LABOUREL Arnaud</nom>
     <mail>arnaud.labourel@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN7001">
-    <nomIntervenant>CREIGNOU Nadia</nomIntervenant>
+    <nom>CREIGNOU Nadia</nom>
     <mail>nadia.creignou@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN7680">
-    <nomIntervenant>LAI Claude</nomIntervenant>
+    <nom>LAI Claude</nom>
     <mail>claude.lai@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN7722">
-    <nomIntervenant>NOVELLI Noel</nomIntervenant>
+    <nom>NOVELLI Noel</nom>
     <mail>noel.novelli@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN7931">
-    <nomIntervenant>RISCH Sylvie</nomIntervenant>
+    <nom>RISCH Sylvie</nom>
     <mail>sylvie.risch@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN8006">
-    <nomIntervenant>BOI Jean Marc</nomIntervenant>
+    <nom>BOI Jean Marc</nom>
     <mail>jean-marc.boi@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN8086">
-    <nomIntervenant>VAXES Yann</nomIntervenant>
+    <nom>VAXES Yann</nom>
     <mail>yann.vaxes@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN9224">
-    <nomIntervenant>MORIN Remi</nomIntervenant>
+    <nom>MORIN Remi</nom>
     <mail>remi.morin@univ-amu.fr</mail>
   </intervenant>
   <intervenant id="IN9941">
-    <nomIntervenant>BECHET Frederic</nomIntervenant>
+    <nom>BECHET Frederic</nom>
     <mail>frederic.bechet@univ-amu.fr</mail>
   </intervenant>
   <UE id="ENSINAU1">
-    <nomUE>Génie Logiciel</nomUE>
+    <nom>Génie Logiciel</nom>
     <ref-intervenant ref="IN7722"/>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé>
@@ -119,7 +126,7 @@
     </résumé>
   </UE>
   <UE id="ENSINAU10">
-    <nomUE>Modèles à évènements discrets</nomUE>
+    <nom>Modèles à évènements discrets</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -134,7 +141,7 @@
     </résumé>
   </UE>
   <UE id="ENSINAU11">
-    <nomUE>Introduction à l'apprentissage automatique</nomUE>
+    <nom>Introduction à l'apprentissage automatique</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -157,7 +164,7 @@
     </résumé>
   </UE>
   <UE id="ENSINAU2">
-    <nomUE>Complexité</nomUE>
+    <nom>Complexité</nom>
     <ref-intervenant ref="IN7001"/>
     <ref-intervenant ref="IN13794"/>
     <nbCreditsUE>6</nbCreditsUE>
@@ -176,7 +183,7 @@
     </résumé>
   </UE>
   <UE id="ENSINAU3">
-    <nomUE>Réseaux</nomUE>
+    <nom>Réseaux</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé>
       <p>
@@ -202,7 +209,7 @@
     </résumé>
   </UE>
   <UE id="ENSINAU4">
-    <nomUE>Programmation fonctionnelle</nomUE>
+    <nom>Programmation fonctionnelle</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -239,7 +246,7 @@
     </résumé>
   </UE>
   <UE id="ENSINAU5">
-    <nomUE>Programmation parallèle</nomUE>
+    <nom>Programmation parallèle</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -257,7 +264,7 @@
     </résumé>
   </UE>
   <UE id="ENSINAU6">
-    <nomUE>Programmation logique</nomUE>
+    <nom>Programmation logique</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -275,7 +282,7 @@
     </résumé>
   </UE>
   <UE id="ENSINAU7">
-    <nomUE>Outils de l'internet</nomUE>
+    <nom>Outils de l'internet</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -294,12 +301,12 @@
     </résumé>
   </UE>
   <UE id="ENSINAU8">
-    <nomUE>Système embarqué</nomUE>
+    <nom>Système embarqué</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSINAU9">
-    <nomUE>Fondamentaux pour l'ingénierie des langues</nomUE>
+    <nom>Fondamentaux pour l'ingénierie des langues</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -312,7 +319,7 @@
     </résumé>
   </UE>
   <UE id="ENSINBU1">
-    <nomUE>Anglais</nomUE>
+    <nom>Anglais</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -323,7 +330,7 @@
     </résumé>
   </UE>
   <UE id="ENSINBU10">
-    <nomUE>Intégration des systèmes d'information</nomUE>
+    <nom>Intégration des systèmes d'information</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -338,7 +345,7 @@
     </résumé>
   </UE>
   <UE id="ENSINBU11">
-    <nomUE>Initiation à la fouille de données et à l’optimisation des SGBD</nomUE>
+    <nom>Initiation à la fouille de données et à l’optimisation des SGBD</nom>
     <ref-intervenant ref="IN7722"/>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
@@ -365,7 +372,7 @@
     </résumé>
   </UE>
   <UE id="ENSINBU12">
-    <nomUE>Intelligence artificielle</nomUE>
+    <nom>Intelligence artificielle</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -384,7 +391,7 @@
     </résumé>
   </UE>
   <UE id="ENSINBU13">
-    <nomUE>Algorithme à performance garantie</nomUE>
+    <nom>Algorithme à performance garantie</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -408,7 +415,7 @@
     </résumé>
   </UE>
   <UE id="ENSINBU14">
-    <nomUE>Pratique de la cryptographie</nomUE>
+    <nom>Pratique de la cryptographie</nom>
     <ref-intervenant ref="IN9224"/>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
@@ -433,7 +440,7 @@
     </résumé>
   </UE>
   <UE id="ENSINBU2">
-    <nomUE>Communication</nomUE>
+    <nom>Communication</nom>
     <ref-intervenant ref="IN12969"/>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
@@ -482,7 +489,7 @@
     </résumé>
   </UE>
   <UE id="ENSINBU3">
-    <nomUE>Bases de données avancées</nomUE>
+    <nom>Bases de données avancées</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -495,7 +502,7 @@
     </résumé>
   </UE>
   <UE id="ENSINBU4">
-    <nomUE>XML</nomUE>
+    <nom>XML</nom>
     <ref-intervenant ref="IN18"/>
     <ref-intervenant ref="IN16625"/>
     <nbCreditsUE>3</nbCreditsUE>
@@ -508,7 +515,7 @@
     </résumé>
   </UE>
   <UE id="ENSINBU5">
-    <nomUE>Algorithmique et recherche opérationnelle</nomUE>
+    <nom>Algorithmique et recherche opérationnelle</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -525,7 +532,7 @@
     </résumé>
   </UE>
   <UE id="ENSINBU6">
-    <nomUE>Projet</nomUE>
+    <nom>Projet</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé>
       <p>
@@ -539,7 +546,7 @@
     </résumé>
   </UE>
   <UE id="ENSINBU7">
-    <nomUE>Stage de deux mois</nomUE>
+    <nom>Stage de deux mois</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé>
       <p>
@@ -553,7 +560,7 @@
     </résumé>
   </UE>
   <UE id="ENSINBU8">
-    <nomUE>Sémantique</nomUE>
+    <nom>Sémantique</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -584,7 +591,7 @@
     </résumé>
   </UE>
   <UE id="ENSINBU9">
-    <nomUE>Algorithmique distribuée</nomUE>
+    <nom>Algorithmique distribuée</nom>
     <ref-intervenant ref="IN6213"/>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
@@ -602,7 +609,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU1">
-    <nomUE>Algorithmique et complexité</nomUE>
+    <nom>Algorithmique et complexité</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé>
       <p>
@@ -614,7 +621,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU10">
-    <nomUE>Fouille de données avancée</nomUE>
+    <nom>Fouille de données avancée</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -626,7 +633,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU11">
-    <nomUE>Géométrie discrète</nomUE>
+    <nom>Géométrie discrète</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -638,7 +645,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU12">
-    <nomUE>Algorithmique des graphes et réseaux</nomUE>
+    <nom>Algorithmique des graphes et réseaux</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -648,7 +655,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU13">
-    <nomUE>Espaces métriques : structure et algorithmiques</nomUE>
+    <nom>Espaces métriques : structure et algorithmiques</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -660,7 +667,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU14">
-    <nomUE>Optimisation combinatoire et programmation en nombres entiers</nomUE>
+    <nom>Optimisation combinatoire et programmation en nombres entiers</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -672,7 +679,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU15">
-    <nomUE>Logiques et jeux</nomUE>
+    <nom>Logiques et jeux</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -682,7 +689,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU16">
-    <nomUE>Algorithmique distribuée 2</nomUE>
+    <nom>Algorithmique distribuée 2</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -692,7 +699,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU17">
-    <nomUE>Vérification et sécurité</nomUE>
+    <nom>Vérification et sécurité</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -702,7 +709,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU18">
-    <nomUE>Modèles du parallélisme</nomUE>
+    <nom>Modèles du parallélisme</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -713,7 +720,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU19">
-    <nomUE>Modèles et connaissances linguistiques pour le TAL</nomUE>
+    <nom>Modèles et connaissances linguistiques pour le TAL</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -725,7 +732,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU2">
-    <nomUE>Logique, automates et aspects formels de la théorie des langages</nomUE>
+    <nom>Logique, automates et aspects formels de la théorie des langages</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé>
       <p>
@@ -739,7 +746,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU20">
-    <nomUE>Syntaxe et sémantique : modèles et outils</nomUE>
+    <nom>Syntaxe et sémantique : modèles et outils</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -750,7 +757,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU21">
-    <nomUE>Modèles numériques pour le TAL</nomUE>
+    <nom>Modèles numériques pour le TAL</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -762,7 +769,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU22">
-    <nomUE>Applications du Traitement Automatique de la Langue (TAL)</nomUE>
+    <nom>Applications du Traitement Automatique de la Langue (TAL)</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -774,7 +781,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU23">
-    <nomUE>Algorithmique des chaînes de caractères</nomUE>
+    <nom>Algorithmique des chaînes de caractères</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -784,7 +791,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU24">
-    <nomUE>Classification et phylogénie</nomUE>
+    <nom>Classification et phylogénie</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -794,7 +801,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU25">
-    <nomUE>Modèles markoviens</nomUE>
+    <nom>Modèles markoviens</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -804,7 +811,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU26">
-    <nomUE>Logiques non-standards</nomUE>
+    <nom>Logiques non-standards</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -816,7 +823,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU27">
-    <nomUE>Anglais 2</nomUE>
+    <nom>Anglais 2</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -827,7 +834,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU28">
-    <nomUE>Communication 2</nomUE>
+    <nom>Communication 2</nom>
     <ref-intervenant ref="IN14758"/>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
@@ -865,7 +872,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU29">
-    <nomUE>Fiabilité logicielle 1</nomUE>
+    <nom>Fiabilité logicielle 1</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -875,7 +882,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU3">
-    <nomUE>Statistique inférentielle</nomUE>
+    <nom>Statistique inférentielle</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -886,7 +893,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU30">
-    <nomUE>Plateforme JEE</nomUE>
+    <nom>Plateforme JEE</nom>
     <ref-intervenant ref="IN18"/>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
@@ -898,7 +905,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU31">
-    <nomUE>Systèmes hétérogènes</nomUE>
+    <nom>Systèmes hétérogènes</nom>
     <ref-intervenant ref="IN616"/>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
@@ -943,7 +950,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU32">
-    <nomUE>Sécurité internet et réseau</nomUE>
+    <nom>Sécurité internet et réseau</nom>
     <ref-intervenant ref="IN616"/>
     <ref-intervenant ref="IN2563"/>
     <nbCreditsUE>6</nbCreditsUE>
@@ -972,7 +979,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU33">
-    <nomUE>Fiabilité logicielle 2</nomUE>
+    <nom>Fiabilité logicielle 2</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -982,7 +989,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU34">
-    <nomUE>Qualité</nomUE>
+    <nom>Qualité</nom>
     <ref-intervenant ref="IN17708"/>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
@@ -1044,7 +1051,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU35">
-    <nomUE>Sécurité des systèmes embarqués</nomUE>
+    <nom>Sécurité des systèmes embarqués</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1053,7 +1060,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU36">
-    <nomUE>Administration système et réseau</nomUE>
+    <nom>Administration système et réseau</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1067,7 +1074,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU37">
-    <nomUE>Méthodes de développement</nomUE>
+    <nom>Méthodes de développement</nom>
     <ref-intervenant ref="IN10388"/>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
@@ -1091,7 +1098,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU38">
-    <nomUE>Architecture logicielle</nomUE>
+    <nom>Architecture logicielle</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1102,7 +1109,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU39">
-    <nomUE>Intégration des données</nomUE>
+    <nom>Intégration des données</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1113,7 +1120,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU4">
-    <nomUE>Nouveaux défis en apprentissage</nomUE>
+    <nom>Nouveaux défis en apprentissage</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1124,7 +1131,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU40">
-    <nomUE>Administration et alimentation de BD</nomUE>
+    <nom>Administration et alimentation de BD</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1137,7 +1144,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU41">
-    <nomUE>Qualité logicielle : outils et méthodes</nomUE>
+    <nom>Qualité logicielle : outils et méthodes</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé>
       <p>
@@ -1147,7 +1154,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU42">
-    <nomUE>Spécification logicielle</nomUE>
+    <nom>Spécification logicielle</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1157,7 +1164,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU43">
-    <nomUE>Conception logicielle et IHM</nomUE>
+    <nom>Conception logicielle et IHM</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1166,7 +1173,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU44">
-    <nomUE>Architecture logicielle JEE</nomUE>
+    <nom>Architecture logicielle JEE</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1176,7 +1183,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU45">
-    <nomUE>Technologies du Web et Web 2.0</nomUE>
+    <nom>Technologies du Web et Web 2.0</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1187,7 +1194,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU46">
-    <nomUE>XML avancé</nomUE>
+    <nom>XML avancé</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1197,7 +1204,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU47">
-    <nomUE>Gestion de projet</nomUE>
+    <nom>Gestion de projet</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1208,7 +1215,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU48">
-    <nomUE>Optimisation linéaire</nomUE>
+    <nom>Optimisation linéaire</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1226,12 +1233,12 @@
     </résumé>
   </UE>
   <UE id="ENSINCU49">
-    <nomUE>Fouille de Bases de Données (FBD)</nomUE>
+    <nom>Fouille de Bases de Données (FBD)</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSINCU5">
-    <nomUE>Théorie de l'apprentissage</nomUE>
+    <nom>Théorie de l'apprentissage</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1242,7 +1249,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU50">
-    <nomUE>Méthodologie de conception d'applications décisionnelles</nomUE>
+    <nom>Méthodologie de conception d'applications décisionnelles</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1264,7 +1271,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU51">
-    <nomUE>Entrepôt de Données</nomUE>
+    <nom>Entrepôt de Données</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé>
       <p>
@@ -1295,7 +1302,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU52">
-    <nomUE>Fouille de Données Avancée</nomUE>
+    <nom>Fouille de Données Avancée</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1313,7 +1320,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU53">
-    <nomUE>Modélisation en RO</nomUE>
+    <nom>Modélisation en RO</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1334,7 +1341,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU54">
-    <nomUE>Recherche locale</nomUE>
+    <nom>Recherche locale</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1358,7 +1365,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU55">
-    <nomUE>Programmation en Nombres Entiers</nomUE>
+    <nom>Programmation en Nombres Entiers</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1386,7 +1393,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU56">
-    <nomUE>Traitement automatique de la parole</nomUE>
+    <nom>Traitement automatique de la parole</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1401,7 +1408,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU57">
-    <nomUE>Indexation et recherche d'images et vidéos</nomUE>
+    <nom>Indexation et recherche d'images et vidéos</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1413,7 +1420,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU58">
-    <nomUE>Apprentissage automatique et classification</nomUE>
+    <nom>Apprentissage automatique et classification</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé>
       <p>
@@ -1431,7 +1438,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU59">
-    <nomUE>Traitement et indexation des données multimédia</nomUE>
+    <nom>Traitement et indexation des données multimédia</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé>
       <p>
@@ -1448,7 +1455,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU6">
-    <nomUE>Inférence grammaticale</nomUE>
+    <nom>Inférence grammaticale</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1459,7 +1466,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU60">
-    <nomUE>Architecture d'applications réparties sur le Web</nomUE>
+    <nom>Architecture d'applications réparties sur le Web</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé>
       <p>
@@ -1471,7 +1478,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU61">
-    <nomUE>Services Web et Business Process</nomUE>
+    <nom>Services Web et Business Process</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé>
       <p>
@@ -1494,7 +1501,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU62">
-    <nomUE>Web Multimédia</nomUE>
+    <nom>Web Multimédia</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1513,7 +1520,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU63">
-    <nomUE>Processus d'entreprise - ERP</nomUE>
+    <nom>Processus d'entreprise - ERP</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1535,7 +1542,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU64">
-    <nomUE>Applications mobiles et réseaux sociaux</nomUE>
+    <nom>Applications mobiles et réseaux sociaux</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1561,7 +1568,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU65">
-    <nomUE>Gestion de projet</nomUE>
+    <nom>Gestion de projet</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1572,7 +1579,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU66">
-    <nomUE>Nouvelles applications du Traitement Automatique de la Langue (TAL)</nomUE>
+    <nom>Nouvelles applications du Traitement Automatique de la Langue (TAL)</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1587,7 +1594,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU67">
-    <nomUE>Projet d'entreprise</nomUE>
+    <nom>Projet d'entreprise</nom>
     <ref-intervenant ref="IN7680"/>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
@@ -1603,7 +1610,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU7">
-    <nomUE>Apprentissage numérique</nomUE>
+    <nom>Apprentissage numérique</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1614,7 +1621,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU8">
-    <nomUE>Fouille de bases de données</nomUE>
+    <nom>Fouille de bases de données</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1626,7 +1633,7 @@
     </résumé>
   </UE>
   <UE id="ENSINCU9">
-    <nomUE>Entrepôts de données</nomUE>
+    <nom>Entrepôts de données</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1637,7 +1644,7 @@
     </résumé>
   </UE>
   <UE id="ENSINDU1">
-    <nomUE>Communication scientifique</nomUE>
+    <nom>Communication scientifique</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1646,12 +1653,12 @@
     </résumé>
   </UE>
   <UE id="ENSINDU2">
-    <nomUE>Initiation à la recherche</nomUE>
+    <nom>Initiation à la recherche</nom>
     <nbCreditsUE>27</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSINDU3">
-    <nomUE>Projet industriel de mise en application</nomUE>
+    <nom>Projet industriel de mise en application</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé>
       <p>
@@ -1661,7 +1668,7 @@
     </résumé>
   </UE>
   <UE id="ENSINDU4">
-    <nomUE>Stage en entreprise</nomUE>
+    <nom>Stage en entreprise</nom>
     <nbCreditsUE>24</nbCreditsUE>
     <résumé>
       <p>
@@ -1672,7 +1679,7 @@
     </résumé>
   </UE>
   <UE id="ENSISCU1">
-    <nomUE>AU4 : Classification, apprentissage et décision</nomUE>
+    <nom>AU4 : Classification, apprentissage et décision</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé>
       <p>
@@ -1682,7 +1689,7 @@
     </résumé>
   </UE>
   <UE id="ENSISCU2">
-    <nomUE>IM8 : Segmentation 2</nomUE>
+    <nom>IM8 : Segmentation 2</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1692,7 +1699,7 @@
     </résumé>
   </UE>
   <UE id="ENSISCU20">
-    <nomUE>RTC : Concepts et fondamentaux de la modélisation</nomUE>
+    <nom>RTC : Concepts et fondamentaux de la modélisation</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé>
       <p>
@@ -1706,7 +1713,7 @@
     </résumé>
   </UE>
   <UE id="ENSISCU21">
-    <nomUE>RI1 : Fondements logiques et algorithmiques</nomUE>
+    <nom>RI1 : Fondements logiques et algorithmiques</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé>
       <p>
@@ -1724,7 +1731,7 @@
     </résumé>
   </UE>
   <UE id="ENSISCU22">
-    <nomUE>RI2 : Fondements de programmation et de satisfiabilité</nomUE>
+    <nom>RI2 : Fondements de programmation et de satisfiabilité</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1737,7 +1744,7 @@
     </résumé>
   </UE>
   <UE id="ENSISCU23">
-    <nomUE>RI3 : Représentation des connaissances : Approfondissement et applications</nomUE>
+    <nom>RI3 : Représentation des connaissances : Approfondissement et applications</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1749,92 +1756,92 @@
     </résumé>
   </UE>
   <UE id="ENSISCU24">
-    <nomUE>RI4 : Planification, configuration et raisonnement temporel et spatial</nomUE>
+    <nom>RI4 : Planification, configuration et raisonnement temporel et spatial</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU25">
-    <nomUE>RI5 : Agents et ontologies pour les systèmes d'information et le web sémantique</nomUE>
+    <nom>RI5 : Agents et ontologies pour les systèmes d'information et le web sémantique</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU26">
-    <nomUE>RI6 : Approches avancées de conception de systèmes d'information</nomUE>
+    <nom>RI6 : Approches avancées de conception de systèmes d'information</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU27">
-    <nomUE>RI7 : Extraction et intégration d'information du web</nomUE>
+    <nom>RI7 : Extraction et intégration d'information du web</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU28">
-    <nomUE>RI8 : Web services</nomUE>
+    <nom>RI8 : Web services</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU29">
-    <nomUE>RIS1 : Traitement de données multimodales</nomUE>
+    <nom>RIS1 : Traitement de données multimodales</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU3">
-    <nomUE>IM6 : Animation et simulation physique</nomUE>
+    <nom>IM6 : Animation et simulation physique</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU30">
-    <nomUE>RIS2 : Formalises à éléments discrets</nomUE>
+    <nom>RIS2 : Formalises à éléments discrets</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU31">
-    <nomUE>RIS3 : Simulation distribuée et modèles hétérogènes</nomUE>
+    <nom>RIS3 : Simulation distribuée et modèles hétérogènes</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU32">
-    <nomUE>RIS4 : Aide à la décision</nomUE>
+    <nom>RIS4 : Aide à la décision</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU33">
-    <nomUE>R2 : Communication et interaction homme-machine</nomUE>
+    <nom>R2 : Communication et interaction homme-machine</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU34">
-    <nomUE>RE1 : Problématique, démarche, modèles et objects de conception</nomUE>
+    <nom>RE1 : Problématique, démarche, modèles et objects de conception</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU35">
-    <nomUE>RE2 : Modèles et objets de conception</nomUE>
+    <nom>RE2 : Modèles et objets de conception</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU36">
-    <nomUE>RE3 : Systèmes intelligents</nomUE>
+    <nom>RE3 : Systèmes intelligents</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU37">
-    <nomUE>RE4 : Conception et architecture</nomUE>
+    <nom>RE4 : Conception et architecture</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU38">
-    <nomUE>RO1 : Une UE extérieure de 3 crédits (validation requise)</nomUE>
+    <nom>RO1 : Une UE extérieure de 3 crédits (validation requise)</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU39">
-    <nomUE>RO2 : Une UE extérieure de 6 crédits (validation requise)</nomUE>
+    <nom>RO2 : Une UE extérieure de 6 crédits (validation requise)</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU4">
-    <nomUE>IM10 : Imagerie médicale</nomUE>
+    <nom>IM10 : Imagerie médicale</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1845,42 +1852,42 @@
     </résumé>
   </UE>
   <UE id="ENSISCU40">
-    <nomUE>RS1 : Commande et diagnostic des systèmes complexes</nomUE>
+    <nom>RS1 : Commande et diagnostic des systèmes complexes</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU41">
-    <nomUE>RS2 : Systèmes à structure variable et planification</nomUE>
+    <nom>RS2 : Systèmes à structure variable et planification</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU42">
-    <nomUE>RS3 : Génie électrique et mécatronique</nomUE>
+    <nom>RS3 : Génie électrique et mécatronique</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU43">
-    <nomUE>RS4 : Pronostic des systèmes</nomUE>
+    <nom>RS4 : Pronostic des systèmes</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU44">
-    <nomUE>RS5 : Procédés à énergie renouvelable</nomUE>
+    <nom>RS5 : Procédés à énergie renouvelable</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU45">
-    <nomUE>RS6 : Réseaux de neurones</nomUE>
+    <nom>RS6 : Réseaux de neurones</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU46">
-    <nomUE>RS7 : Conduite et gestion de la production</nomUE>
+    <nom>RS7 : Conduite et gestion de la production</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU5">
-    <nomUE>IM11 : Modélisation algorithmique, différentielle et discrète</nomUE>
+    <nom>IM11 : Modélisation algorithmique, différentielle et discrète</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1891,12 +1898,12 @@
     </résumé>
   </UE>
   <UE id="ENSISCU55">
-    <nomUE>IM15 : Modèles pour la production d'images, traitement et visualisation de données géométriques à haute-performance</nomUE>
+    <nom>IM15 : Modèles pour la production d'images, traitement et visualisation de données géométriques à haute-performance</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISCU6">
-    <nomUE>IM12 : Analyse de vidéo et reconnaissance de forme</nomUE>
+    <nom>IM12 : Analyse de vidéo et reconnaissance de forme</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1908,7 +1915,7 @@
     </résumé>
   </UE>
   <UE id="ENSISCU7">
-    <nomUE>IM13 : Vision industrielle</nomUE>
+    <nom>IM13 : Vision industrielle</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1920,7 +1927,7 @@
     </résumé>
   </UE>
   <UE id="ENSISCU8">
-    <nomUE>IM14 : Modèles pour la production d'images : CAO et jeux vidéo</nomUE>
+    <nom>IM14 : Modèles pour la production d'images : CAO et jeux vidéo</nom>
     <nbCreditsUE>3</nbCreditsUE>
     <résumé>
       <p>
@@ -1936,19 +1943,20 @@
     </résumé>
   </UE>
   <UE id="ENSISDU3">
-    <nomUE>R bib : Étude bibliographique</nomUE>
+    <nom>R bib : Étude bibliographique</nom>
     <nbCreditsUE>6</nbCreditsUE>
     <résumé/>
   </UE>
   <UE id="ENSISDU4">
-    <nomUE>Stage de recherche</nomUE>
+    <nom>Stage de recherche</nom>
     <nbCreditsUE>24</nbCreditsUE>
     <résumé/>
   </UE>
-  <parcours>
+  <parcours id="PRSIN4T0">
+    <nom>M1 Informatique</nom>
     <responsable>MORIN Remi</responsable>
-    <nomParcours>M1 Informatique</nomParcours>
     <description>
+      <p>
 			
 				L'objectif de cette première année est de donner les bases
 					indispensables permettant, en deuxième année, de choisir une
@@ -1958,7 +1966,8 @@
 					adapté. Un choix entre stage ou projet encadré est également
 					proposé au semestre de printemps.
 			
-		</description>
+		</p>
+    </description>
     <semestre>
       <bloc-UE rôle="Option de 6 crédits à choisir">
         <nbCreditsBloc>6</nbCreditsBloc>
@@ -2002,9 +2011,10 @@
       </bloc-UE>
     </semestre>
   </parcours>
-  <parcours>
-    <nomParcours>M2 Spécialité Informatique fondamentale (IF)</nomParcours>
+  <parcours id="PRSIN5A0">
+    <nom>M2 Spécialité Informatique fondamentale (IF)</nom>
     <description>
+      <p>
 			
 				L'objectif de la spécialité Informatique Fondamentale est de
 					donner des connaissances solides dans le domaine des fondements de
@@ -2012,7 +2022,8 @@
 					concepts et les méthodes dans l es thèmes couverts par le
 					Laboratoire d'Informatique Fondamentale.
 			
-		</description>
+		</p>
+    </description>
     <semestre>
       <bloc-UE rôle="15 crédits à choisir (validation requise)">
         <nbCreditsBloc>15</nbCreditsBloc>
@@ -2053,17 +2064,19 @@
       </bloc-UE>
     </semestre>
   </parcours>
-  <parcours>
+  <parcours id="PRSIN5B1">
+    <nom>M2 Spécialité Sciences de l'information et des systèmes, parcours Informatique</nom>
     <responsable>OLIVETTI Nicola</responsable>
-    <nomParcours>M2 Spécialité Sciences de l'information et des systèmes, parcours Informatique</nomParcours>
     <description>
+      <p>
 			
 				L’objectif est d’approfondir les connaissances de
 					bases en Informatique sur l’intelligence artificielle, les
 					systèmes d’information, conception et vérification des
 					systèmes, informatique décisionnelle.
 			
-		</description>
+		</p>
+    </description>
     <semestre>
       <bloc-UE rôle="15 crédits à choisir parmi">
         <nbCreditsBloc>15</nbCreditsBloc>
@@ -2117,16 +2130,18 @@
       </bloc-UE>
     </semestre>
   </parcours>
-  <parcours>
+  <parcours id="PRSIN5B2">
+    <nom>M2 Spécialité Sciences de l'information et des systèmes, parcours Image</nom>
     <responsable>BOI Jean Marc</responsable>
-    <nomParcours>M2 Spécialité Sciences de l'information et des systèmes, parcours Image</nomParcours>
     <description>
+      <p>
 			
 				L’objectif est d’approfondir les connaissances de
 					bases en imagerie numérique : analyse d’image, synthèse
 					d’image, CAO, …
 			
-		</description>
+		</p>
+    </description>
     <semestre>
       <bloc-UE rôle="15 crédits à choisir parmi">
         <nbCreditsBloc>15</nbCreditsBloc>
@@ -2180,16 +2195,18 @@
       </bloc-UE>
     </semestre>
   </parcours>
-  <parcours>
+  <parcours id="PRSIN5B3">
+    <nom>M2 Spécialité Sciences de l'information et des systèmes, parcours Systèmes</nom>
     <responsable>OUTBIB Rachid</responsable>
-    <nomParcours>M2 Spécialité Sciences de l'information et des systèmes, parcours Systèmes</nomParcours>
     <description>
+      <p>
 			
 				L’objectif est d’approfondir les connaissances sur
 					les systèmes dynamiques complexes : modélisation, commande,
 					diagnostic, …
 			
-		</description>
+		</p>
+    </description>
     <semestre>
       <bloc-UE rôle="15 crédits à choisir parmi">
         <nbCreditsBloc>15</nbCreditsBloc>
@@ -2243,10 +2260,11 @@
       </bloc-UE>
     </semestre>
   </parcours>
-  <parcours>
+  <parcours id="PRSIN5C1">
+    <nom>M2 Spécialité Fiabilité, sécurité et intégration logicielle (FSIL), parcours Fiabilité et sécurité informatique (FSI)</nom>
     <responsable>LUGIEZ Denis</responsable>
-    <nomParcours>M2 Spécialité Fiabilité, sécurité et intégration logicielle (FSIL), parcours Fiabilité et sécurité informatique (FSI)</nomParcours>
     <description>
+      <p>
 			
 				La formation donne les principes et techniques liés à la
 					conception de systèmes informatiques surs dans un environnement
@@ -2259,7 +2277,8 @@
 					cryptographiques,..) et à la communication entre systèmes (réseaux
 					hétérogènes et applications embarquées ou distribuées).
 			
-		</description>
+		</p>
+    </description>
     <semestre>
       <bloc-UE rôle="TC des parcours FSI et ISL">
         <nbCreditsBloc>15</nbCreditsBloc>
@@ -2287,10 +2306,11 @@
       </bloc-UE>
     </semestre>
   </parcours>
-  <parcours>
+  <parcours id="PRSIN5C2">
+    <nom>M2 Spécialité Fiabilité, sécurité et intégration logicielle (FSIL), parcours Intégration de systèmes logiciels (ISL)</nom>
     <responsable>MASSAT Jean Luc</responsable>
-    <nomParcours>M2 Spécialité Fiabilité, sécurité et intégration logicielle (FSIL), parcours Intégration de systèmes logiciels (ISL)</nomParcours>
     <description>
+      <p>
 			
 				Le développement de l'Internet/Intranet et des applications
 					associées a fait émerger de nouvelles normes pour la structuration
@@ -2310,7 +2330,8 @@
 				Java Enterprise Edition
 				 pour concrétiser les concepts présentés.
 			
-		</description>
+		</p>
+    </description>
     <semestre>
       <bloc-UE rôle="TC des parcours FSI et ISL">
         <nbCreditsBloc>15</nbCreditsBloc>
@@ -2339,9 +2360,10 @@
       </bloc-UE>
     </semestre>
   </parcours>
-  <parcours>
-    <nomParcours>M2 Spécialité Génie logiciel (GL)</nomParcours>
+  <parcours id="PRSIN5D0">
+    <nom>M2 Spécialité Génie logiciel (GL)</nom>
     <description>
+      <p>
 			
 				La production d'un logiciel est une tâche très complexe mettant
 					en oeuvre plusieurs ressources, notamment humaines, matériels et
@@ -2350,7 +2372,8 @@
 					pouvoir intervenir dans toutes les phases de la production
 					logiciel.
 			
-		</description>
+		</p>
+    </description>
     <semestre>
       <bloc-UE rôle="Obligatoire">
         <refUE refUE="ENSINCU41"/>
@@ -2371,10 +2394,11 @@
       </bloc-UE>
     </semestre>
   </parcours>
-  <parcours>
+  <parcours id="PRSIN5E1">
+    <nom>M2 Spécialité Informatique décisionnelle (ID), parcours Fouille et entrepôts de données (FED)</nom>
     <responsable>NOVELLI Noel</responsable>
-    <nomParcours>M2 Spécialité Informatique décisionnelle (ID), parcours Fouille et entrepôts de données (FED)</nomParcours>
     <description>
+      <p>
 			
 				Ce parcours permet aux étudiants d’approfondir les
 					connaissances qu'ils doivent maîtriser pour appréhender le cycle de
@@ -2392,7 +2416,8 @@
 					de données, en analyse des données, ayant aussi des connaissances
 					de bases en recherche opérationnelle.
 			
-		</description>
+		</p>
+    </description>
     <semestre>
       <bloc-UE rôle="Tronc-commun des parcours FED et RO">
         <nbCreditsBloc>21</nbCreditsBloc>
@@ -2420,10 +2445,11 @@
       </bloc-UE>
     </semestre>
   </parcours>
-  <parcours>
+  <parcours id="PRSIN5E2">
+    <nom>M2 Spécialité Informatique décisionnelle (ID), parcours Recherche opérationnelle (RO)</nom>
     <responsable>VAXES Yann</responsable>
-    <nomParcours>M2 Spécialité Informatique décisionnelle (ID), parcours Recherche opérationnelle (RO)</nomParcours>
     <description>
+      <p>
 			
 				La recherche opérationnelle consiste à utiliser des méthodes et
 					des modèles pour résoudre des problèmes complexes d'organisation,
@@ -2442,7 +2468,8 @@
 					(langages de modélisation, solveurs, structures de données,
 					algorithmes…).
 			
-		</description>
+		</p>
+    </description>
     <semestre>
       <bloc-UE rôle="Tronc-commun des parcours FED et RO">
         <nbCreditsBloc>21</nbCreditsBloc>
@@ -2471,9 +2498,10 @@
       </bloc-UE>
     </semestre>
   </parcours>
-  <parcours>
-    <nomParcours>M2 Spécialité Recherche d'informations multimédia (RIM)</nomParcours>
+  <parcours id="PRSIN5F0">
+    <nom>M2 Spécialité Recherche d'informations multimédia (RIM)</nom>
     <description>
+      <p>
 			
 				L'objectif de la spécialité RIM est de former des spécialistes du
 					traitement et de la recherche de contenus multimédias. Du point de
@@ -2483,7 +2511,8 @@
 					dans des entreprises innovantes centrées autour des domaines du
 					multimédia et de l'internet.
 			
-		</description>
+		</p>
+    </description>
     <semestre>
       <bloc-UE rôle="3 crédits à choisir parmi">
         <nbCreditsBloc>3</nbCreditsBloc>
@@ -2516,9 +2545,10 @@
       </bloc-UE>
     </semestre>
   </parcours>
-  <parcours>
-    <nomParcours>M2 Spécialité Systèmes d'information répartis (SIR)</nomParcours>
+  <parcours id="PRSIN5G0">
+    <nom>M2 Spécialité Systèmes d'information répartis (SIR)</nom>
     <description>
+      <p>
 			
 				Le programme vise la formation de spécialistes dans des métiers à
 					forte valeur ajoutée au travers des compétences acquises dans trois
@@ -2527,7 +2557,8 @@
 					développement du logiciel (Cloud, Mobile, etc.) et les processus
 					métiers de l’entreprise.
 			
-		</description>
+		</p>
+    </description>
     <semestre>
       <bloc-UE rôle="Obligatoire">
         <refUE refUE="ENSINCU60"/>

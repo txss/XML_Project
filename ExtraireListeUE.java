@@ -28,17 +28,17 @@ public class CreateDom {
 				.newDocumentBuilder().parse(xmlFile);
 
 
-		// création d'un document vide
+		// crï¿½ation d'un document vide
 		Document docOutXml = DocumentBuilderFactory.newInstance()
 				.newDocumentBuilder().newDocument();
 
-		// récupération des données
+		// rï¿½cupï¿½ration des donnï¿½es
 		NodeList nList = donneesXml.getDocumentElement().getElementsByTagName("UE");
 			
-		// création de la racine
-		Element racine = docOutXml.createElement("UE");
+		// crï¿½ation de la racine
+		Element racine = docOutXml.createElement("UEs");
 
-		// Ajout de noeuds contenant les noms des UEs récupérer 
+		// Ajout de noeuds contenant les noms des UEs rï¿½cupï¿½rer 
 		for (int i = 0; i < nList.getLength(); i++) {
 			Node nNode = nList.item(i);
 			Node ue = racine.appendChild(docOutXml.createElement("nomUE"));

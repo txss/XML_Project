@@ -1,6 +1,6 @@
 /* Campanella Florian et Manon Scholivet
 
-	Ajout de contenue dans le css,
+	Ajout de contenu dans le css,
 	pour une meilleur mise en forme des templates.
  */
 
@@ -23,3 +23,11 @@
 	line-height: 1em ;
 	text-align: center ;
 }
+
+#contenu .box {
+	border:solid 1px black;
+	padding:2%;
+	margin:1%;
+}
+
+

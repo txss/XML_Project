@@ -51,6 +51,9 @@
   <intervenant id="IN18">
     <nom>MASSAT Jean Luc</nom>
     <mail>jean-luc.massat@univ-amu.fr</mail>
+    <siteWeb>http://jean-luc.massat.perso.luminy.univ-amu.fr</siteWeb>
+    <infoComplementaire typeInfo="Taille">1m80</infoComplementaire>
+    <infoComplementaire typeInfo="Gentil">Oui</infoComplementaire>
   </intervenant>
   <intervenant id="IN2563">
     <nom>GODARD Emmanuel</nom>

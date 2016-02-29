@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!ELEMENT master					(intervenant+, UE+, parcours, parcours)>
+<!ELEMENT master					(intervenant+, UE+, parcours+)>
 
-<!ELEMENT UE						(nomUE, ref-intervenant*, nbCreditsUE, résumé?, plan?, lieu_d_enseignement*)>
+<!ELEMENT UE						(nom, ref-intervenant*, nbCreditsUE, résumé?, plan?, lieu_d_enseignement*)>
 <!ATTLIST UE
     id ID #REQUIRED
     >
 
-<!ELEMENT nomUE           			(#PCDATA)>
+<!ELEMENT nom           			(#PCDATA)>
 <!ELEMENT ref-intervenant			EMPTY    >
 <!ATTLIST ref-intervenant
     ref IDREF #REQUIRED
     >
 <!ELEMENT nbCreditsUE     			(#PCDATA)>
-<!ELEMENT résumé        			(p)*>
-<!ELEMENT plan          			(p)*>
+<!ELEMENT résumé        			(p|ul)*>
+<!ELEMENT plan          			(p|ul)*>
 <!ELEMENT lieu_d_enseignement    	(Luminy|St-Jerôme)>
 <!ELEMENT Luminy   				 	EMPTY>
 <!ELEMENT St-Jerôme    				EMPTY>
 
-<!ELEMENT p 						(#PCDATA|b|i|t|p|ul|table|a)*>
+<!ELEMENT p 						(#PCDATA|b|i|t|p|ul|table|a|br)*>
 <!ELEMENT ul				    	(li)+>
 <!ELEMENT table						(tr)+>
 <!ELEMENT tr						(td)+>
@@ -28,14 +28,18 @@
 <!ELEMENT t							(#PCDATA)>
 <!ELEMENT a					    	(#PCDATA)>
 <!ELEMENT td				    	(p)*>
-<!ELEMENT li				    	(p)+>
+<!ELEMENT li				    	(p|t)*>
+<!ELEMENT br				    	EMPTY>
 
-<!ELEMENT intervenant				(nomIntervenant,mail,siteWeb?)>
+<!ELEMENT intervenant				(nom,mail?,siteWeb?,infoComplementaire*)>
 <!ATTLIST intervenant
     id ID #REQUIRED
     >
    
-<!ELEMENT nomIntervenant           	(#PCDATA)>
+<!ELEMENT infoComplementaire        (#PCDATA)>
+<!ATTLIST infoComplementaire
+    typeInfo CDATA #REQUIRED>
+    
 <!ELEMENT mail          			(#PCDATA)>
 <!ELEMENT siteWeb        			(#PCDATA)>
 
@@ -43,18 +47,19 @@
 
 <!ELEMENT bloc-UE                   (nbCreditsBloc?,refUE+)>
 <!ATTLIST bloc-UE
-    rôle (Obligatoire|Facultatif) #REQUIRED
-    >
+    rôle CDATA #REQUIRED>
+    
 <!ELEMENT nbCreditsBloc         	(#PCDATA)>
 <!ELEMENT refUE 					EMPTY    >
 <!ATTLIST refUE
-    refUE IDREF #REQUIRED
+    refUE IDREF #REQUIRED >
+
+<!ELEMENT parcours                  (responsable?, nom, description, débouché*,semestre,semestre)>
+<!ATTLIST parcours
+    id ID #REQUIRED
     >
-
-
-<!ELEMENT parcours                  (responsable?, nomParcours, description, débouché*,semestre,semestre)>
 <!ELEMENT responsable               (#PCDATA)>
-<!ELEMENT nomParcours               (#PCDATA)>
 <!ELEMENT description               (p)*>
 <!ELEMENT débouché	                (p)*>
+
 

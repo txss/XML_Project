@@ -2,9 +2,8 @@
 	version="1.0">
 
 	<xsl:output method="html" encoding="UTF-8" />
-	
-	<xsl:key name="UEenParticulier" match="//UE" use="@id" />
 
+	<xsl:key name="UEenParticulier" match="//UE" use="@id" />
 
 
 
@@ -47,7 +46,7 @@
 					<div id="global">
 						<xsl:call-template name="menu-page-web" />
 						<div id="contenu">
-							<h2 style="margin-top:50px;">Le Master</h2>
+							<h2>Le Master</h2>
 							<xsl:call-template name="listerParcours" />
 						</div>
 					</div>
@@ -66,13 +65,13 @@
 		<h1>Les parcours proposés:</h1>
 		<ul>
 			<xsl:for-each select="/master/parcours">
-				<xsl:variable name="nomParcours" select="nomParcours" />
+				<xsl:variable name="nom" select="nom" />
 				<li>
-					<a href="{$nomParcours}.html">
-						<xsl:value-of select="nomParcours" />
+					<a href="{@id}.html">
+						<xsl:value-of select="nom" />
 					</a>
 				</li>
-				<xsl:document href="{$nomParcours}.html">
+				<xsl:document href="{@id}.html">
 					<html>
 						<xsl:call-template name="head-page-web" />
 						<body>
@@ -83,7 +82,7 @@
 										style="border:solid 1px black; margin: 1px; padding-left:5%; margin-top:50px; margin-top:50px; padding-bottom:50px;">
 										<p>
 											<h2>
-												<xsl:value-of select="nomParcours" />
+												<xsl:value-of select="nom" />
 											</h2>
 											<br />
 											Responsable :
@@ -112,7 +111,7 @@
 														<li>
 															<a href="{$referenceUE}.html">
 																<xsl:value-of
-																	select="key('UEenParticulier',$referenceUE)/nomUE" />
+																	select="key('UEenParticulier',$referenceUE)/nom" />
 																(
 																<xsl:value-of
 																	select="key('UEenParticulier',$referenceUE)/nbCreditsUE" />
@@ -145,10 +144,9 @@
 						<div id="global">
 							<xsl:call-template name="menu-page-web" />
 							<div id="contenu">
-								<div
-									style="border:solid 1px black; margin: 1px; padding-left:5%; margin-top:50px; margin-top:50px;">
+								<div class="box">
 									<h3 id="{$idUECourant}">
-										<xsl:value-of select="nomUE" />
+										<xsl:value-of select="nom" />
 									</h3>
 									<ul>
 										<xsl:for-each select="ref-intervenant">
@@ -156,7 +154,7 @@
 											<li>
 												<a href="{$idIntervenant}.html">
 													<xsl:value-of
-														select="//intervenant[@id=$idIntervenant]/nomIntervenant" />
+														select="//intervenant[@id=$idIntervenant]/nom" />
 												</a>
 											</li>
 										</xsl:for-each>
@@ -176,12 +174,12 @@
 										<p>Cette UE apparaît dans le(s) parcours : </p>
 										<ul>
 											<xsl:for-each select="//parcours">
-												<xsl:variable name="nomParcours" select="nomParcours" />
+												<xsl:variable name="nom" select="nom" />
+												<xsl:variable name="idParcours" select="@id" />
 												<xsl:for-each select="semestre/bloc-UE/refUE[@refUE=$idUECourant]">
-
 													<li>
-														<a href="{$nomParcours}.html">
-															<xsl:value-of select="$nomParcours" />
+														<a href="{$idParcours}.html">
+															<xsl:value-of select="$nom" />
 														</a>
 													</li>
 												</xsl:for-each>
@@ -201,12 +199,6 @@
 
 	<xsl:template name="menu-lister-UEs">
 		<ul id="breadcrumb">
-			<li>
-				<a href="listeUE.html">
-					Toutes les UEs
-					<xsl:call-template name="listerUE" />
-				</a>
-			</li>
 			<li>
 				<a href="listeDe3Credits.html">
 					UEs de 3 Crédits
@@ -238,10 +230,10 @@
 							<xsl:call-template name="menu-lister-UEs" />
 							<h2>Liste des matières</h2>
 							<xsl:for-each select="UE">
-								<div style="border:solid 1px black; margin: 1px; padding-left:5%;">
+								<div class="box">
 									<xsl:variable name="idUECourant" select="@id" />
 									<a href="{$idUECourant}.html">
-										<xsl:value-of select="nomUE" />
+										<xsl:value-of select="nom" />
 									</a>
 									<ul>
 										<xsl:for-each select="ref-intervenant">
@@ -249,7 +241,7 @@
 											<li>
 												<a href="{$idIntervenant}.html">
 													<xsl:value-of
-														select="//intervenant[@id=$idIntervenant]/nomIntervenant" />
+														select="//intervenant[@id=$idIntervenant]/nom" />
 												</a>
 											</li>
 										</xsl:for-each>
@@ -269,11 +261,12 @@
 										<p>Cette UE apparaît dans le(s) parcours : </p>
 										<ul>
 											<xsl:for-each select="//parcours">
-												<xsl:variable name="nomParcours" select="nomParcours" />
+												<xsl:variable name="nom" select="nom" />
+												<xsl:variable name="idParcours" select="@id" />
 												<xsl:for-each select="semestre/bloc-UE/refUE[@refUE=$idUECourant]">
 													<li>
-														<a href="{$nomParcours}.html">
-															<xsl:value-of select="$nomParcours" />
+														<a href="{$idParcours}.html">
+															<xsl:value-of select="$nom" />
 														</a>
 													</li>
 												</xsl:for-each>
@@ -296,7 +289,7 @@
 		<xsl:for-each select="/master/intervenant">
 			<xsl:variable name="idIntervenantCourant" select="@id" />
 			<xsl:variable name="siteWebIntervenant" select="siteWeb" />
-			<xsl:variable name="nomIntervenant" select="nomIntervenant" />
+			<xsl:variable name="nomIntervenant" select="nom" />
 			<xsl:document href="www/{$idIntervenantCourant}.html">
 				<html>
 					<xsl:call-template name="head-page-web" />
@@ -304,47 +297,53 @@
 						<div id="global">
 							<xsl:call-template name="menu-page-web" />
 							<div id="contenu">
-								<p id="{$idIntervenantCourant}" style="margin-top:50px;">
-									<xsl:value-of select="nomIntervenant" />
-									<br />
-									<xsl:value-of select="mail" />
-									<br />
-									<xsl:if test="siteWeb">
-										<a href="{$siteWebIntervenant}"> Site perso </a>
+								<div class="box">
+									<p id="{$idIntervenantCourant}">
+										<xsl:value-of select="nom" />
 										<br />
-									</xsl:if>
-									<br />
-									<xsl:apply-templates /> <!-- TODO gerer les infos complementaires -->
-									<br />
-									<br />
-									UE enseignée(s):
-									<br />
-									<ul>
-										<xsl:for-each select="//UE">
-											<xsl:variable name="UECourante" select="@id" />
-											<xsl:variable name="nomUECourante" select="nomUE" />
-											<xsl:for-each select="ref-intervenant">
-												<xsl:if test="$idIntervenantCourant = @ref">
-													<li>
-														<a href="{$UECourante}.html">
-															<xsl:value-of select="$nomUECourante" />
-														</a>
-													</li>
-												</xsl:if>
-											</xsl:for-each>
-										</xsl:for-each>
-									</ul>
-									<xsl:for-each select="//parcours">
-										<xsl:variable name="nomResp" select="responsable" />
-										<xsl:variable name="nomParcours" select="nomParcours" />
-										<xsl:if test="$nomIntervenant = $nomResp">
-											Cet enseignant est responsable du/des parcours:
-											<a href="{$nomParcours}.html">
-												<xsl:value-of select="$nomParcours" />
-											</a>
+										<xsl:value-of select="mail" />
+										<br />
+										<xsl:if test="siteWeb">
+											<a href="{$siteWebIntervenant}"> Site perso </a>
+											<br />
 										</xsl:if>
-									</xsl:for-each>
-								</p>
+										<br />
+										<xsl:if test="infoComplementaire">
+											Infos complémentaires :
+											<ul>
+												<xsl:for-each select="infoComplementaire">
+													<xsl:call-template name="infoComplementaire" />
+												</xsl:for-each>
+											</ul>
+										</xsl:if>
+										UE enseignée(s):
+										<ul>
+											<xsl:for-each select="//UE">
+												<xsl:variable name="UECourante" select="@id" />
+												<xsl:variable name="nomUECourante" select="nom" />
+												<xsl:for-each select="ref-intervenant">
+													<xsl:if test="$idIntervenantCourant = @ref">
+														<li>
+															<a href="{$UECourante}.html">
+																<xsl:value-of select="$nomUECourante" />
+															</a>
+														</li>
+													</xsl:if>
+												</xsl:for-each>
+											</xsl:for-each>
+										</ul>
+										<xsl:for-each select="//parcours">
+											<xsl:variable name="nomResp" select="responsable" />
+											<xsl:variable name="nomParcours" select="nom" />
+											<xsl:if test="$nomIntervenant = $nomResp">
+												Cet enseignant est responsable du/des parcours:
+												<a href="{@id}.html">
+													<xsl:value-of select="$nomParcours" />
+												</a>
+											</xsl:if>
+										</xsl:for-each>
+									</p>
+								</div>
 							</div>
 						</div>
 						<xsl:call-template name="pied-page-web" />
@@ -385,7 +384,9 @@
 					<div id="global">
 						<xsl:call-template name="menu-page-web" />
 						<div id="contenu">
-						<xsl:call-template name="menu-lister-UEs" />
+							<a href="listeUE.html">
+								Toutes les UEs
+							</a>
 							<xsl:call-template name="faire-une-liste">
 								<xsl:with-param name="objets"
 									select="//UE[nbCreditsUE=$nbCredits]" />
@@ -438,7 +439,12 @@
 	</xsl:template>
 
 
-	<!-- <xsl:template match="any"> Infos complémentaires: <br /> <xsl:value-of 
-		select="." /> </xsl:template> -->
+	<xsl:template name="infoComplementaire">
+		<li>
+			<xsl:value-of select="@typeInfo" />
+			:
+			<xsl:value-of select="." />
+		</li>
+	</xsl:template>
 
 </xsl:stylesheet>
