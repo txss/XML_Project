@@ -1,0 +1,33 @@
+<enseignants>
+{
+	for $i in doc("donneeFinales.xml")//intervenant
+		let $refi := $i/@id
+		let $info := $i/infoComplementaire
+		let $nomInter := $i/nom
+		order by $i/nom
+		return
+			<enseignant>
+				{attribute id $refi}
+				{$i/nom}
+				{$i/mail}
+				{$i/siteWeb}
+				{$info}
+				for $ues in doc("donneeFinales.xml")//UE
+					let refiUE := $u/ref-intervenant
+					order by $ues/nom
+					where ($refi = $refiUE)
+					return 
+						<ref-UE />
+						{attribute refUE $ues/@id}
+				for $p in doc("donneeFinales.xml")//parcours
+					let $refP := $p/@id
+					let $resp := $p/responsable
+					order by $p/nom
+					where ($resp = $nomInter)
+					return
+						<parcours />
+						{attribute refParcours $refP}
+			</enseignant>				
+					
+}
+</enseignants>
