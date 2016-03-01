@@ -1,0 +1,18 @@
+<autre-liste>
+    {
+    for
+        $p in doc("produits.xml")//produit,
+        $y in (3,2,1)
+    let $n := ($y - 1)
+    let $nom := $p/nom
+    where ($y > 1)
+    order by $y, $p/title
+    return
+        <item>
+            {attribute type {$p/@nature}}
+            <numero>{$n}</numero>
+            {element meme-chose {$n+1}}
+            {$nom}
+        </item>
+    }
+</autre-liste>

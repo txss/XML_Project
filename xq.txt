@@ -1,33 +1,39 @@
 <enseignants>
 {
-	for $i in doc("donneeFinales.xml")//intervenant
-		let $refi := $i/@id
-		let $info := $i/infoComplementaire
-		let $nomInter := $i/nom
-		order by $i/nom
-		return
-			<enseignant>
-				{attribute id $refi}
-				{$i/nom}
-				{$i/mail}
-				{$i/siteWeb}
-				{$info}
-				for $ues in doc("donneeFinales.xml")//UE
-					let refiUE := $u/ref-intervenant
-					order by $ues/nom
-					where ($refi = $refiUE)
-					return 
-						<ref-UE />
-						{attribute refUE $ues/@id}
-				for $p in doc("donneeFinales.xml")//parcours
-					let $refP := $p/@id
-					let $resp := $p/responsable
-					order by $p/nom
-					where ($resp = $nomInter)
-					return
-						<parcours />
-						{attribute refParcours $refP}
-			</enseignant>				
+	for $i in doc("donnesFinales_schema.xml")//intervenant
+	let $refi := $i/@id
+	let $info := $i/infoComplementaire
+	let $nomInter := $i/nom
+	order by $i/nom
+	return
+		<enseignant>
+			{attribute ref {$refi}}
+			{$i/nom}
+			{$i/mail}
+			{$i/siteWeb}
+			{$info}
+			{
+				for $ues in doc("donnesFinales_schema.xml")//UE
+				let $refiUE := $ues/ref-intervenant/@ref   --on recupere plusieurs intervenant et ca pose soucis
+				order by $ues/nom
+				where ($refi = $refiUE)
+				return 
+					<ref-UE>
+						{$refiUE}
+					</ref-UE>
+			}
+			{
+				for $p in doc("donnesFinales_schema.xml")//parcours
+				let $refp := $p/@id
+				let $resp := $p/responsable
+				order by $p/nom
+				where ($resp eq $nomInter)
+				return
+					<parcours>
+						{$refp}
+					</parcours>
+			}			
+			</enseignant>	
 					
 }
 </enseignants>
