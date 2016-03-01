@@ -1,4 +1,3 @@
-package xml;
 
 
 import java.io.File;
@@ -17,11 +16,11 @@ import org.w3c.dom.NodeList;
 
 
 
-public class CreateDom {
+public class ExtraireListeUE {
 
 
 	public static void main(String[] args) throws Exception {
-		File xmlFile = new File("donnesFinales.xml");
+		File xmlFile = new File("donnesFinales_schema.xml");
 		//File listeUe = new File("ListeUEs.xml");
 
 		Document donneesXml = DocumentBuilderFactory.newInstance()
@@ -41,9 +40,9 @@ public class CreateDom {
 		// Ajout de noeuds contenant les noms des UEs r�cup�rer 
 		for (int i = 0; i < nList.getLength(); i++) {
 			Node nNode = nList.item(i);
-			Node ue = racine.appendChild(docOutXml.createElement("nomUE"));
+			Node ue = racine.appendChild(docOutXml.createElement("nom"));
 			ue.appendChild(docOutXml.createTextNode(((Element) nNode)
-					.getElementsByTagName("nomUE").item(0).getTextContent()));
+					.getElementsByTagName("nom").item(0).getTextContent()));
 		}
 
 		docOutXml.appendChild(racine);
@@ -52,7 +51,7 @@ public class CreateDom {
 		TransformerFactory myFactory = TransformerFactory.newInstance();
 		Transformer transformer = myFactory.newTransformer();
 
-		transformer.setOutputProperty(OutputKeys.ENCODING, "ISO-8859-1");
+		transformer.setOutputProperty(OutputKeys.ENCODING, "utf-8");
 		transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 		transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
 		transformer.setOutputProperty(OutputKeys.METHOD, "xml");

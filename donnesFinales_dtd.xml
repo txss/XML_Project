@@ -124,6 +124,7 @@
 				<t>- Design patterns</t>
 			</p>
     </résumé>
+    <lieu_d_enseignement><Luminy/></lieu_d_enseignement>
   </UE>
   <UE id="ENSINAU10">
     <nom>Modèles à évènements discrets</nom>
