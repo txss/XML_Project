@@ -54,7 +54,7 @@
 <!ATTLIST refUE
     refUE IDREF #REQUIRED >
 
-<!ELEMENT parcours                  (responsable?, nom, description, débouché*,semestre,semestre)>
+<!ELEMENT parcours                  (nom, responsable?, description, débouché*,semestre,semestre)>
 <!ATTLIST parcours
     id ID #REQUIRED
     >

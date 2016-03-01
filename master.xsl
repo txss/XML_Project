@@ -78,15 +78,17 @@
 							<div id="global">
 								<xsl:call-template name="menu-page-web" />
 								<div id="contenu">
-									<div
-										style="border:solid 1px black; margin: 1px; padding-left:5%; margin-top:50px; margin-top:50px; padding-bottom:50px;">
+									<div>
 										<p>
 											<h2>
 												<xsl:value-of select="nom" />
 											</h2>
 											<br />
-											Responsable :
-											<xsl:value-of select="responsable" />
+											<xsl:variable name="resp" select="responsable" />
+											<xsl:variable name="idresp" select="//intervenant[nom = $resp]" />
+											Responsable : <a href="{$idresp/@id}.html">
+												<xsl:value-of select="responsable" />
+											</a>
 											<br />
 											Description :
 											<xsl:value-of select="description" />
@@ -410,6 +412,7 @@
 		</h2>
 		<ul>
 			<xsl:for-each select="$objets">
+				<xsl:sort select="nom"/>
 				<xsl:variable name="idObjets" select="@id" />
 				<li>
 					<a href="{$idObjets}.html">

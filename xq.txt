@@ -12,28 +12,42 @@
 			{$i/mail}
 			{$i/siteWeb}
 			{$info}
+			<ul>
 			{
-				for $ues in doc("donnesFinales_schema.xml")//UE
-				let $refiUE := $ues/ref-intervenant/@ref   --on recupere plusieurs intervenant et ca pose soucis
-				order by $ues/nom
+				for $ues in doc("donnesFinales_schema.xml")//UE,
+					$intervenant in $ues/ref-intervenant
+				let $refiUE := $intervenant/@ref
+				let $nomUE := $ues/nom
+				let $refUE := $ues/@id
 				where ($refi = $refiUE)
+				order by $ues/nom
 				return 
-					<ref-UE>
-						{$refiUE}
-					</ref-UE>
+					<li>
+						<ref-UE>
+							{$refUE}
+							{$nomUE}
+						</ref-UE>
+					</li>
 			}
+			</ul>
+			<ul>
 			{
 				for $p in doc("donnesFinales_schema.xml")//parcours
 				let $refp := $p/@id
 				let $resp := $p/responsable
+				let $nomParcours := $p/nom
 				order by $p/nom
 				where ($resp eq $nomInter)
 				return
-					<parcours>
-						{$refp}
-					</parcours>
-			}			
-			</enseignant>	
+					<li>
+						<parcours>
+							{$refp}	
+							{$nomParcours}				
+						</parcours>
+					</li>
+			}	
+			</ul>	
+			</enseignant>
 					
 }
 </enseignants>
