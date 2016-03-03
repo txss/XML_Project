@@ -14,7 +14,7 @@ web:
 	xsltproc master.xsl donnesFinales_schema.xml
 	
 tidy:
-	tidy -im -utf8 www/*.html
+	tidy -qe -im -utf8 www/*.html
 	 
 xq:
 	 java -cp saxon/saxon9he.jar net.sf.saxon.Query indent=no xq.txt > www/xq.xhtml

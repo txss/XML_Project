@@ -90,10 +90,12 @@
 										<br />
 										<xsl:variable name="resp" select="responsable" />
 										<xsl:variable name="idresp" select="//intervenant[nom = $resp]" />
-										Responsable :
-										<a href="{$idresp/@id}.html">
-											<xsl:value-of select="responsable" />
-										</a>
+										<xsl:if test="responsable">
+											Responsable :
+											<a href="{$idresp/@id}.html">
+												<xsl:value-of select="responsable" />
+											</a>
+										</xsl:if>
 										<br />
 										Description :
 										<xsl:value-of select="description" />
