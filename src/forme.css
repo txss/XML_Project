@@ -33,3 +33,23 @@
 #contenu .afficherParcours {
 	padding:20px;
 }
+
+
+#contenu #documentation h1{
+	text-align: center;
+	text-decoration:underline;
+}
+
+#contenu #documentation h4{
+	text-align: center;
+	text-decoration:underline;
+}
+
+#contenu #documentation .descr p {
+	width:80%;
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+

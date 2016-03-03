@@ -29,6 +29,9 @@
 			<li>
 				<a href="listeUE.html"> Les unités d'enseignements </a>
 			</li>
+			<li>
+				<a href="../doc.html"> Documentation </a>
+			</li>
 		</ul>
 	</xsl:template>
 

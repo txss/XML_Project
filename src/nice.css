@@ -17,7 +17,7 @@
 /* Général */
 body {
 	color: #F0E39E;
-	background: #2C2F22;
+	background: #6C7A89;
 }
 a {
 	color: #FF6533;
@@ -48,7 +48,7 @@ strong {
 /* Contenu principal */
 #contenu {
 	color: #363B29;
-	background: #cbd888;
+	background: #89C4F4;
 }
 #contenu a {
 	color: #332510;
@@ -59,6 +59,7 @@ strong {
 #contenu strong {
 	color: #181A12;
 }
+
 
 /* Pied de page */
 #pied {
@@ -127,6 +128,7 @@ body {
 #contenu p, #contenu li {
 	line-height: 1.5;
 }
+
 
 /* Pied de page */
 #pied {

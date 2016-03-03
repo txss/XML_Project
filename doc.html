@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="src/nice.css">
+<link rel="stylesheet" type="text/css" href="src/forme.css">
+<title>Doc projet</title>
+</head>
+<body>
+	<div id="global">
+		<div id="entete">Master Informatique:</div>
+		<ul id="menu">
+			<li><a href="www/index.html">Accueil</a></li>
+
+			<li><a href="www/listeEnseignants.html">Les enseignants</a></li>
+
+			<li><a href="www/listeUE.html">Les unités d'enseignements</a></li>
+			<li><a href="doc.html"> Documentation </a></li>
+		</ul>
+		<div id="contenu">
+			<div id="documentation">
+				<h1>Documentation du projet xml:</h1>
+
+				<div class="box">
+					Contenue du projet:<br />
+					<ul>
+						<li><a href="master.dtd">master.dtd</a></li>
+						<li><a href="master.xsd">master.xsd</a></li>
+						<li><a href="master.xsl">master.xsl</a></li>
+						<li><a href="donnesFinales_dtd.xml">donnesFinales_dtd.xml</a></li>
+						<li><a href="donnesFinales_schema.xml">donnesFinales_schema.xml</a></li>
+						<li><a href="ExtraireListeUE.java">ExtraireListeUE.java</a></li>
+						<li><a href="Makefile">Makefile</a></li>
+						<li><a href="README">ReadMe</a></li>
+						<li><a href="xq.txt">xq.txt</a></li>
+						<ul>
+							<p>Ainsi que les dossiers</p>
+							<li>saxon: qui contient l'outil saxon</li>
+							<li>
+								<p>src</p>
+								<ul>
+									<li><a href="src/forme.css">forme.css</a></li>
+									<li><a href="src/nice.css">nice.css</a></li>
+								</ul>
+							</li>
+							<li><p>xml2xml</p>
+								<ul>
+									<li><a href="xml2xml/donnees-master.dtd">donnees-master.dtd</a></li>
+									<li><a href="xml2xml/donnees-master.xml">donnees-master.xml</a></li>
+									<li><a href="xml2xml/donneesFinales.xml">donneesFinales.xml</a></li>
+									<li><a href="xml2xml/modifieur.xsl">modifieur.xsl</a></li>
+								</ul></li>
+
+						</ul>
+					</ul>
+				</div>
+				<div class="descr" id="/">
+					<h4>Le dossier xml2xml:</h4>
+					<p>
+						Ce dossier contient les données du master fournies lors du tp 4/5.<br />
+						À savoir, le fichier xml -ainsi que sa dtd- que nous avons
+						utiliseé pour créer notre fichier xml. Nous avons donc écrit un
+						fichier xsl <a href="xml2xml/modifieur.xsl">modifieur.xsl</a>
+						qui nous a permis d'extraire les informations importantes sur le
+						master, pour remplir la liste des enseignants, des unités
+						d'enseignement et des parcours proposés.<br /> Ce document ne
+						contenant pas toutes les informations nécessaires, par exemple les
+						sites web, les lieux d'enseignement, ou encore des informations
+						complémentaires sur les enseignants, nous en avons ajoutés
+						manuellement sur certains enseignant.<br /> Ainsi la fiche de <a
+						href="www/IN18.html">M. Jean-Luc Massat</a> contient des
+						informations que nous avons ajouté pour tester la validité de notre
+						dtd et de notre schema.
+					</p>
+
+					<h4>Le dossier src:</h4>
+
+					<p>Ce dossier contient les fichiers *.css utilisé pour mettre
+						en forme notre document html.</p>
+						
+					<h4>La DTD/Schéma, la gestion des informations complémentaires</h4>
+
+					<p>Pour gérer l'ajout d'informations complémentaires, nous avons ajouter une balise <i>infoComplémentaire</i>, 
+					qui a un attribut <i>type</i>, nous permettant d'ajouter des informations à la volée (Par exemple, la taille, le poids...)</p>
+
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<div id="pied">Fait par Campanella Florian et Manon Scholivet</div>
+</body>
+</html>
